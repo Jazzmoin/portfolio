@@ -1,6 +1,5 @@
 <script lang="ts">
     import "./layout.css";
-    import { resolve } from "$app/paths";
 
     let { children } = $props();
 </script>
