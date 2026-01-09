@@ -1,4 +1,1 @@
-
-<h1>
-		Coding
-</h1>
+<h1>Coding</h1>

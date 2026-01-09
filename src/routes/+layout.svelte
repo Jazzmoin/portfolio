@@ -1,43 +1,30 @@
 <script lang="ts">
-	import './layout.css';
-	import { resolve } from '$app/paths';
+    import "./layout.css";
+    import { resolve } from "$app/paths";
 
-	let { children } = $props();
+    let { children } = $props();
 </script>
 
 <div class="app">
-	<header>
-		<nav>
-			<ul>
-				<li>
-					<a href={resolve('/')}>Home</a>
-				</li>
+    <header>
+        <nav>
+            <ul>
+                {#each [{ path: "/", name: "home" }, { path: "/ux", name: "ux" }, { path: "/coding", name: "coding" }] as elem}
+                    <li class="p-1">
+                        <a href={elem.path}>{elem.name}</a>
+                    </li>
+                {/each}
+            </ul>
+        </nav>
+    </header>
 
-				<li>
-					<a href={resolve('/ux')}>UX</a>
-				</li>
-
-				<li>
-					<a href={resolve('/coding')}>coding</a>
-				</li>
-			</ul>
-		</nav>
-
-	</header>
-
-	<main>{@render children()}</main>
+    <main>{@render children()}</main>
 </div>
 
 <style>
     header {
         display: flex;
         justify-content: space-between;
-    }
-
-    nav {
-        display: flex;
-        justify-content: center;
-        --background: rgba(255, 255, 255, 0.7);
     }
 
     ul {
@@ -76,22 +63,20 @@
         color: var(--color-theme-1);
     }
 
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
+    .app {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-
+    main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: 100%;
+        max-width: 64rem;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
 </style>
