@@ -1,5 +1,4 @@
 <script lang="ts">
-    import Counter from "./Counter.svelte";
 </script>
 
 <svelte:head>
@@ -8,7 +7,7 @@
 </svelte:head>
 
 <section>
-    <h1>w</h1>
+    <h1>home</h1>
 </section>
 
 <style>
