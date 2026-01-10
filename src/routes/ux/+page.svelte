@@ -1,1 +1,14 @@
-<h1>UX</h1>
+<script>
+    import CardLayout from "$lib/components/CardLayout.svelte";
+
+    const cards = [
+        {
+            href: "",
+            title: "-",
+            desc: "-",
+            img: "/src/lib/images/img.png",
+        },
+    ];
+</script>
+
+<CardLayout sectionTitle="UX/UI" {cards} />
