@@ -6,9 +6,13 @@
 
 <div class="app">
     <header>
+        <h1>
+            <a href="/">Jazzmine Pasnin</a>
+        </h1>
+
         <nav>
             <ul>
-                {#each [{ path: "/", name: "home" }, { path: "/ux", name: "ux" }, { path: "/coding", name: "coding" }] as elem}
+                {#each [{ path: "/ux", name: "ux/ui" }, { path: "/coding", name: "coding projects" }, { path: "/product-design", name: "product design" }] as elem}
                     <li class="p-1">
                         <a href={elem.path}>{elem.name}</a>
                     </li>
@@ -24,6 +28,7 @@
     header {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     ul {
@@ -42,6 +47,18 @@
     li {
         position: relative;
         height: 100%;
+        font-size: 1.5rem;
+    }
+
+    h1,
+    h1 a {
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-text);
+        text-decoration: none;
+        align-items: center;
     }
 
     nav a {
@@ -51,7 +68,7 @@
         padding: 0 0.5rem;
         color: var(--color-text);
         font-weight: 700;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         text-transform: uppercase;
         letter-spacing: 0.1em;
         text-decoration: none;
@@ -66,15 +83,15 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
+        padding: 1rem 2rem 1rem 2rem;
     }
 
     main {
         flex: 1;
         display: flex;
-        flex-direction: column;
-        padding: 1rem;
+        flex-direction: row;
+        padding: 2rem 0rem 1rem 0rem;
         width: 100%;
-        max-width: 64rem;
         margin: 0 auto;
         box-sizing: border-box;
     }
