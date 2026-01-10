@@ -1,1 +1,14 @@
-<h1>Product design</h1>
+<script>
+    import CardLayout from "$lib/components/CardLayout.svelte";
+
+    const cards = [
+        {
+            href: "",
+            title: "-",
+            desc: "-",
+            img: "/src/lib/images/img.png",
+        },
+    ];
+</script>
+
+<CardLayout sectionTitle="Product Design" {cards} />

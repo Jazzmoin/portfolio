@@ -13,7 +13,7 @@
         <nav>
             <ul>
                 {#each [{ path: "/ux", name: "ux/ui" }, { path: "/coding", name: "coding projects" }, { path: "/product-design", name: "product design" }] as elem}
-                    <li class="p-1">
+                    <li>
                         <a href={elem.path}>{elem.name}</a>
                     </li>
                 {/each}
@@ -33,7 +33,6 @@
 
     ul {
         position: relative;
-        padding: 0;
         margin: 0;
         height: 3em;
         display: flex;
@@ -47,7 +46,6 @@
     li {
         position: relative;
         height: 100%;
-        font-size: 1.5rem;
     }
 
     h1,
@@ -65,10 +63,10 @@
         display: flex;
         height: 100%;
         align-items: center;
-        padding: 0 0.5rem;
+        padding: 0 0 0 2rem;
         color: var(--color-text);
         font-weight: 700;
-        font-size: 0.9rem;
+        font-size: 1rem;
         text-transform: uppercase;
         letter-spacing: 0.1em;
         text-decoration: none;
@@ -90,7 +88,7 @@
         flex: 1;
         display: flex;
         flex-direction: row;
-        padding: 2rem 0rem 1rem 0rem;
+        padding: 2rem 0 1rem 0;
         width: 100%;
         margin: 0 auto;
         box-sizing: border-box;
