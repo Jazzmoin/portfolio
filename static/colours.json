@@ -1,0 +1,2888 @@
+[
+    {
+        "name": "Infinity White",
+        "code": "WB1",
+        "hex": "#e5e5e5",
+        "category": "Whites"
+    },
+    {
+        "name": "White Link",
+        "code": "WB4",
+        "hex": "#e5e8e3",
+        "category": "Whites"
+    },
+    {
+        "name": "White Escape",
+        "code": "WB3",
+        "hex": "#ebede6",
+        "category": "Whites"
+    },
+    {
+        "name": "Love Note",
+        "code": "WB2",
+        "hex": "#f6f6f1",
+        "category": "Whites"
+    },
+    {
+        "name": "Star White",
+        "code": "WB7",
+        "hex": "#ecece6",
+        "category": "Whites"
+    },
+    {
+        "name": "Dreamy White",
+        "code": "WB5",
+        "hex": "#ebebe3",
+        "category": "Whites"
+    },
+    {
+        "name": "White Disclosure",
+        "code": "WB8",
+        "hex": "#e5e5de",
+        "category": "Whites"
+    },
+    {
+        "name": "Tiger White",
+        "code": "WB10",
+        "hex": "#e7e3de",
+        "category": "Whites"
+    },
+    {
+        "name": "White Focus",
+        "code": "WB6",
+        "hex": "#ebe7dc",
+        "category": "Whites"
+    },
+    {
+        "name": "White Comfort",
+        "code": "WB11",
+        "hex": "#ede7dd",
+        "category": "Whites"
+    },
+    {
+        "name": "White Beam",
+        "code": "WB12",
+        "hex": "#ede8dd",
+        "category": "Whites"
+    },
+    {
+        "name": "Frosted Window",
+        "code": "WB9",
+        "hex": "#e5e3d7",
+        "category": "Whites"
+    },
+    {
+        "name": "Charming White",
+        "code": "WB13",
+        "hex": "#e6dfd3",
+        "category": "Whites"
+    },
+    {
+        "name": "Winter Chic",
+        "code": "WB14",
+        "hex": "#e7e2d3",
+        "category": "Whites"
+    },
+    {
+        "name": "Salt And Sand",
+        "code": "WB15",
+        "hex": "#e7dece",
+        "category": "Whites"
+    },
+    {
+        "name": "Tokyo Snow",
+        "code": "WB16",
+        "hex": "#e8dfcf",
+        "category": "Whites"
+    },
+    {
+        "name": "Gentle Wind",
+        "code": "WB17",
+        "hex": "#e1ddd4",
+        "category": "Whites"
+    },
+    {
+        "name": "Arctic Crossing",
+        "code": "WB18",
+        "hex": "#d7d2c8",
+        "category": "Whites"
+    },
+    {
+        "name": "Casual",
+        "code": "28",
+        "hex": "#b18f79",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Witching",
+        "code": "161",
+        "hex": "#79463c",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Bass And Flinders",
+        "code": "44",
+        "hex": "#75655b",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Sandy Gorge",
+        "code": "41",
+        "hex": "#b6a99e",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Space Capsule",
+        "code": "3",
+        "hex": "#655e59",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Ace Of Clubs",
+        "code": "1",
+        "hex": "#5d5756",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Barista Fare",
+        "code": "29",
+        "hex": "#c2a48e",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Field Notes",
+        "code": "160",
+        "hex": "#875e4f",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Stone Cave",
+        "code": "42",
+        "hex": "#938476",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Beige Bravado",
+        "code": "12",
+        "hex": "#c3beba",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Winter Grey",
+        "code": "20",
+        "hex": "#887e75",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Grey Change",
+        "code": "4",
+        "hex": "#79706b",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Gently",
+        "code": "30",
+        "hex": "#d1b7a3",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Branch Out",
+        "code": "26",
+        "hex": "#8e6a57",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Stone Path",
+        "code": "39",
+        "hex": "#c1b7a6",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Refined Stone",
+        "code": "11",
+        "hex": "#cbc5bf",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Charcoal Rigour",
+        "code": "6",
+        "hex": "#978e8b",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Primal Instinct",
+        "code": "19",
+        "hex": "#8c847e",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Lovey",
+        "code": "33",
+        "hex": "#ecded1",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Tea Light",
+        "code": "35",
+        "hex": "#f9eddb",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Foundation Stone",
+        "code": "37",
+        "hex": "#ded6c9",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Arctic Grey",
+        "code": "10",
+        "hex": "#cbc6c1",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Twisted Rope",
+        "code": "14",
+        "hex": "#c3bcb7",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Solid Stone",
+        "code": "16",
+        "hex": "#a09993",
+        "category": "Neutrals"
+    },
+    {
+        "name": "English Beach",
+        "code": "32",
+        "hex": "#e6d5c5",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Stone Pillar",
+        "code": "34",
+        "hex": "#f7eddb",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Pathways",
+        "code": "36",
+        "hex": "#ded7cc",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Stoneboard",
+        "code": "9",
+        "hex": "#beb6b3",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Resiliant",
+        "code": "13",
+        "hex": "#c9c4bf",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Winteridge",
+        "code": "17",
+        "hex": "#989088",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Henhouse",
+        "code": "31",
+        "hex": "#ddc8b5",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Cane Chair",
+        "code": "40",
+        "hex": "#bcac9a",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Set In Stone",
+        "code": "38",
+        "hex": "#cac1b2",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Neutral Grey",
+        "code": "8",
+        "hex": "#b3aba9",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Grey Fibre",
+        "code": "15",
+        "hex": "#b2aca7",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Barn Owl",
+        "code": "18",
+        "hex": "#8c8782",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Yani's Earth",
+        "code": "27",
+        "hex": "#9e7b67",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Rocky Hideaway",
+        "code": "24",
+        "hex": "#705444",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Renewed Timber",
+        "code": "43",
+        "hex": "#958579",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Steamed Mushroom",
+        "code": "5",
+        "hex": "#867d78",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Chateau Stone",
+        "code": "7",
+        "hex": "#aca4a0",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Fossil Record",
+        "code": "21",
+        "hex": "#7b726c",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Timber Loft",
+        "code": "25",
+        "hex": "#7b5744",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Rich Soil",
+        "code": "45",
+        "hex": "#624a3a",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Prehistoric",
+        "code": "23",
+        "hex": "#554a43",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Rich Cocoa",
+        "code": "46",
+        "hex": "#504439",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Elephant Run",
+        "code": "2",
+        "hex": "#625751",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Wombat Gully",
+        "code": "22",
+        "hex": "#6a6157",
+        "category": "Neutrals"
+    },
+    {
+        "name": "Yellow Mania",
+        "code": "49",
+        "hex": "#fed138",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Hide And Seek",
+        "code": "48",
+        "hex": "#fec338",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Liquid Gold",
+        "code": "89",
+        "hex": "#d09641",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Fool's Crown",
+        "code": "94",
+        "hex": "#dd9b3f",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Yellow Brick Road",
+        "code": "93",
+        "hex": "#d48b36",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Electric Avenue",
+        "code": "136",
+        "hex": "#d08156",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Buttercup Field",
+        "code": "52",
+        "hex": "#fad364",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Good Karma",
+        "code": "68",
+        "hex": "#f7cd62",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Vast Estate",
+        "code": "70",
+        "hex": "#e1ac4d",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Oscar Gold",
+        "code": "95",
+        "hex": "#e6a950",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Maize Madness",
+        "code": "114",
+        "hex": "#b97b37",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Orange Critic",
+        "code": "118",
+        "hex": "#c87d47",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Sublime Yellow",
+        "code": "54",
+        "hex": "#fce294",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Echo Beach",
+        "code": "65",
+        "hex": "#f8db96",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Abundant Harvest",
+        "code": "71",
+        "hex": "#e3b05a",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Gold Harmony",
+        "code": "97",
+        "hex": "#f2c372",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Pastry Parlour",
+        "code": "113",
+        "hex": "#c78e49",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Worldly",
+        "code": "119",
+        "hex": "#d87e35",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Pillow Talk",
+        "code": "61",
+        "hex": "#f8edcc",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Harmonic",
+        "code": "64",
+        "hex": "#fae3ab",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Peninsula Sand",
+        "code": "86",
+        "hex": "#efc986",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Golden Sail",
+        "code": "98",
+        "hex": "#f4cb86",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Unbaked Clay",
+        "code": "112",
+        "hex": "#ca9456",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Gabe's Orange",
+        "code": "120",
+        "hex": "#fc9a53",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Icing Sugar",
+        "code": "59",
+        "hex": "#f6eed5",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Scented Candle",
+        "code": "63",
+        "hex": "#faeabb",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Honey Oat",
+        "code": "85",
+        "hex": "#f8da99",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Spun Straw",
+        "code": "100",
+        "hex": "#f6d59b",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Grand Hotel",
+        "code": "111",
+        "hex": "#d6a467",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Fresh Orange",
+        "code": "121",
+        "hex": "#feac69",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Simply Vanilla",
+        "code": "80",
+        "hex": "#f7f0df",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Soy Milk",
+        "code": "58",
+        "hex": "#f5f0d4",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Banana Crepe",
+        "code": "84",
+        "hex": "#f8e1aa",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Straw Loft",
+        "code": "102",
+        "hex": "#fae3b4",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Rich Sandstone",
+        "code": "110",
+        "hex": "#e1bf90",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Peachy Dream",
+        "code": "134",
+        "hex": "#feaa7c",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Potential",
+        "code": "81",
+        "hex": "#f9f0d5",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Sunlit Heaven",
+        "code": "57",
+        "hex": "#f8f1c7",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Egg Pasta",
+        "code": "78",
+        "hex": "#f8efc6",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Smooth Vanilla",
+        "code": "103",
+        "hex": "#f8e8c3",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Island Sand",
+        "code": "109",
+        "hex": "#eacea5",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Montage",
+        "code": "122",
+        "hex": "#ffb577",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Lemon Souffle",
+        "code": "79",
+        "hex": "#f7f3dd",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Custard Bake",
+        "code": "56",
+        "hex": "#faefbd",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Sunshine Rays",
+        "code": "82",
+        "hex": "#f9eac8",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Making Hay",
+        "code": "101",
+        "hex": "#f8dca8",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Lifestyle",
+        "code": "107",
+        "hex": "#efd9b6",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Exquisite Peach",
+        "code": "123",
+        "hex": "#ffc18c",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Crystal White",
+        "code": "60",
+        "hex": "#f8f0d5",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Golden Butter",
+        "code": "55",
+        "hex": "#fbe9a3",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Velvet Cream",
+        "code": "77",
+        "hex": "#f8e7bd",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Pumpkin Skin",
+        "code": "99",
+        "hex": "#f9d696",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Sculptured Sand",
+        "code": "108",
+        "hex": "#e8d1af",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Fizzy Sherbet",
+        "code": "124",
+        "hex": "#ffcfa2",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Wheat Range",
+        "code": "62",
+        "hex": "#f7e8bf",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Good To Go",
+        "code": "66",
+        "hex": "#f5d487",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Cream Delight",
+        "code": "83",
+        "hex": "#f8e0ab",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Golden Moon",
+        "code": "73",
+        "hex": "#fde294",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Homestyle",
+        "code": "106",
+        "hex": "#eedfc7",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Sugar Beat",
+        "code": "128",
+        "hex": "#fddfc7",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Happy Home",
+        "code": "53",
+        "hex": "#fddf87",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Jitterbug",
+        "code": "67",
+        "hex": "#f5d07f",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Squeaky Beach",
+        "code": "76",
+        "hex": "#fae2a7",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Peanut Oil",
+        "code": "96",
+        "hex": "#ebb763",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Porcelain Glow",
+        "code": "104",
+        "hex": "#f8edd1",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Ruby Sunshine",
+        "code": "129",
+        "hex": "#fddabc",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "High Alert",
+        "code": "50",
+        "hex": "#f7cf47",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Crazy Daisy",
+        "code": "69",
+        "hex": "#e8b446",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Honey Blonde",
+        "code": "75",
+        "hex": "#f6da9c",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Harvest View",
+        "code": "90",
+        "hex": "#c19344",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Delicate Lace",
+        "code": "105",
+        "hex": "#f3ead8",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Retro Peach",
+        "code": "131",
+        "hex": "#f2cab0",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "My Favourite",
+        "code": "51",
+        "hex": "#f7c84b",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Grainstore",
+        "code": "87",
+        "hex": "#e1ae5e",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Sand Wash",
+        "code": "74",
+        "hex": "#f4d18c",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Ginger Tea",
+        "code": "91",
+        "hex": "#a8844e",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Chilled Champagne",
+        "code": "127",
+        "hex": "#fce7d4",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Perfect Timing",
+        "code": "132",
+        "hex": "#efbd9d",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Hot Pop Yellow",
+        "code": "47",
+        "hex": "#fdba2e",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Topaz Dream",
+        "code": "88",
+        "hex": "#d9a04d",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Prosper",
+        "code": "72",
+        "hex": "#e9ba68",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Habitat House",
+        "code": "92",
+        "hex": "#9f7b46",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Truly Divine",
+        "code": "126",
+        "hex": "#f2dbca",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Plastic Fantastic",
+        "code": "133",
+        "hex": "#e9ac87",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Golden Lamp",
+        "code": "70",
+        "hex": "#d1ba92",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Snuggle Up",
+        "code": "130",
+        "hex": "#f5d7be",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Apricot Lace",
+        "code": "135",
+        "hex": "#da9267",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Naked City",
+        "code": "125",
+        "hex": "#ffdbb6",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Real Apricot",
+        "code": "117",
+        "hex": "#c77649",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Wild Riches",
+        "code": "137",
+        "hex": "#a26337",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Rosanna Gold",
+        "code": "116",
+        "hex": "#b86139",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Wooden Doll",
+        "code": "115",
+        "hex": "#9f6336",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Exotic Terracotta",
+        "code": "140",
+        "hex": "#a3513e",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Natural Paprika",
+        "code": "138",
+        "hex": "#965734",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Hot Jam",
+        "code": "139",
+        "hex": "#924735",
+        "category": "Yellows & Oranges"
+    },
+    {
+        "name": "Hot Pop Red",
+        "code": "185",
+        "hex": "#c53a40",
+        "category": "Reds"
+    },
+    {
+        "name": "Sassy Red",
+        "code": "181",
+        "hex": "#a52e2f",
+        "category": "Reds"
+    },
+    {
+        "name": "Kimono Red",
+        "code": "180",
+        "hex": "#a13534",
+        "category": "Reds"
+    },
+    {
+        "name": "Paint The Town",
+        "code": "164",
+        "hex": "#9b3534",
+        "category": "Reds"
+    },
+    {
+        "name": "Red Ribbon",
+        "code": "207",
+        "hex": "#9d384f",
+        "category": "Reds"
+    },
+    {
+        "name": "Red Alert",
+        "code": "187",
+        "hex": "#bc2f31",
+        "category": "Reds"
+    },
+    {
+        "name": "Red Splendour",
+        "code": "166",
+        "hex": "#b33f43",
+        "category": "Reds"
+    },
+    {
+        "name": "Red Emphasis",
+        "code": "163",
+        "hex": "#9d3133",
+        "category": "Reds"
+    },
+    {
+        "name": "Devil's Cloak",
+        "code": "182",
+        "hex": "#993130",
+        "category": "Reds"
+    },
+    {
+        "name": "Indian Red",
+        "code": "184",
+        "hex": "#572f2f",
+        "category": "Reds"
+    },
+    {
+        "name": "Red Bauble",
+        "code": "186",
+        "hex": "#bc302b",
+        "category": "Reds"
+    },
+    {
+        "name": "Red Viper",
+        "code": "165",
+        "hex": "#a4312d",
+        "category": "Reds"
+    },
+    {
+        "name": "Red Outcome",
+        "code": "162",
+        "hex": "#972f2f",
+        "category": "Reds"
+    },
+    {
+        "name": "Glazed Ruby",
+        "code": "183",
+        "hex": "#7e3738",
+        "category": "Reds"
+    },
+    {
+        "name": "Leather Chair",
+        "code": "185",
+        "hex": "#5e3e41",
+        "category": "Reds"
+    },
+    {
+        "name": "Pink Rival",
+        "code": "157",
+        "hex": "#c18c87",
+        "category": "Pinks"
+    },
+    {
+        "name": "Sweetest",
+        "code": "143",
+        "hex": "#f3b2ac",
+        "category": "Pinks"
+    },
+    {
+        "name": "Pink Groove",
+        "code": "188",
+        "hex": "#c25064",
+        "category": "Pinks"
+    },
+    {
+        "name": "Sweet Candy",
+        "code": "201",
+        "hex": "#e3a6b7",
+        "category": "Pinks"
+    },
+    {
+        "name": "Prom Queen",
+        "code": "205",
+        "hex": "#c36e80",
+        "category": "Pinks"
+    },
+    {
+        "name": "Fuchsia Bloom",
+        "code": "211",
+        "hex": "#a9547e",
+        "category": "Pinks"
+    },
+    {
+        "name": "Legacy Rose",
+        "code": "156",
+        "hex": "#cc9e9b",
+        "category": "Pinks"
+    },
+    {
+        "name": "Rose Vision",
+        "code": "145",
+        "hex": "#f6beb9",
+        "category": "Pinks"
+    },
+    {
+        "name": "Swinging Pink",
+        "code": "189",
+        "hex": "#d16377",
+        "category": "Pinks"
+    },
+    {
+        "name": "Luminous Pink",
+        "code": "194",
+        "hex": "#f5cddd",
+        "category": "Pinks"
+    },
+    {
+        "name": "Velvet Slipper",
+        "code": "203",
+        "hex": "#d78fa1",
+        "category": "Pinks"
+    },
+    {
+        "name": "Hibiscus Blossom",
+        "code": "212",
+        "hex": "#b15a85",
+        "category": "Pinks"
+    },
+    {
+        "name": "Rose Revival",
+        "code": "155",
+        "hex": "#d0aeab",
+        "category": "Pinks"
+    },
+    {
+        "name": "Ballet Princess",
+        "code": "146",
+        "hex": "#fdd4cd",
+        "category": "Pinks"
+    },
+    {
+        "name": "Sweet Caress",
+        "code": "190",
+        "hex": "#e88195",
+        "category": "Pinks"
+    },
+    {
+        "name": "Pink Life",
+        "code": "198",
+        "hex": "#f1d1df",
+        "category": "Pinks"
+    },
+    {
+        "name": "My Wish",
+        "code": "200",
+        "hex": "#ebb9c6",
+        "category": "Pinks"
+    },
+    {
+        "name": "Sugar Baby",
+        "code": "214",
+        "hex": "#d591b6",
+        "category": "Pinks"
+    },
+    {
+        "name": "Pinky Peach",
+        "code": "153",
+        "hex": "#ead1c5",
+        "category": "Pinks"
+    },
+    {
+        "name": "Soft Marshmallow",
+        "code": "147",
+        "hex": "#fcded8",
+        "category": "Pinks"
+    },
+    {
+        "name": "Fizzy Pink",
+        "code": "191",
+        "hex": "#ed94a9",
+        "category": "Pinks"
+    },
+    {
+        "name": "Pink Gem",
+        "code": "217",
+        "hex": "#e3ccd4",
+        "category": "Pinks"
+    },
+    {
+        "name": "Pink Bliss",
+        "code": "199",
+        "hex": "#f8cdd7",
+        "category": "Pinks"
+    },
+    {
+        "name": "Pink Perfume",
+        "code": "216",
+        "hex": "#e5b1d2",
+        "category": "Pinks"
+    },
+    {
+        "name": "Breadcrumb Trail",
+        "code": "151",
+        "hex": "#efdcd2",
+        "category": "Pinks"
+    },
+    {
+        "name": "Gentle Kiss",
+        "code": "148",
+        "hex": "#fbe6e0",
+        "category": "Pinks"
+    },
+    {
+        "name": "Pink Dolly",
+        "code": "170",
+        "hex": "#f8c3c9",
+        "category": "Pinks"
+    },
+    {
+        "name": "Maggie May",
+        "code": "218",
+        "hex": "#ead7dd",
+        "category": "Pinks"
+    },
+    {
+        "name": "Pink Sprinkle",
+        "code": "193",
+        "hex": "#f0c9d3",
+        "category": "Pinks"
+    },
+    {
+        "name": "Candle Scent",
+        "code": "220",
+        "hex": "#e7dae8",
+        "category": "Pinks"
+    },
+    {
+        "name": "Kirsten Pink",
+        "code": "149",
+        "hex": "#f0e4dd",
+        "category": "Pinks"
+    },
+    {
+        "name": "Sheer Gown",
+        "code": "174",
+        "hex": "#f7e9ea",
+        "category": "Pinks"
+    },
+    {
+        "name": "Pink Drop",
+        "code": "196",
+        "hex": "#f3ecec",
+        "category": "Pinks"
+    },
+    {
+        "name": "Touch Of Berry",
+        "code": "150",
+        "hex": "#f5ede9",
+        "category": "Pinks"
+    },
+    {
+        "name": "Soft Pink",
+        "code": "173",
+        "hex": "#f3eeec",
+        "category": "Pinks"
+    },
+    {
+        "name": "Crystal Dash",
+        "code": "219",
+        "hex": "#ece6ec",
+        "category": "Pinks"
+    },
+    {
+        "name": "Piglet Pink",
+        "code": "152",
+        "hex": "#e8d9d2",
+        "category": "Pinks"
+    },
+    {
+        "name": "Spring Bloom",
+        "code": "175",
+        "hex": "#fcddd8",
+        "category": "Pinks"
+    },
+    {
+        "name": "Iced Cupcake",
+        "code": "177",
+        "hex": "#fdc3c7",
+        "category": "Pinks"
+    },
+    {
+        "name": "Leyla Rose",
+        "code": "195",
+        "hex": "#f3dce4",
+        "category": "Pinks"
+    },
+    {
+        "name": "Pink Dress",
+        "code": "197",
+        "hex": "#f3dce2",
+        "category": "Pinks"
+    },
+    {
+        "name": "Barberalla",
+        "code": "215",
+        "hex": "#d99abd",
+        "category": "Pinks"
+    },
+    {
+        "name": "Coastal Sand",
+        "code": "154",
+        "hex": "#e2cec6",
+        "category": "Pinks"
+    },
+    {
+        "name": "Rose Candle",
+        "code": "144",
+        "hex": "#e4b2ab",
+        "category": "Pinks"
+    },
+    {
+        "name": "Rose Balm",
+        "code": "178",
+        "hex": "#f6b3b7",
+        "category": "Pinks"
+    },
+    {
+        "name": "Cherry Vanilla",
+        "code": "176",
+        "hex": "#fed3d4",
+        "category": "Pinks"
+    },
+    {
+        "name": "Paperback",
+        "code": "172",
+        "hex": "#f3d9e3",
+        "category": "Pinks"
+    },
+    {
+        "name": "Pink Orbit",
+        "code": "213",
+        "hex": "#c2739d",
+        "category": "Pinks"
+    },
+    {
+        "name": "All Seasons",
+        "code": "158",
+        "hex": "#b88c87",
+        "category": "Pinks"
+    },
+    {
+        "name": "Forever Peach",
+        "code": "142",
+        "hex": "#d79087",
+        "category": "Pinks"
+    },
+    {
+        "name": "French Bow",
+        "code": "169",
+        "hex": "#eb9193",
+        "category": "Pinks"
+    },
+    {
+        "name": "Pink Haven",
+        "code": "171",
+        "hex": "#facacf",
+        "category": "Pinks"
+    },
+    {
+        "name": "Raspberry Silk",
+        "code": "192",
+        "hex": "#daa1ac",
+        "category": "Pinks"
+    },
+    {
+        "name": "Wine Tasting",
+        "code": "210",
+        "hex": "#884967",
+        "category": "Pinks"
+    },
+    {
+        "name": "Bubbling Brew",
+        "code": "159",
+        "hex": "#9b6b62",
+        "category": "Pinks"
+    },
+    {
+        "name": "Mollusk Shell",
+        "code": "141",
+        "hex": "#c27363",
+        "category": "Pinks"
+    },
+    {
+        "name": "Stolen Kiss",
+        "code": "168",
+        "hex": "#e27a7b",
+        "category": "Pinks"
+    },
+    {
+        "name": "Love Affair",
+        "code": "179",
+        "hex": "#ecb5bd",
+        "category": "Pinks"
+    },
+    {
+        "name": "Pink Petal",
+        "code": "202",
+        "hex": "#dfa0b0",
+        "category": "Pinks"
+    },
+    {
+        "name": "Plum Magic",
+        "code": "208",
+        "hex": "#7c3a56",
+        "category": "Pinks"
+    },
+    {
+        "name": "Vital Rose",
+        "code": "167",
+        "hex": "#cc6b6e",
+        "category": "Pinks"
+    },
+    {
+        "name": "Bed Of Roses",
+        "code": "204",
+        "hex": "#cd7d8f",
+        "category": "Pinks"
+    },
+    {
+        "name": "Paparazzi Pink",
+        "code": "206",
+        "hex": "#b55b6c",
+        "category": "Pinks"
+    },
+    {
+        "name": "Merlot Valley",
+        "code": "209",
+        "hex": "#7f394f",
+        "category": "Pinks"
+    },
+    {
+        "name": "Purple Shock",
+        "code": "228",
+        "hex": "#7a5b8f",
+        "category": "Purples"
+    },
+    {
+        "name": "Lilac Mood",
+        "code": "223",
+        "hex": "#d1bfdc",
+        "category": "Purples"
+    },
+    {
+        "name": "Royal Realm",
+        "code": "247",
+        "hex": "#7f799a",
+        "category": "Purples"
+    },
+    {
+        "name": "Purple Flower",
+        "code": "233",
+        "hex": "#585f95",
+        "category": "Purples"
+    },
+    {
+        "name": "Pansy Paradise",
+        "code": "250",
+        "hex": "#484c75",
+        "category": "Purples"
+    },
+    {
+        "name": "Majestic Purple",
+        "code": "227",
+        "hex": "#8f6ea2",
+        "category": "Purples"
+    },
+    {
+        "name": "Holey Moley",
+        "code": "222",
+        "hex": "#d6c6df",
+        "category": "Purples"
+    },
+    {
+        "name": "Sweet Hyacinth",
+        "code": "246",
+        "hex": "#a6a5ce",
+        "category": "Purples"
+    },
+    {
+        "name": "Dancing Dahlia",
+        "code": "234",
+        "hex": "#7980b5",
+        "category": "Purples"
+    },
+    {
+        "name": "Russian Sage",
+        "code": "245",
+        "hex": "#c4c9e3",
+        "category": "Purples"
+    },
+    {
+        "name": "Lavender Bag",
+        "code": "226",
+        "hex": "#a88ab9",
+        "category": "Purples"
+    },
+    {
+        "name": "Lavender Rose",
+        "code": "221",
+        "hex": "#dccee3",
+        "category": "Purples"
+    },
+    {
+        "name": "Lilac Lies",
+        "code": "239",
+        "hex": "#cac6dd",
+        "category": "Purples"
+    },
+    {
+        "name": "Impatiens Petal",
+        "code": "243",
+        "hex": "#dddfec",
+        "category": "Purples"
+    },
+    {
+        "name": "Violet Charm",
+        "code": "244",
+        "hex": "#d2d6e9",
+        "category": "Purples"
+    },
+    {
+        "name": "Gracious",
+        "code": "224",
+        "hex": "#c4a8ce",
+        "category": "Purples"
+    },
+    {
+        "name": "Lavender Silk",
+        "code": "241",
+        "hex": "#dad5e7",
+        "category": "Purples"
+    },
+    {
+        "name": "Lavender Love",
+        "code": "242",
+        "hex": "#e4e1ec",
+        "category": "Purples"
+    },
+    {
+        "name": "Anna Jasmine",
+        "code": "236",
+        "hex": "#9da6d1",
+        "category": "Purples"
+    },
+    {
+        "name": "Violet Heaven",
+        "code": "238",
+        "hex": "#b9bcda",
+        "category": "Purples"
+    },
+    {
+        "name": "Wisteria Wonder",
+        "code": "225",
+        "hex": "#b99ac5",
+        "category": "Purples"
+    },
+    {
+        "name": "Violet Pod",
+        "code": "240",
+        "hex": "#cec8e2",
+        "category": "Purples"
+    },
+    {
+        "name": "Satin Wrap",
+        "code": "265",
+        "hex": "#e4e7eb",
+        "category": "Purples"
+    },
+    {
+        "name": "Purple Sting",
+        "code": "235",
+        "hex": "#8993c4",
+        "category": "Purples"
+    },
+    {
+        "name": "Geranium Stem",
+        "code": "237",
+        "hex": "#abb3d9",
+        "category": "Purples"
+    },
+    {
+        "name": "Ultimate Purple",
+        "code": "229",
+        "hex": "#5c4963",
+        "category": "Purples"
+    },
+    {
+        "name": "Dark Velvet",
+        "code": "230",
+        "hex": "#54424d",
+        "category": "Purples"
+    },
+    {
+        "name": "Purple Gem",
+        "code": "249",
+        "hex": "#5e5978",
+        "category": "Purples"
+    },
+    {
+        "name": "Royal Watch",
+        "code": "232",
+        "hex": "#4f507e",
+        "category": "Purples"
+    },
+    {
+        "name": "Purple Emblem",
+        "code": "231",
+        "hex": "#494a75",
+        "category": "Purples"
+    },
+    {
+        "name": "Iris Bloom",
+        "code": "248",
+        "hex": "#635b80",
+        "category": "Purples"
+    },
+    {
+        "name": "Royal Tulip",
+        "code": "252",
+        "hex": "#474d78",
+        "category": "Purples"
+    },
+    {
+        "name": "Nile Lily",
+        "code": "251",
+        "hex": "#4a4c70",
+        "category": "Purples"
+    },
+    {
+        "name": "Blue Encounter",
+        "code": "274",
+        "hex": "#505f99",
+        "category": "Blues"
+    },
+    {
+        "name": "Blue Trump",
+        "code": "275",
+        "hex": "#394873",
+        "category": "Blues"
+    },
+    {
+        "name": "River Watch",
+        "code": "255",
+        "hex": "#2f4773",
+        "category": "Blues"
+    },
+    {
+        "name": "Hot Pop Blue",
+        "code": "280",
+        "hex": "#1f94d2",
+        "category": "Blues"
+    },
+    {
+        "name": "Harbour View",
+        "code": "279",
+        "hex": "#0578bd",
+        "category": "Blues"
+    },
+    {
+        "name": "Costa Rica Blue",
+        "code": "298",
+        "hex": "#364a61",
+        "category": "Blues"
+    },
+    {
+        "name": "Poodle",
+        "code": "270",
+        "hex": "#a2b0d0",
+        "category": "Blues"
+    },
+    {
+        "name": "Tornado",
+        "code": "273",
+        "hex": "#5771a4",
+        "category": "Blues"
+    },
+    {
+        "name": "Ocean Plunge",
+        "code": "257",
+        "hex": "#6e91be",
+        "category": "Blues"
+    },
+    {
+        "name": "Blue Passion",
+        "code": "282",
+        "hex": "#7dc0e6",
+        "category": "Blues"
+    },
+    {
+        "name": "Perfect Coastline",
+        "code": "284",
+        "hex": "#b5d3e4",
+        "category": "Blues"
+    },
+    {
+        "name": "Peter's Palace",
+        "code": "296",
+        "hex": "#4c6a87",
+        "category": "Blues"
+    },
+    {
+        "name": "Satellite",
+        "code": "269",
+        "hex": "#b6bfdf",
+        "category": "Blues"
+    },
+    {
+        "name": "Water Bead",
+        "code": "259",
+        "hex": "#9fb7d8",
+        "category": "Blues"
+    },
+    {
+        "name": "Silken Blue",
+        "code": "267",
+        "hex": "#d3dbeb",
+        "category": "Blues"
+    },
+    {
+        "name": "Billie Blue",
+        "code": "287",
+        "hex": "#dbecf1",
+        "category": "Blues"
+    },
+    {
+        "name": "New Arrival",
+        "code": "290",
+        "hex": "#b9d4e6",
+        "category": "Blues"
+    },
+    {
+        "name": "Blue Forge",
+        "code": "294",
+        "hex": "#7494b0",
+        "category": "Blues"
+    },
+    {
+        "name": "Snowy Clouds",
+        "code": "266",
+        "hex": "#dfe4ea",
+        "category": "Blues"
+    },
+    {
+        "name": "Blue Council",
+        "code": "262",
+        "hex": "#c2d3e7",
+        "category": "Blues"
+    },
+    {
+        "name": "Satin Slip",
+        "code": "263",
+        "hex": "#d2dae4",
+        "category": "Blues"
+    },
+    {
+        "name": "River Star",
+        "code": "289",
+        "hex": "#ccd7d7",
+        "category": "Blues"
+    },
+    {
+        "name": "Sky Baby Blue",
+        "code": "311",
+        "hex": "#e9f1ef",
+        "category": "Blues"
+    },
+    {
+        "name": "Distant Shore",
+        "code": "292",
+        "hex": "#8db3cf",
+        "category": "Blues"
+    },
+    {
+        "name": "Up And Away",
+        "code": "268",
+        "hex": "#c2cee6",
+        "category": "Blues"
+    },
+    {
+        "name": "Whitsunday Passage",
+        "code": "261",
+        "hex": "#b1c5df",
+        "category": "Blues"
+    },
+    {
+        "name": "Blue Fortress",
+        "code": "256",
+        "hex": "#5d8ab8",
+        "category": "Blues"
+    },
+    {
+        "name": "Levent",
+        "code": "285",
+        "hex": "#c9e4f0",
+        "category": "Blues"
+    },
+    {
+        "name": "Fresh Ice",
+        "code": "334",
+        "hex": "#e9efed",
+        "category": "Blues"
+    },
+    {
+        "name": "Blueberry Cream",
+        "code": "291",
+        "hex": "#a4c5db",
+        "category": "Blues"
+    },
+    {
+        "name": "Blueberry Ash",
+        "code": "271",
+        "hex": "#8799c2",
+        "category": "Blues"
+    },
+    {
+        "name": "Glazed Blue",
+        "code": "260",
+        "hex": "#abc0e1",
+        "category": "Blues"
+    },
+    {
+        "name": "Cool Store",
+        "code": "295",
+        "hex": "#61819e",
+        "category": "Blues"
+    },
+    {
+        "name": "Northern Blue",
+        "code": "281",
+        "hex": "#4e9fd5",
+        "category": "Blues"
+    },
+    {
+        "name": "Bilko Blue",
+        "code": "286",
+        "hex": "#d6eaf2",
+        "category": "Blues"
+    },
+    {
+        "name": "Healing Spa",
+        "code": "293",
+        "hex": "#8ca8c1",
+        "category": "Blues"
+    },
+    {
+        "name": "Childs Play",
+        "code": "272",
+        "hex": "#7988b2",
+        "category": "Blues"
+    },
+    {
+        "name": "Blue Cashmere",
+        "code": "258",
+        "hex": "#85a2c9",
+        "category": "Blues"
+    },
+    {
+        "name": "Sea Shepherd",
+        "code": "254",
+        "hex": "#1c3969",
+        "category": "Blues"
+    },
+    {
+        "name": "James Blue",
+        "code": "278",
+        "hex": "#00629f",
+        "category": "Blues"
+    },
+    {
+        "name": "I'm Blue",
+        "code": "283",
+        "hex": "#aad6ec",
+        "category": "Blues"
+    },
+    {
+        "name": "Vintage Denim",
+        "code": "297",
+        "hex": "#3f5b77",
+        "category": "Blues"
+    },
+    {
+        "name": "Midnight Whirlwind",
+        "code": "276",
+        "hex": "#3c466c",
+        "category": "Blues"
+    },
+    {
+        "name": "Texas Blue Bells",
+        "code": "253",
+        "hex": "#3c4976",
+        "category": "Blues"
+    },
+    {
+        "name": "Ocean Charm",
+        "code": "277",
+        "hex": "#16477a",
+        "category": "Blues"
+    },
+    {
+        "name": "Kara Sea",
+        "code": "299",
+        "hex": "#2b3648",
+        "category": "Blues"
+    },
+    {
+        "name": "Atlantic Sea",
+        "code": "302",
+        "hex": "#1e86a2",
+        "category": "Teals"
+    },
+    {
+        "name": "Grand Turquoise",
+        "code": "344",
+        "hex": "#00778a",
+        "category": "Teals"
+    },
+    {
+        "name": "New Tropics",
+        "code": "323",
+        "hex": "#007b7d",
+        "category": "Teals"
+    },
+    {
+        "name": "Bollywood Jade",
+        "code": "324",
+        "hex": "#009f8b",
+        "category": "Teals"
+    },
+    {
+        "name": "Mermaid Splash",
+        "code": "317",
+        "hex": "#7bb8bd",
+        "category": "Teals"
+    },
+    {
+        "name": "Caribbean Bliss",
+        "code": "303",
+        "hex": "#4197b0",
+        "category": "Teals"
+    },
+    {
+        "name": "Tempted Teal",
+        "code": "342",
+        "hex": "#218e9d",
+        "category": "Teals"
+    },
+    {
+        "name": "Pacific Lagoon",
+        "code": "318",
+        "hex": "#4c9092",
+        "category": "Teals"
+    },
+    {
+        "name": "Naturalist",
+        "code": "325",
+        "hex": "#3fb9a9",
+        "category": "Teals"
+    },
+    {
+        "name": "Delicious Mint",
+        "code": "330",
+        "hex": "#b1ddd9",
+        "category": "Teals"
+    },
+    {
+        "name": "Playgroup",
+        "code": "304",
+        "hex": "#68b2c7",
+        "category": "Teals"
+    },
+    {
+        "name": "Temperate Tide",
+        "code": "339",
+        "hex": "#66c5d6",
+        "category": "Teals"
+    },
+    {
+        "name": "Water Flow",
+        "code": "316",
+        "hex": "#94c7cb",
+        "category": "Teals"
+    },
+    {
+        "name": "Reckless Green",
+        "code": "329",
+        "hex": "#96d2cc",
+        "category": "Teals"
+    },
+    {
+        "name": "Pure Mint",
+        "code": "331",
+        "hex": "#c2e5e1",
+        "category": "Teals"
+    },
+    {
+        "name": "Turquoise Whirl",
+        "code": "338",
+        "hex": "#8dccd8",
+        "category": "Teals"
+    },
+    {
+        "name": "Pick Me Up",
+        "code": "306",
+        "hex": "#9fcedb",
+        "category": "Teals"
+    },
+    {
+        "name": "Jello Mint",
+        "code": "312",
+        "hex": "#b9dee2",
+        "category": "Teals"
+    },
+    {
+        "name": "Feeling Fresh",
+        "code": "335",
+        "hex": "#c9e9e8",
+        "category": "Teals"
+    },
+    {
+        "name": "Blown Away",
+        "code": "310",
+        "hex": "#dfeeee",
+        "category": "Teals"
+    },
+    {
+        "name": "Relaxation",
+        "code": "305",
+        "hex": "#85c3d4",
+        "category": "Teals"
+    },
+    {
+        "name": "Water Watch",
+        "code": "336",
+        "hex": "#afd8de",
+        "category": "Teals"
+    },
+    {
+        "name": "Secret Blue",
+        "code": "308",
+        "hex": "#c2e7ed",
+        "category": "Teals"
+    },
+    {
+        "name": "Peaceful Bay",
+        "code": "332",
+        "hex": "#c8e9ea",
+        "category": "Teals"
+    },
+    {
+        "name": "Complete Harmony",
+        "code": "309",
+        "hex": "#dbece9",
+        "category": "Teals"
+    },
+    {
+        "name": "Mystery Island",
+        "code": "340",
+        "hex": "#56afc0",
+        "category": "Teals"
+    },
+    {
+        "name": "Aqua Motion",
+        "code": "337",
+        "hex": "#a2d6e0",
+        "category": "Teals"
+    },
+    {
+        "name": "Frozen Moment",
+        "code": "307",
+        "hex": "#b8dee5",
+        "category": "Teals"
+    },
+    {
+        "name": "Atrium Light",
+        "code": "313",
+        "hex": "#b7dcde",
+        "category": "Teals"
+    },
+    {
+        "name": "Mint Crunch",
+        "code": "333",
+        "hex": "#cbe6e8",
+        "category": "Teals"
+    },
+    {
+        "name": "Tropical Bird",
+        "code": "341",
+        "hex": "#0097aa",
+        "category": "Teals"
+    },
+    {
+        "name": "Freshness",
+        "code": "315",
+        "hex": "#a2ced2",
+        "category": "Teals"
+    },
+    {
+        "name": "Open Air",
+        "code": "314",
+        "hex": "#aadde2",
+        "category": "Teals"
+    },
+    {
+        "name": "Mint Milestone",
+        "code": "326",
+        "hex": "#7fd4c9",
+        "category": "Teals"
+    },
+    {
+        "name": "Shrub Leaf",
+        "code": "328",
+        "hex": "#85cac3",
+        "category": "Teals"
+    },
+    {
+        "name": "Santiago Blue",
+        "code": "301",
+        "hex": "#096880",
+        "category": "Teals"
+    },
+    {
+        "name": "Waterfall Ridge",
+        "code": "343",
+        "hex": "#408a92",
+        "category": "Teals"
+    },
+    {
+        "name": "Spring Trek",
+        "code": "319",
+        "hex": "#2f7174",
+        "category": "Teals"
+    },
+    {
+        "name": "Green Spike",
+        "code": "327",
+        "hex": "#81d5c9",
+        "category": "Teals"
+    },
+    {
+        "name": "Riverland Blue",
+        "code": "321",
+        "hex": "#04505c",
+        "category": "Teals"
+    },
+    {
+        "name": "River Rapids",
+        "code": "300",
+        "hex": "#255974",
+        "category": "Teals"
+    },
+    {
+        "name": "Tempted Turquoise",
+        "code": "345",
+        "hex": "#096e7c",
+        "category": "Teals"
+    },
+    {
+        "name": "Irish Brogue",
+        "code": "320",
+        "hex": "#275c5f",
+        "category": "Teals"
+    },
+    {
+        "name": "Webster Park",
+        "code": "322",
+        "hex": "#27494d",
+        "category": "Teals"
+    },
+    {
+        "name": "Blue Daze",
+        "code": "322",
+        "hex": "#97b2b0",
+        "category": "Teals"
+    },
+    {
+        "name": "Lime Leaf",
+        "code": "348",
+        "hex": "#c7cd43",
+        "category": "Greens"
+    },
+    {
+        "name": "Hot Pop Green",
+        "code": "346",
+        "hex": "#76a43e",
+        "category": "Greens"
+    },
+    {
+        "name": "Urban Appeal",
+        "code": "375",
+        "hex": "#c9be9d",
+        "category": "Greens"
+    },
+    {
+        "name": "Garden Rooftop",
+        "code": "411",
+        "hex": "#7d8071",
+        "category": "Greens"
+    },
+    {
+        "name": "Secluded Avenue",
+        "code": "388",
+        "hex": "#7c8771",
+        "category": "Greens"
+    },
+    {
+        "name": "Preserved Rainforest",
+        "code": "413",
+        "hex": "#6d7058",
+        "category": "Greens"
+    },
+    {
+        "name": "Pandora's Garden",
+        "code": "349",
+        "hex": "#d3d65a",
+        "category": "Greens"
+    },
+    {
+        "name": "Splice Of Life",
+        "code": "347",
+        "hex": "#a3c945",
+        "category": "Greens"
+    },
+    {
+        "name": "Georgian Style",
+        "code": "376",
+        "hex": "#d6cdb1",
+        "category": "Greens"
+    },
+    {
+        "name": "Green Result",
+        "code": "409",
+        "hex": "#a9a997",
+        "category": "Greens"
+    },
+    {
+        "name": "Norway Spruce",
+        "code": "386",
+        "hex": "#98a591",
+        "category": "Greens"
+    },
+    {
+        "name": "Open Living",
+        "code": "389",
+        "hex": "#737e69",
+        "category": "Greens"
+    },
+    {
+        "name": "Tubs",
+        "code": "350",
+        "hex": "#d7dc69",
+        "category": "Greens"
+    },
+    {
+        "name": "Perfect Grass",
+        "code": "366",
+        "hex": "#98b14f",
+        "category": "Greens"
+    },
+    {
+        "name": "Original Canvas",
+        "code": "377",
+        "hex": "#dbd2b8",
+        "category": "Greens"
+    },
+    {
+        "name": "Cabbage Field",
+        "code": "395",
+        "hex": "#adaf97",
+        "category": "Greens"
+    },
+    {
+        "name": "Green Deed",
+        "code": "385",
+        "hex": "#a2aa9a",
+        "category": "Greens"
+    },
+    {
+        "name": "Mossy Road",
+        "code": "387",
+        "hex": "#89947e",
+        "category": "Greens"
+    },
+    {
+        "name": "Lime Sparkle",
+        "code": "351",
+        "hex": "#dee17f",
+        "category": "Greens"
+    },
+    {
+        "name": "Made Up",
+        "code": "361",
+        "hex": "#d5d694",
+        "category": "Greens"
+    },
+    {
+        "name": "Flower Bud",
+        "code": "381",
+        "hex": "#ece8da",
+        "category": "Greens"
+    },
+    {
+        "name": "Galley Green",
+        "code": "407",
+        "hex": "#c5c8b7",
+        "category": "Greens"
+    },
+    {
+        "name": "Vitamin Green",
+        "code": "401",
+        "hex": "#d6dccf",
+        "category": "Greens"
+    },
+    {
+        "name": "Light Foliage",
+        "code": "383",
+        "hex": "#c2ccbb",
+        "category": "Greens"
+    },
+    {
+        "name": "Citrus Zing",
+        "code": "353",
+        "hex": "#e6e898",
+        "category": "Greens"
+    },
+    {
+        "name": "Weekend Escape",
+        "code": "360",
+        "hex": "#e0e0a9",
+        "category": "Greens"
+    },
+    {
+        "name": "White Gable",
+        "code": "403",
+        "hex": "#e8e9dc",
+        "category": "Greens"
+    },
+    {
+        "name": "It's Still Green",
+        "code": "405",
+        "hex": "#d3d5c7",
+        "category": "Greens"
+    },
+    {
+        "name": "Garden Fable",
+        "code": "400",
+        "hex": "#d0d6c9",
+        "category": "Greens"
+    },
+    {
+        "name": "June Sky",
+        "code": "264",
+        "hex": "#dfe6e8",
+        "category": "Greens"
+    },
+    {
+        "name": "Twist And Shout",
+        "code": "354",
+        "hex": "#ececb1",
+        "category": "Greens"
+    },
+    {
+        "name": "Spaced Out",
+        "code": "358",
+        "hex": "#eaeebf",
+        "category": "Greens"
+    },
+    {
+        "name": "By Design",
+        "code": "380",
+        "hex": "#e9e2cf",
+        "category": "Greens"
+    },
+    {
+        "name": "Spearmint Crush",
+        "code": "399",
+        "hex": "#d7d9c7",
+        "category": "Greens"
+    },
+    {
+        "name": "Green Scene",
+        "code": "382",
+        "hex": "#d2d9c9",
+        "category": "Greens"
+    },
+    {
+        "name": "Green Note",
+        "code": "398",
+        "hex": "#c9cdb7",
+        "category": "Greens"
+    },
+    {
+        "name": "Daytime",
+        "code": "359",
+        "hex": "#e8e7ba",
+        "category": "Greens"
+    },
+    {
+        "name": "New Again",
+        "code": "357",
+        "hex": "#eeedca",
+        "category": "Greens"
+    },
+    {
+        "name": "Ice Apple",
+        "code": "404",
+        "hex": "#e1dfd4",
+        "category": "Greens"
+    },
+    {
+        "name": "Stone Pavilion",
+        "code": "379",
+        "hex": "#d6d4c7",
+        "category": "Greens"
+    },
+    {
+        "name": "Green Valley Island",
+        "code": "396",
+        "hex": "#b4bbab",
+        "category": "Greens"
+    },
+    {
+        "name": "Green Bottle",
+        "code": "397",
+        "hex": "#c2c9bb",
+        "category": "Greens"
+    },
+    {
+        "name": "Twist Of Lime",
+        "code": "352",
+        "hex": "#e1e285",
+        "category": "Greens"
+    },
+    {
+        "name": "Limelight Feel",
+        "code": "356",
+        "hex": "#eff0c4",
+        "category": "Greens"
+    },
+    {
+        "name": "Century Stone",
+        "code": "378",
+        "hex": "#e1d9c1",
+        "category": "Greens"
+    },
+    {
+        "name": "Moon Ray",
+        "code": "288",
+        "hex": "#e5eaeb",
+        "category": "Greens"
+    },
+    {
+        "name": "Slender Pine",
+        "code": "384",
+        "hex": "#acb7a5",
+        "category": "Greens"
+    },
+    {
+        "name": "Pencil Pine",
+        "code": "408",
+        "hex": "#a3a696",
+        "category": "Greens"
+    },
+    {
+        "name": "Home Grown",
+        "code": "362",
+        "hex": "#c5c671",
+        "category": "Greens"
+    },
+    {
+        "name": "Green Echo",
+        "code": "355",
+        "hex": "#f0ecbd",
+        "category": "Greens"
+    },
+    {
+        "name": "Green Silhouette",
+        "code": "406",
+        "hex": "#cac7b7",
+        "category": "Greens"
+    },
+    {
+        "name": "First Eden",
+        "code": "402",
+        "hex": "#e0e4da",
+        "category": "Greens"
+    },
+    {
+        "name": "Hidden Grove",
+        "code": "390",
+        "hex": "#616c58",
+        "category": "Greens"
+    },
+    {
+        "name": "Green Relic",
+        "code": "410",
+        "hex": "#858574",
+        "category": "Greens"
+    },
+    {
+        "name": "Hepburn Spa",
+        "code": "364",
+        "hex": "#b7bd6b",
+        "category": "Greens"
+    },
+    {
+        "name": "Forest Scene",
+        "code": "370",
+        "hex": "#857c4d",
+        "category": "Greens"
+    },
+    {
+        "name": "Bamboo Stalk",
+        "code": "374",
+        "hex": "#b9ac88",
+        "category": "Greens"
+    },
+    {
+        "name": "Wollemi Pine",
+        "code": "394",
+        "hex": "#8b8c6f",
+        "category": "Greens"
+    },
+    {
+        "name": "Daintree Beauty",
+        "code": "392",
+        "hex": "#616e5c",
+        "category": "Greens"
+    },
+    {
+        "name": "Castle Garden",
+        "code": "412",
+        "hex": "#707364",
+        "category": "Greens"
+    },
+    {
+        "name": "Outside",
+        "code": "363",
+        "hex": "#b5b95b",
+        "category": "Greens"
+    },
+    {
+        "name": "Green Seed",
+        "code": "369",
+        "hex": "#83834f",
+        "category": "Greens"
+    },
+    {
+        "name": "Subtle Khaki",
+        "code": "373",
+        "hex": "#aea07a",
+        "category": "Greens"
+    },
+    {
+        "name": "Fields Of Green",
+        "code": "393",
+        "hex": "#7d8572",
+        "category": "Greens"
+    },
+    {
+        "name": "Brunswick Green",
+        "code": "391",
+        "hex": "#2d4738",
+        "category": "Greens"
+    },
+    {
+        "name": "Planet Care",
+        "code": "414",
+        "hex": "#676858",
+        "category": "Greens"
+    },
+    {
+        "name": "Asian Lime",
+        "code": "365",
+        "hex": "#929b44",
+        "category": "Greens"
+    },
+    {
+        "name": "Garden Centre",
+        "code": "371",
+        "hex": "#978953",
+        "category": "Greens"
+    },
+    {
+        "name": "Seed Pod",
+        "code": "372",
+        "hex": "#a09169",
+        "category": "Greens"
+    },
+    {
+        "name": "Green Life",
+        "code": "367",
+        "hex": "#7c913c",
+        "category": "Greens"
+    },
+    {
+        "name": "Spring Carnival",
+        "code": "368",
+        "hex": "#4e773c",
+        "category": "Greens"
+    },
+    {
+        "name": "Rhino Grey",
+        "code": "416",
+        "hex": "#464b51",
+        "category": "Greys"
+    },
+    {
+        "name": "Top Shot",
+        "code": "435",
+        "hex": "#595d66",
+        "category": "Greys"
+    },
+    {
+        "name": "Dark Silhouette",
+        "code": "415",
+        "hex": "#3b3d43",
+        "category": "Greys"
+    },
+    {
+        "name": "Slate Element",
+        "code": "458",
+        "hex": "#655f63",
+        "category": "Greys"
+    },
+    {
+        "name": "Road Ahead",
+        "code": "441",
+        "hex": "#615d64",
+        "category": "Greys"
+    },
+    {
+        "name": "Hardware Lane",
+        "code": "459",
+        "hex": "#615d63",
+        "category": "Greys"
+    },
+    {
+        "name": "Knowledge",
+        "code": "419",
+        "hex": "#787d87",
+        "category": "Greys"
+    },
+    {
+        "name": "Tabloid",
+        "code": "420",
+        "hex": "#8b9094",
+        "category": "Greys"
+    },
+    {
+        "name": "Portal Grey",
+        "code": "418",
+        "hex": "#646972",
+        "category": "Greys"
+    },
+    {
+        "name": "Grey Canvas",
+        "code": "444",
+        "hex": "#a7a3aa",
+        "category": "Greys"
+    },
+    {
+        "name": "Afternoon Storm",
+        "code": "443",
+        "hex": "#979297",
+        "category": "Greys"
+    },
+    {
+        "name": "Metro Style",
+        "code": "442",
+        "hex": "#827e84",
+        "category": "Greys"
+    },
+    {
+        "name": "Pilot",
+        "code": "431",
+        "hex": "#a4a8b0",
+        "category": "Greys"
+    },
+    {
+        "name": "Cold Metal",
+        "code": "422",
+        "hex": "#b6babd",
+        "category": "Greys"
+    },
+    {
+        "name": "Animal Kingdom",
+        "code": "421",
+        "hex": "#969ca2",
+        "category": "Greys"
+    },
+    {
+        "name": "Grey Spirit",
+        "code": "450",
+        "hex": "#d1d0d2",
+        "category": "Greys"
+    },
+    {
+        "name": "Dawn Frost",
+        "code": "447",
+        "hex": "#d7d4d5",
+        "category": "Greys"
+    },
+    {
+        "name": "Hidden",
+        "code": "445",
+        "hex": "#aca7aa",
+        "category": "Greys"
+    },
+    {
+        "name": "Lighten Up",
+        "code": "425",
+        "hex": "#dee1e0",
+        "category": "Greys"
+    },
+    {
+        "name": "White Albatross",
+        "code": "428",
+        "hex": "#d2d6d8",
+        "category": "Greys"
+    },
+    {
+        "name": "Status Cloud",
+        "code": "423",
+        "hex": "#b4b9bc",
+        "category": "Greys"
+    },
+    {
+        "name": "Imperial Mist",
+        "code": "451",
+        "hex": "#c6c4c9",
+        "category": "Greys"
+    },
+    {
+        "name": "Smiley White",
+        "code": "449",
+        "hex": "#e5e4e3",
+        "category": "Greys"
+    },
+    {
+        "name": "Parliament Hall",
+        "code": "446",
+        "hex": "#cdc9cb",
+        "category": "Greys"
+    },
+    {
+        "name": "Diamond White",
+        "code": "426",
+        "hex": "#e7e8e6",
+        "category": "Greys"
+    },
+    {
+        "name": "Mountain Peak",
+        "code": "427",
+        "hex": "#d7dbdb",
+        "category": "Greys"
+    },
+    {
+        "name": "Mineral Salt",
+        "code": "424",
+        "hex": "#bdbfbd",
+        "category": "Greys"
+    },
+    {
+        "name": "Cloudy Winter",
+        "code": "452",
+        "hex": "#bcbbbf",
+        "category": "Greys"
+    },
+    {
+        "name": "Unlimited Space",
+        "code": "448",
+        "hex": "#dcdbdb",
+        "category": "Greys"
+    },
+    {
+        "name": "Winter Haze",
+        "code": "453",
+        "hex": "#b7b4bb",
+        "category": "Greys"
+    },
+    {
+        "name": "Silver Treasure",
+        "code": "429",
+        "hex": "#b7bcc1",
+        "category": "Greys"
+    },
+    {
+        "name": "Systematic",
+        "code": "433",
+        "hex": "#6a7077",
+        "category": "Greys"
+    },
+    {
+        "name": "Universal",
+        "code": "430",
+        "hex": "#a0a5a8",
+        "category": "Greys"
+    },
+    {
+        "name": "Original Grey",
+        "code": "454",
+        "hex": "#9e9ca0",
+        "category": "Greys"
+    },
+    {
+        "name": "Metal Links",
+        "code": "455",
+        "hex": "#8e898c",
+        "category": "Greys"
+    },
+    {
+        "name": "Bullet Proof",
+        "code": "456",
+        "hex": "#817c82",
+        "category": "Greys"
+    },
+    {
+        "name": "Capsule",
+        "code": "432",
+        "hex": "#8e939c",
+        "category": "Greys"
+    },
+    {
+        "name": "Maritime Charcoal",
+        "code": "434",
+        "hex": "#64696f",
+        "category": "Greys"
+    },
+    {
+        "name": "Grey Tablelands",
+        "code": "440",
+        "hex": "#4a494f",
+        "category": "Greys"
+    },
+    {
+        "name": "Limited Edition",
+        "code": "457",
+        "hex": "#716e72",
+        "category": "Greys"
+    },
+    {
+        "name": "Cable Grey",
+        "code": "437",
+        "hex": "#514e53",
+        "category": "Greys"
+    },
+    {
+        "name": "Black Trend",
+        "code": "460",
+        "hex": "#4b3f3e",
+        "category": "Greys"
+    },
+    {
+        "name": "Grey Charter",
+        "code": "436",
+        "hex": "#65666c",
+        "category": "Greys"
+    },
+    {
+        "name": "Ace Of Spades",
+        "code": "439",
+        "hex": "#393b40",
+        "category": "Greys"
+    },
+    {
+        "name": "Black Ace",
+        "code": "438",
+        "hex": "#2d2e2f",
+        "category": "Greys"
+    },
+    {
+        "name": "Heavy Metal",
+        "code": "417",
+        "hex": "#555b61",
+        "category": "Greys"
+    }
+]
