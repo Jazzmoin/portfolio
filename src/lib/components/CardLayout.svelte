@@ -1,12 +1,10 @@
-<script>
-    import InfoPanel from "$lib/components/InfoPanel.svelte";
+<script lang="ts">
     import Card from "$lib/components/Card.svelte";
 
+    // svelte 4 shit -> fix later
     export let sectionTitle = "";
     export let cards = [];
 </script>
-
-<InfoPanel />
 
 <div class="basis-8/10">
     <h2 class="pb-5">{sectionTitle}</h2>
