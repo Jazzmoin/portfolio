@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "@fontsource/fira-mono";
 
 :root {
     --font-body:
@@ -33,11 +32,10 @@ h2 {
 
 p {
     font-weight: 400;
-}
-
-p {
     line-height: 1.5;
 }
+
+
 
 a {
     color: var(--color-theme-1);
@@ -54,6 +52,10 @@ h1 {
 }
 
 h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
     font-size: 1rem;
 }
 

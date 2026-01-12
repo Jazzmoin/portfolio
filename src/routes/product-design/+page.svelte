@@ -11,4 +11,4 @@
     ];
 </script>
 
-<CardLayout sectionTitle="Product Design" {cards} />
+<CardLayout sectionTitle="Product Design" />
