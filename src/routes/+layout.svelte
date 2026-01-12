@@ -1,5 +1,6 @@
 <script lang="ts">
     import "./layout.css";
+    import { page } from "$app/state";
 
     let { children } = $props();
 </script>
@@ -21,10 +22,46 @@
         </nav>
     </header>
 
-    <main>{@render children()}</main>
+    {#if page.data.sideBar ?? false}
+        <div class="content-grid">
+            <div class="sidePanel">
+                <p>:P</p>
+
+                {#each [{ path: "https://www.instagram.com/simplyjazzyp/", name: "Instagram" }] as elem}
+                    <p class="p-1">
+                        <a href={elem.path}>{elem.name}</a>
+                    </p>
+                {/each}
+            </div>
+
+            <main>{@render children()}</main>
+        </div>
+    {:else}
+        <main>{@render children()}</main>
+    {/if}
 </div>
 
 <style>
+    .app {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 1rem 2rem;
+    }
+
+    .content-grid {
+        display: grid;
+        grid-template-columns: 15% auto;
+        padding: 2rem 0 1rem 0;
+        min-height: calc(100vh - 6rem);
+    }
+
+    .sidePanel {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     header {
         display: flex;
         justify-content: space-between;
@@ -34,18 +71,7 @@
     ul {
         position: relative;
         margin: 0;
-        height: 3em;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        background: var(--background);
-        background-size: contain;
-    }
-
-    li {
-        position: relative;
-        height: 100%;
     }
 
     h1,
@@ -75,22 +101,5 @@
 
     a:hover {
         color: var(--color-theme-1);
-    }
-
-    .app {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        padding: 1rem 2rem 1rem 2rem;
-    }
-
-    main {
-        flex: 1;
-        display: flex;
-        flex-direction: row;
-        padding: 2rem 0 1rem 0;
-        width: 100%;
-        margin: 0 auto;
-        box-sizing: border-box;
     }
 </style>

@@ -141,7 +141,6 @@
 
     h2 {
         position: sticky;
-        background-color: #242424;
         top: 0;
         z-index: 10;
         text-transform: uppercase;
@@ -177,7 +176,6 @@
     }
 
     .stats-sidebar .stats {
-        background-color: #242424;
         padding: 0 1.5rem 1.5rem;
     }
 
@@ -229,8 +227,6 @@
         font-weight: 400;
 
         color-scheme: light dark;
-        color: rgba(255, 255, 255, 0.87);
-        background-color: #242424;
         overflow-y: hidden;
 
         font-synthesis: none;
@@ -239,26 +235,8 @@
         -moz-osx-font-smoothing: grayscale;
     }
 
-    body {
-        margin: 0;
-        display: flex;
-        place-items: center;
-    }
-
     h1 {
         font-size: 3.2em;
         line-height: 1.1;
-    }
-
-    #app {
-        margin: 0 auto;
-        padding: 1rem 3rem 1rem 3rem;
-        width: 100%;
-    }
-
-    @media (max-width: 768px) {
-        #app {
-            padding: 1rem 1rem 1rem 1rem;
-        }
     }
 </style>

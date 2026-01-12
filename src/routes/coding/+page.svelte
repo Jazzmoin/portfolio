@@ -6,7 +6,7 @@
             href: "/coding/hueventory",
             title: "Hueventory",
             desc: "Colour Swatch Tracker",
-            img: "/src/lib/images/img.png",
+            img: "-",
         },
     ];
 </script>
