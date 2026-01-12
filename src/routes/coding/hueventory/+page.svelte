@@ -1,6 +1,7 @@
 <!-- Todo: -->
 <!--    - fun charts to display colours owned and colour percentage of colour categories owned -->
 <!--    - colour opacity is lowered and a tick appears in the bottom right for owned colours -->
+<!--    - add progress bars for the stats -->
 
 <script lang="ts">
     import ColourSwatch from "./ColourSwatch.svelte";
@@ -51,7 +52,7 @@
 </script>
 
 <header class="topbar">
-    <h1>Hueventory - Colour Swatch Archive</h1>
+    <h1>Hueventory</h1>
     <div>
         <button class="menu" onclick={() => (showStats = !showStats)}>
             ☰
@@ -59,36 +60,34 @@
     </div>
 </header>
 
-<main class="main">
-    <div class="column" style="flex-grow: 4;">
-        <div class="main-colour-container">
-            {#each categories as category}
-                <section class="colour-section">
-                    <h2>{category}</h2>
-                    <div class="swatch-group">
-                        {#each colourInfo.data.filter((c) => c.category === category) as colour}
-                            <ColourSwatch
-                                {colour}
-                                isOwned={ownedColours.data.has(colour.hex)}
-                            />
-                        {/each}
-                    </div>
-                </section>
-            {/each}
-        </div>
-    </div>
+<h2>Colour Swatch Archive</h2>
+<p>desc.</p>
 
-    <div
-        class="column stats-sidebar"
-        class:open={showStats}
-        style="flex-grow: 1"
-    >
+<hr />
+
+<main class="content-grid">
+    <div class="main-colour-container">
+        {#each categories as category}
+            <section class="colour-section">
+                <h3>{category}</h3>
+                <div class="swatch-group">
+                    {#each colourInfo.data.filter((c) => c.category === category) as colour}
+                        <ColourSwatch
+                            {colour}
+                            isOwned={ownedColours.data.has(colour.hex)}
+                        />
+                    {/each}
+                </div>
+            </section>
+        {/each}
+    </div>
+    <div class="column stats-sidebar" class:open={showStats}>
         <div class="stats">
             <div>
-                <h2>
+                <h3>
                     Total Owned: {totalOwned}/{totalColours}
                     ({ownedPercentage.toFixed(1)}%)
-                </h2>
+                </h3>
                 {#each categoryStats as stat}
                     <p>
                         {stat.category}: {stat.owned} / {stat.total}
@@ -111,41 +110,24 @@
 </main>
 
 <style>
-    .main {
-        display: flex;
-        box-sizing: border-box;
-        height: 100vh;
+    .content-grid {
+        display: grid;
         width: 100%;
-    }
-
-    .column {
-        flex: 1;
-        min-width: 0;
-        display: flex;
-        flex-direction: column;
-        min-height: 0;
+        grid-template-columns: auto 20%;
+        height: calc(100vh - 1.5rem);
+        overflow: hidden;
     }
 
     .main-colour-container {
         overflow: auto;
         scrollbar-width: none;
         box-sizing: border-box;
-        padding-bottom: 10%;
     }
 
     .swatch-group {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 0.5rem;
-    }
-
-    h2 {
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        text-transform: uppercase;
-        margin: 0;
-        padding: 2rem 0 0.1rem 0;
     }
 
     .topbar {
@@ -156,27 +138,35 @@
 
     .topbar h1 {
         margin: 0;
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 500;
-        color: white;
         position: sticky;
-        padding-top: 0.5em;
-        z-index: 5;
         text-transform: uppercase;
-        letter-spacing: 0.2em;
+        letter-spacing: 0.1em;
+    }
+
+    h2 {
+        font-weight: 600;
+        padding: 0.5rem 0;
+    }
+
+    h3 {
+        position: sticky;
+        top: 0;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 0;
+        padding: 2rem 0 0.5rem 0;
+        background-color: var(--color-bg-0);
     }
 
     .menu {
         display: none;
-        background: none;
-        border: none;
-        font-size: 1.25rem;
-        cursor: pointer;
-        color: white;
     }
 
     .stats-sidebar .stats {
-        padding: 0 1.5rem 1.5rem;
+        padding: 0 2rem 2rem;
+        height: 80vh;
     }
 
     @media (max-width: 768px) {
@@ -202,11 +192,11 @@
             right: 0;
             height: 100%;
             width: 250px;
-            background: #242424;
+            background: var(--color-bg-0);
             transform: translateX(100%);
             transition: transform 0.3s ease;
             z-index: 20;
-            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.25);
             padding: 0.2rem 1rem 1rem;
             box-sizing: border-box;
             overflow-y: auto;
@@ -215,24 +205,6 @@
         .stats-sidebar.open {
             transform: translateX(0);
         }
-    }
-
-    :root {
-        font-family:
-            Space Grotesk,
-            Helvetica,
-            Arial,
-            sans-serif;
-        line-height: 1.5;
-        font-weight: 400;
-
-        color-scheme: light dark;
-        overflow-y: hidden;
-
-        font-synthesis: none;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
     }
 
     h1 {

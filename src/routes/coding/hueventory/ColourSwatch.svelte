@@ -11,7 +11,7 @@
     class="card"
     onclick={() => toggleOwned(colour.hex)}
     style="background-color: white; opacity: {isOwned
-        ? 0.5
+        ? 0.25
         : 1}; color: {textColour}"
 >
     <div class="swatch" style="background-color: {colour.hex}"></div>
@@ -28,6 +28,7 @@
         cursor: pointer;
         overflow: hidden;
         transition: 0.2s ease all;
+        border: 1px solid #cac2c2;
     }
 
     .swatch {

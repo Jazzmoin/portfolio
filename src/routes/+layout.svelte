@@ -46,14 +46,13 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        padding: 1rem 2rem;
+        padding: 1rem 2rem 2rem 2rem;
     }
 
     .content-grid {
         display: grid;
         grid-template-columns: 15% auto;
-        padding: 2rem 0 1rem 0;
-        min-height: calc(100vh - 6rem);
+        min-height: calc(100vh - 8rem);
     }
 
     .sidePanel {
@@ -66,6 +65,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 0 8rem 0;
     }
 
     ul {
