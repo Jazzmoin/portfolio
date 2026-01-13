@@ -3,12 +3,12 @@
 
     const cards = [
         {
-            href: "",
-            title: "-",
-            desc: "-",
-            img: "/src/lib/images/img.png",
+            href: "/product-design/whale-phone-holder",
+            title: "Whale Phone Holder",
+            desc: "First-year project",
+            img: "-",
         },
     ];
 </script>
 
-<CardLayout sectionTitle="Product Design" />
+<CardLayout sectionTitle="Product Design" {cards} />

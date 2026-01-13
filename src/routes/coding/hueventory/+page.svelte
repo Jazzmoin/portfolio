@@ -46,8 +46,6 @@
         });
     });
 
-    const commit: string = import.meta.env.VITE_PUBLIC_COMMIT_HASH;
-
     let showStats = $state(false);
 </script>
 
@@ -82,30 +80,18 @@
         {/each}
     </div>
     <div class="column stats-sidebar" class:open={showStats}>
-        <div class="stats">
-            <div>
-                <h3>
-                    Total Owned: {totalOwned}/{totalColours}
-                    ({ownedPercentage.toFixed(1)}%)
-                </h3>
-                {#each categoryStats as stat}
-                    <p>
-                        {stat.category}: {stat.owned} / {stat.total}
-                        ({stat.percent.toFixed(1)}%)
-                    </p>
-                {/each}
-            </div>
+        <div>
+            <h3>
+                Total Owned: {totalOwned}/{totalColours}
+                ({ownedPercentage.toFixed(1)}%)
+            </h3>
+            {#each categoryStats as stat}
+                <p>
+                    {stat.category}: {stat.owned} / {stat.total}
+                    ({stat.percent.toFixed(1)}%)
+                </p>
+            {/each}
         </div>
-        <span style="position: fixed; bottom: 1em; right: 1em;">
-            {#if commit}
-                Commit <a
-                    href="https://github.com/Jazzmoin/Hueventory/commit/{commit}"
-                    >{commit.slice(0, 8)}</a
-                >
-            {:else}
-                Running in dev
-            {/if}
-        </span>
     </div>
 </main>
 
@@ -138,25 +124,14 @@
 
     .topbar h1 {
         margin: 0;
-        font-size: 3rem;
-        font-weight: 500;
         position: sticky;
-        text-transform: uppercase;
         letter-spacing: 0.1em;
-    }
-
-    h2 {
-        font-weight: 600;
-        padding: 0.5rem 0;
     }
 
     h3 {
         position: sticky;
         top: 0;
-        text-transform: uppercase;
-        font-weight: 600;
         margin: 0;
-        padding: 2rem 0 0.5rem 0;
         background-color: var(--color-bg-0);
     }
 
@@ -164,9 +139,12 @@
         display: none;
     }
 
-    .stats-sidebar .stats {
-        padding: 0 2rem 2rem;
-        height: 80vh;
+    .stats-sidebar  {
+        padding: 0 0 0 2rem;
+    }
+
+    .stats-sidebar p {
+        line-height: 3rem;
     }
 
     @media (max-width: 768px) {
@@ -205,10 +183,5 @@
         .stats-sidebar.open {
             transform: translateX(0);
         }
-    }
-
-    h1 {
-        font-size: 3.2em;
-        line-height: 1.1;
     }
 </style>

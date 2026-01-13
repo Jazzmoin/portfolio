@@ -51,7 +51,7 @@
 
     .content-grid {
         display: grid;
-        grid-template-columns: 15% auto;
+        grid-template-columns: 20% auto;
         min-height: calc(100vh - 8rem);
     }
 
@@ -65,7 +65,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 0 8rem 0;
+        padding: 0 0 4rem 0;
     }
 
     ul {
