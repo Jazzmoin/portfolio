@@ -7,7 +7,7 @@
         <img alt="" src={img} />
     </a>
 
-    <h3 class="card-title">{title} - {desc}</h3>
+    <p class="card-title"> <strong>{title}</strong> - {desc}</p>
 </div>
 
 <style>
@@ -27,6 +27,7 @@
         border-radius: 0.5rem;
         opacity: 0.9;
         transition: transform 0.3s ease-out;
+        background-color: white;
     }
 
     .card-title {
