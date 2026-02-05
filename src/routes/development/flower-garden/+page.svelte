@@ -6,11 +6,11 @@
     let container: HTMLElement | undefined = $state();
     let started = false;
 
-    // function removeAll() {
-    //     for (const canvas of document.getElementsByTagName("canvas")) {
-    //         canvas.remove();
-    //     }
-    // }
+    function removeAll() {
+        for (const canvas of document.getElementsByTagName("canvas")) {
+            canvas.remove();
+        }
+    }
 
     async function boot() {
         if (started) return;
@@ -20,9 +20,9 @@
         await main_web();
     }
 
-    $effect(() => {
-        if (!container) return;
+    onMount(() => {
         boot();
+        return removeAll;
     });
 </script>
 
