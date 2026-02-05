@@ -10,5 +10,3 @@
         },
     ];
 </script>
-
-<CardLayout sectionTitle="UX/UI" {cards} />

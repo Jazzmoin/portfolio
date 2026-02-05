@@ -23,11 +23,7 @@
 
 <style>
     h2 {
-        font-weight: 700;
-        font-size: 1rem;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        color: var(--color-text);
+        color: var(--color-text-0);
         text-decoration: none;
         align-items: center;
     }
