@@ -17,7 +17,7 @@
 </svelte:head>
 
 <div>
-    <h1>Welcome to my portfolio!</h1>
+    <h1>Welcome to my Portfolio!</h1>
 </div>
 
 <CardLayout sectionTitle="Currently working on... " />

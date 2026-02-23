@@ -14,6 +14,12 @@
             desc: "Flower Planting Sim",
             img: "-",
         },
+        {
+            href: "/development/todo-analytics",
+            title: "Todo Analytics",
+            desc: "-",
+            img: "-",
+        },
     ];
 </script>
 

@@ -59,9 +59,10 @@
 </header>
 
 <h2>Colour Swatch Archive</h2>
-<p>desc.</p>
-
-<hr />
+<p class="project-desc">
+    A project built to help my little sister track her collected colour
+    swatches. &lt;3
+</p>
 
 <main class="content-grid">
     <div class="main-colour-container">
@@ -102,11 +103,16 @@
         grid-template-columns: auto 20%;
         height: calc(100vh - 1.5rem);
         overflow: hidden;
+        background-color: var(--color-bg-0);
+        border: 5px solid var(--color-theme-1);
+        border-radius: 0.5rem;
+        padding: 1rem;
     }
 
     .main-colour-container {
         overflow: auto;
-        scrollbar-width: none;
+        scrollbar-width: thin;
+        scrollbar-color: var(--color-bg-1) var(--color-bg-0);
         box-sizing: border-box;
     }
 
@@ -128,18 +134,27 @@
         letter-spacing: 0.1em;
     }
 
+    h2 {
+        padding: 0;
+    }
+
     h3 {
         position: sticky;
         top: 0;
         margin: 0;
-        background-color: var(--color-bg-0);
+        background: var(--color-bg-0);
+        padding: 0.5rem 0 0.5rem 0;
+    }
+
+    .project-desc {
+        padding: 0 0 1.5rem 0;
     }
 
     .menu {
         display: none;
     }
 
-    .stats-sidebar  {
+    .stats-sidebar {
         padding: 0 0 0 2rem;
     }
 
@@ -170,7 +185,6 @@
             right: 0;
             height: 100%;
             width: 250px;
-            background: var(--color-bg-0);
             transform: translateX(100%);
             transition: transform 0.3s ease;
             z-index: 20;

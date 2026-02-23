@@ -20,7 +20,8 @@
         await main_web();
     }
 
-    onMount(() => {
+    $effect(() => {
+        if (!container) return;
         boot();
         return removeAll;
     });
@@ -29,8 +30,6 @@
 <h1>Flower Garden</h1>
 <h2>Flower Planting Sim</h2>
 <p>desc.</p>
-
-<hr />
 
 <main>
     <span bind:this={container} style="display:none;"></span>
