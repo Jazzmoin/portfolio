@@ -17,6 +17,7 @@
     "devDependencies": {
         "@eslint/compat": "^1.4.0",
         "@eslint/js": "^9.39.1",
+        "@microsoft/microsoft-graph-types": "^2.43.1",
         "@fontsource/fira-mono": "^5.2.7",
         "@neoconfetti/svelte": "^2.2.2",
         "@sveltejs/adapter-vercel": "^6.2.0",
@@ -40,7 +41,10 @@
     },
     "dependencies": {
         "@azure/msal-browser": "^5.1.0",
+        "@azure/msal-node": "^3.8.0",
         "@microsoft/microsoft-graph-client": "^3.0.7",
+        "dotenv": "^17.2.3",
+        "msal-node": "^0.0.1-security",
         "svelteplot": "^0.9.2"
     }
 }
