@@ -174,7 +174,7 @@
         "#FFBF91",
         "#efe495",
         "#A8E3C1",
-        "#7DDCB2",
+        "#68c59d",
         "#7ADADA",
         "#89B9FF",
         "#9F8FFF",
@@ -356,10 +356,6 @@
 </main>
 
 <style>
-    main {
-        padding: var(--dot-spacing) calc(var(--dot-spacing) * 14);
-    }
-
     .content-grid {
         display: flex;
         flex-direction: column;
@@ -376,10 +372,6 @@
         display: flex;
         flex-direction: row;
         gap: 2rem;
-    }
-
-    .dropdown {
-        /*width: 12rem;*/
     }
 
     select {
