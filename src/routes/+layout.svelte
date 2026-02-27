@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Background from "$lib/components/Background.svelte";
     import "./layout.css";
 
     const pages = [
@@ -10,6 +11,7 @@
     let { children } = $props();
 </script>
 
+<Background />
 <div class="app">
     <header>
         <h1>
