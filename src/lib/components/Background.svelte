@@ -34,6 +34,7 @@
 
     let baseCanvas: HTMLCanvasElement | null = null;
 
+    // Mouse in *document* coordinates (top-left of page = 0,0)
     let mouseX = -Infinity;
     let mouseY = -Infinity;
     let prevMouseX = -Infinity;
@@ -57,15 +58,43 @@
         return row * cols + col;
     }
 
+    function getDocSize() {
+        const el = document.documentElement;
+        const body = document.body;
+
+        const width = Math.max(
+            el.clientWidth,
+            el.scrollWidth,
+            body?.scrollWidth ?? 0,
+        );
+
+        const height = Math.max(
+            el.clientHeight,
+            el.scrollHeight,
+            body?.scrollHeight ?? 0,
+        );
+
+        return { width, height };
+    }
+
     function rebuildGrid() {
         if (!ctx) return;
 
         dpr = window.devicePixelRatio || 1;
-        cssWidth = canvas.clientWidth;
-        cssHeight = canvas.clientHeight;
 
+        const { width, height } = getDocSize();
+        cssWidth = width;
+        cssHeight = height;
+
+        // Ensure the canvas element itself spans the whole document in CSS pixels
+        canvas.style.width = `${cssWidth}px`;
+        canvas.style.height = `${cssHeight}px`;
+
+        // Backing store in device pixels
         canvas.width = Math.floor(cssWidth * dpr);
         canvas.height = Math.floor(cssHeight * dpr);
+
+        // Draw in CSS pixel coordinates
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
         dotRadiusPx = (DOT_DIAMETER_CM * PX_PER_CM) / 2;
@@ -98,6 +127,7 @@
             }
         }
 
+        // Pre-render the base background to an offscreen canvas
         baseCanvas = document.createElement("canvas");
         baseCanvas.width = canvas.width;
         baseCanvas.height = canvas.height;
@@ -117,6 +147,7 @@
             baseCtx.fill();
         }
 
+        // Draw base once immediately
         ctx.setTransform(1, 0, 0, 1, 0, 0);
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -165,6 +196,7 @@
 
                 let closestX = endX;
                 let closestY = endY;
+
                 if (segLenSquared > 0) {
                     const t = Math.max(
                         0,
@@ -234,22 +266,45 @@
         ctx = canvas.getContext("2d");
         if (!ctx) return;
 
-        const observer = new ResizeObserver(() => {
-            rebuildGrid();
-            if (mouseInside || activeDots.size > 0) ensureAnimation();
-        });
-        observer.observe(canvas);
+        // Throttle doc-size rebuilds (scroll / DOM changes can be frequent)
+        let lastW = 0;
+        let lastH = 0;
+        let resizeScheduled = false;
 
+        const scheduleDocResize = () => {
+            if (resizeScheduled) return;
+            resizeScheduled = true;
+            requestAnimationFrame(() => {
+                resizeScheduled = false;
+                const { width, height } = getDocSize();
+                if (width !== lastW || height !== lastH) {
+                    lastW = width;
+                    lastH = height;
+                    rebuildGrid();
+                    if (mouseInside || activeDots.size > 0) ensureAnimation();
+                }
+            });
+        };
+
+        // Initial build
+        const initSize = getDocSize();
+        lastW = initSize.width;
+        lastH = initSize.height;
         rebuildGrid();
 
         const onResize = () => {
-            rebuildGrid();
-            if (mouseInside || activeDots.size > 0) ensureAnimation();
+            scheduleDocResize();
         };
-        const onMouseMove = (event: MouseEvent) => {
-            const rect = canvas.getBoundingClientRect();
-            const x = event.clientX - rect.left;
-            const y = event.clientY - rect.top;
+
+        const onScroll = () => {
+            // Page height can change when sticky headers collapse, lazy content loads, etc.
+            scheduleDocResize();
+        };
+
+        const onPointerMove = (event: PointerEvent) => {
+            // Convert viewport coords -> document coords
+            const x = event.clientX + window.scrollX;
+            const y = event.clientY + window.scrollY;
 
             if (mouseInside) {
                 prevMouseX = mouseX;
@@ -263,9 +318,13 @@
             mouseY = y;
             mouseMoved = true;
             mouseInside = true;
+
+            // If content grew, catch up
+            scheduleDocResize();
             ensureAnimation();
         };
-        const onMouseLeave = () => {
+
+        const onBlur = () => {
             mouseInside = false;
             mouseX = -Infinity;
             mouseY = -Infinity;
@@ -275,16 +334,28 @@
             if (activeDots.size > 0) ensureAnimation();
         };
 
-        window.addEventListener("resize", onResize);
-        window.addEventListener("mousemove", onMouseMove);
-        window.addEventListener("mouseleave", onMouseLeave);
+        window.addEventListener("resize", onResize, { passive: true });
+        window.addEventListener("scroll", onScroll, { passive: true });
+        window.addEventListener("pointermove", onPointerMove, {
+            passive: true,
+        });
+        window.addEventListener("blur", onBlur);
+
+        // Watch DOM changes that might affect document height (route changes, accordions, async content, etc.)
+        const mo = new MutationObserver(() => scheduleDocResize());
+        mo.observe(document.body, {
+            childList: true,
+            subtree: true,
+            attributes: true,
+        });
 
         return () => {
             stopAnimation();
-            observer.disconnect();
+            mo.disconnect();
             window.removeEventListener("resize", onResize);
-            window.removeEventListener("mousemove", onMouseMove);
-            window.removeEventListener("mouseleave", onMouseLeave);
+            window.removeEventListener("scroll", onScroll);
+            window.removeEventListener("pointermove", onPointerMove);
+            window.removeEventListener("blur", onBlur);
             ctx = null;
         };
     });
@@ -292,13 +363,17 @@
 
 <canvas bind:this={canvas}></canvas>
 
-<style lang="css">
+<style>
     canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        /* JS sets exact pixel size; these keep it “stretchy” in layout terms */
         width: 100%;
         height: 100%;
-        position: absolute;
+
         z-index: -1;
-        inset: 0;
         pointer-events: none;
     }
 </style>

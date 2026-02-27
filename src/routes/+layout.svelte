@@ -11,7 +11,7 @@
     let { children } = $props();
 </script>
 
-<Background />
+    <Background />
 <div class="app">
     <header>
         <h1>
