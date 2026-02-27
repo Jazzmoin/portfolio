@@ -7,6 +7,4 @@
 
 <hr />
 
-<main class="content">
-
-</main>
+<main class="content"></main>

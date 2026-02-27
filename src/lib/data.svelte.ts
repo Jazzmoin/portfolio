@@ -1,12 +1,19 @@
 import { browser } from "$app/environment";
-import { getTasksForList, getTodoLists, type LoadedTodoList } from "$lib/graph.svelte";
+import {
+    getTasksForList,
+    getTodoLists,
+    type LoadedTodoList,
+} from "$lib/graph.svelte";
 import { getAccessToken } from "$lib/auth";
 
 const KEY: string = "todoLists";
 
-export const allLists: { data: LoadedTodoList[]; selected: string | undefined } = $state({
+export const allLists: {
+    data: LoadedTodoList[];
+    selected: string | undefined;
+} = $state({
     data: [],
-    selected: undefined
+    selected: undefined,
 });
 
 const json = localStorage.getItem(KEY);
@@ -32,10 +39,10 @@ export async function load(s: { state: "loading"; progress: number }) {
             items: await getTasksForList(token, x.id, {
                 state: s,
                 start: i / todoLists.length,
-                end: (i + 1) / todoLists.length
-            })
+                end: (i + 1) / todoLists.length,
+            }),
         }),
-        s
+        s,
     );
 }
 
@@ -47,7 +54,7 @@ export async function reset(s: { state: "loading"; progress: number }) {
 async function processInSeries<T, U>(
     array: T[],
     callback: (item: T, index: number) => Promise<U>,
-    s: { state: "loading"; progress: number }
+    s: { state: "loading"; progress: number },
 ): Promise<U[]> {
     const results: U[] = [];
     for (let i = 0; i < array.length; i++) {

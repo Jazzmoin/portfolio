@@ -7,7 +7,7 @@
         <img alt="" src={img} />
     </a>
 
-    <p class="card-title"> <strong>{title}</strong> - {desc}</p>
+    <p class="card-title"><strong>{title}</strong> - {desc}</p>
 </div>
 
 <style>
