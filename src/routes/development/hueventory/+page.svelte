@@ -21,9 +21,9 @@
         colourInfo.data.filter((c) => ownedColours.data.has(c.hex)).length,
     );
 
-    const ownedPercentage = $derived(
-        totalColours ? (totalOwned / totalColours) * 100 : 0,
-    );
+    // const ownedPercentage = $derived(
+    //     totalColours ? (totalOwned / totalColours) * 100 : 0,
+    // );
 
     const categoryStats = $derived.by(() => {
         return categories.map((category) => {
@@ -49,153 +49,117 @@
     let showStats = $state(false);
 </script>
 
-<header class="topbar">
-    <h1>Hueventory</h1>
-    <div>
-        <button class="menu" onclick={() => (showStats = !showStats)}>
-            ☰
-        </button>
-    </div>
-</header>
-
-<h2>Colour Swatch Archive</h2>
-<p class="project-desc">
-    A project built to help my little sister track her collected colour
-    swatches. &lt;3
-</p>
-
-<main class="content-grid">
-    <div class="main-colour-container">
-        {#each categories as category}
-            <section class="colour-section">
-                <h3>{category}</h3>
-                <div class="swatch-group">
-                    {#each colourInfo.data.filter((c) => c.category === category) as colour}
-                        <ColourSwatch
-                            {colour}
-                            isOwned={ownedColours.data.has(colour.hex)}
-                        />
-                    {/each}
-                </div>
-            </section>
-        {/each}
-    </div>
-    <div class="column stats-sidebar" class:open={showStats}>
-        <div>
-            <h3>
-                Total Owned: {totalOwned}/{totalColours}
-                ({ownedPercentage.toFixed(1)}%)
-            </h3>
-            {#each categoryStats as stat}
-                <p>
-                    {stat.category}: {stat.owned} / {stat.total}
-                    ({stat.percent.toFixed(1)}%)
-                </p>
+<main>
+    <aside>
+        <ul>
+            <li>
+                <a class="back-button" href="/development">← Back</a>
+            </li>
+            {#each categories as category}
+                <li>
+                    <a href={"#" + category}>
+                        {category}
+                    </a>
+                </li>
             {/each}
+        </ul>
+    </aside>
+
+    <div class="layout">
+        <div class="cover">
+            <img alt="" id="#top" src="src/lib/img.png" />
+        </div>
+
+        <div class="content">
+            <div class="overview">
+                <h1 class="title">Hueventory</h1>
+                <p class="section-title">Overview</p>
+                <p class="desc">
+                    A project built to help my little sister track her collected colour swatches. &lt;3
+                </p>
+            </div>
+
+            <div class="sections">
+                {#each categoryStats as stat}
+                    <section class="colour-category">
+                        <div class="category-header">
+                            <p id="{stat.category}" class="section-title">{stat.category}</p>
+                            <p class="stat-text">
+                                {stat.owned}/{stat.total} ({stat.percent.toFixed(0)}%)
+                            </p>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress-fill"
+                                style={`width: ${stat.percent}%`}
+                            />
+                        </div>
+
+                        <div class="swatch-group">
+                            {#each colourInfo.data.filter((c) => c.category === stat.category) as colour}
+                                <ColourSwatch
+                                    {colour}
+                                    isOwned={ownedColours.data.has(colour.hex)}
+                                />
+                            {/each}
+                        </div>
+                    </section>
+                {/each}
+            </div>
         </div>
     </div>
 </main>
 
 <style>
-    .content-grid {
+    main {
         display: grid;
-        width: 100%;
-        grid-template-columns: auto 20%;
-        height: calc(100vh - 1.5rem);
-        overflow: hidden;
-        background-color: var(--color-bg-0);
-        border: 5px solid var(--color-theme-1);
-        border-radius: 0.5rem;
-        padding: 1rem;
+        grid-template-columns: 10rem 1fr;
+        gap: 4rem;
+        min-height: 170vh;
     }
 
-    .main-colour-container {
-        overflow: auto;
-        scrollbar-width: thin;
-        scrollbar-color: var(--color-bg-1) var(--color-bg-0);
-        box-sizing: border-box;
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .sections {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .colour-category {
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #e8e8e8;
+    }
+
+    .category-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 0.75rem;
+    }
+
+    .progress-bar {
+        height: 4px;
+        background: #e5e5e5;
+        border-radius: 2px;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background: #111;
+        transition: width 0.4s ease;
     }
 
     .swatch-group {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 0.5rem;
-    }
-
-    .topbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .topbar h1 {
-        margin: 0;
-        position: sticky;
-        letter-spacing: 0.1em;
-    }
-
-    h2 {
-        padding: 0;
-    }
-
-    h3 {
-        position: sticky;
-        top: 0;
-        margin: 0;
-        background: var(--color-bg-0);
-        padding: 0.5rem 0 0.5rem 0;
-    }
-
-    .project-desc {
-        padding: 0 0 1.5rem 0;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .stats-sidebar {
-        padding: 0 0 0 2rem;
-    }
-
-    .stats-sidebar p {
-        line-height: 3rem;
-    }
-
-    @media (max-width: 768px) {
-        .topbar h1 {
-            font-size: 1rem;
-        }
-
-        .swatch-group {
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        }
-
-        .menu {
-            display: block;
-            position: static;
-            top: 1rem;
-            right: 1rem;
-            z-index: 100;
-        }
-
-        .stats-sidebar {
-            position: fixed;
-            top: 0;
-            right: 0;
-            height: 100%;
-            width: 250px;
-            transform: translateX(100%);
-            transition: transform 0.3s ease;
-            z-index: 20;
-            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.25);
-            padding: 0.2rem 1rem 1rem;
-            box-sizing: border-box;
-            overflow-y: auto;
-        }
-
-        .stats-sidebar.open {
-            transform: translateX(0);
-        }
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        gap: 1rem;
     }
 </style>

@@ -23,7 +23,8 @@
 
 <style>
     .card {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         border-radius: 0.35rem;
         cursor: pointer;
         overflow: hidden;
@@ -42,11 +43,11 @@
 
     .info {
         text-align: left;
-        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        padding: 0.5rem;
+        height: 5rem;
     }
 
     p {
-        margin: 0;
-        font-size: 15px;
+        font-size: 14px;
     }
 </style>
