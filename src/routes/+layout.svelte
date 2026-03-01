@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Background from "$lib/components/Background.svelte";
+    // import Background from "$lib/components/Background.svelte";
     import "./layout.css";
 
     const pages = [
@@ -11,15 +11,13 @@
     let { children } = $props();
 </script>
 
-    <Background />
+<!--    <Background />-->
 <div class="app">
     <header>
-        <h1>
-            <a href="/">Jazzmine Pasnin</a>
-        </h1>
+        <a href="/">Jazzmine Pasnin</a>
 
         <nav>
-            <ul>
+            <ul class="nav-links">
                 {#each pages as elem}
                     <li>
                         <a class="nav-link" href={elem.path}> {elem.name}</a>
@@ -28,61 +26,27 @@
             </ul>
         </nav>
     </header>
+
     <main>{@render children()}</main>
 
     <footer class="footer"></footer>
 </div>
 
 <style>
-    .app {
-        display: flex;
-        flex-direction: column;
-    }
-
-    main {
-        padding: var(--dot-spacing) calc(var(--dot-spacing) * 4);
-    }
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid var(--color-bg-1);
-        background-color: var(--color-bg-0);
-        padding: var(--dot-spacing) calc(var(--dot-spacing) * 4);
-    }
-
-    ul {
-        position: relative;
-        margin: 0;
+    .nav-links {
         display: flex;
         gap: var(--dot-spacing);
     }
 
     .nav-link {
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
+        padding: 0.5rem 0 0.5rem 1rem;
         letter-spacing: 0.1em;
-        text-transform: uppercase;
-        font-weight: 400;
-        text-decoration: none;
+        font-size: 14px;
     }
 
-    nav a:hover {
-        transform: translateY(-0.25rem);
-        transition:
-            transform 0.6s ease,
-            opacity 0.6s ease;
-    }
-
-    h1,
-    h1 a {
-        font-weight: 400;
-        font-size: 1rem;
-        text-transform: uppercase;
+    a {
         letter-spacing: 0.1em;
-        color: var(--color-text-0);
-        text-decoration: none;
-        align-items: center;
+        font-size: 14px;
+        text-transform: uppercase;
     }
 </style>
