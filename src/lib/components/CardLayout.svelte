@@ -1,37 +1,27 @@
 <script lang="ts">
     import Card from "$lib/components/Card.svelte";
-
-    // svelte 4 shit -> fix later
-    export let sectionTitle = "";
-    export let cards = [];
+    import type { CardType } from "$lib/types";
+    let {sectionTitle, cards}: {sectionTitle: string, cards: CardType[]} = $props();
 </script>
 
-<div class="basis-8/10">
-    <h2 class="pb-5">{sectionTitle}</h2>
+<div class="content-grid">
+    <h2>{sectionTitle}</h2>
 
-    <div class="card-layout">
+    <div class="card-grid">
         {#each cards as card}
-            <Card
-                href={card.href}
-                title={card.title}
-                desc={card.desc}
-                img={card.img}
-            />
+            <Card {card} />
         {/each}
     </div>
 </div>
 
 <style>
-    h2 {
-        color: var(--color-text-0);
-        text-decoration: none;
-        align-items: center;
+    .content-grid {
+        padding: var(--dot-spacing) calc(var(--dot-spacing) * 8 );
     }
 
-    .card-layout {
+    .card-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 2rem;
-        row-gap: 3em;
+        gap: 2rem;
     }
 </style>

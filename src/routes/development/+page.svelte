@@ -19,6 +19,7 @@
             title: "Todo Analytics",
             desc: "-",
             img: "-",
+            reload: true,
         },
     ];
 </script>

@@ -7,9 +7,9 @@
     let isAnimating = false;
 
     const PX_PER_CM = 96 / 2.54;
-    const DOT_DIAMETER_CM = 0.12;
-    const GRID_SPACING_CM = 1.0;
-    const HOVER_RADIUS_CM = 2.5;
+    const DOT_DIAMETER_CM = 0.08;
+    const GRID_SPACING_CM = 0.5;
+    const HOVER_RADIUS_CM = 1.5;
     const FADE_PER_FRAME = 0.94;
     const MIN_GLOW = 0.001;
 
@@ -366,8 +366,7 @@
 <style>
     canvas {
         position: absolute;
-        top: 0;
-        left: 0;
+        display: block;
 
         /* JS sets exact pixel size; these keep it “stretchy” in layout terms */
         width: 100%;
