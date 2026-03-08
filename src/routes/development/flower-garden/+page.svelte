@@ -27,15 +27,50 @@
     });
 </script>
 
-<h1>Flower Garden</h1>
-<h2>Flower Planting Sim</h2>
-<p>A project I made to learn Rust and Nannou.</p>
-
 <main>
-    <span bind:this={container} style="display:none;"></span>
+    <aside>
+        <ul>
+            <li>
+                <a class="back-button" href="/design">← Back</a>
+            </li>
+            <li>
+                <a href="#overview">Overview</a>
+            </li>
+        </ul>
+    </aside>
+
+    <div class="layout">
+        <div class="cover">
+            <img alt="" src="src/lib/img.png" id="#top" />
+        </div>
+
+        <div class="content">
+            <div class="overview">
+                <h1>Flower Garden</h1>
+                <p id="overview" class="section-title">Overview</p>
+                <p>desc.</p>
+            </div>
+
+            <span bind:this={container} style="display:none;"></span>
+
+        </div>
+    </div>
 </main>
 
 <style>
+    main {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 4rem;
+        min-height: 170vh;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
     :global(canvas) {
         display: block;
         margin: auto;
