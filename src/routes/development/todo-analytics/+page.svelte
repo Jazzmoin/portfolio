@@ -214,6 +214,10 @@
 <main>
     <h1>Microsoft To Do Analytics</h1>
 
+    <h2>Analytics Dashboard</h2>
+    <p class="pb-8">A project created to view todo list stats overall and across individual lists.</p>
+
+
     {#if s.state === "unknown"}
         <div>Loading...</div>
     {:else if s.state === "signedOut"}
@@ -227,7 +231,7 @@
         <p>Progress {(s.progress * 100).toFixed(2)}%</p>
     {:else}
         <div class="welcome-message">
-            <h2>Welcome, {s.user.name ?? "User"}</h2>
+            <p>Welcome, {s.user.name ?? "User"}</p>
 
             <div class="welcome-actions">
                 <button class="action-btn logout-btn" onclick={signOut}>
@@ -362,8 +366,8 @@
         gap: 1rem;
         width: 100%;
         min-height: 70vh;
-        /*background-color: var(--color-bg-0);*/
-        /*border: 5px solid var(--color-theme-1);*/
+        background-color: var(--color-bg-0);
+        border: 5px solid var(--color-theme-1);
         border-radius: 0.5rem;
         padding: 1rem;
     }

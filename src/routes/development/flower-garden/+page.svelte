@@ -29,7 +29,7 @@
 
 <h1>Flower Garden</h1>
 <h2>Flower Planting Sim</h2>
-<p>desc.</p>
+<p>A project I made to learn Rust and Nannou.</p>
 
 <main>
     <span bind:this={container} style="display:none;"></span>

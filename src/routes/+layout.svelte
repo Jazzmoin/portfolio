@@ -40,7 +40,7 @@
     }
 
     main {
-        padding: var(--dot-spacing) calc(var(--dot-spacing) * 14);
+        padding: var(--dot-spacing) calc(var(--dot-spacing) * 4);
     }
 
     header {
@@ -49,7 +49,7 @@
         align-items: center;
         border-bottom: 1px solid var(--color-bg-1);
         background-color: var(--color-bg-0);
-        padding: var(--dot-spacing) calc(var(--dot-spacing) * 14);
+        padding: var(--dot-spacing) calc(var(--dot-spacing) * 4);
     }
 
     ul {
