@@ -1,12 +1,11 @@
 <script>
-
 </script>
 
 <main>
     <aside>
         <ul>
             <li>
-                <a class="back-button" href="/design">← Back</a>
+                <a class="back-button" href="/">← Back</a>
             </li>
             <li>
                 <a href="#overview">Overview</a>
@@ -25,8 +24,6 @@
                 <p id="overview" class="section-title">Overview</p>
                 <p>desc.</p>
             </div>
-
-
         </div>
     </div>
 </main>
@@ -44,5 +41,4 @@
         flex-direction: column;
         gap: 0.5rem;
     }
-
 </style>

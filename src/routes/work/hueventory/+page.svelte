@@ -53,7 +53,7 @@
     <aside>
         <ul>
             <li>
-                <a class="back-button" href="/development">← Back</a>
+                <a class="back-button" href="/">← Back</a>
             </li>
             {#each categories as category}
                 <li>

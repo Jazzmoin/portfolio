@@ -3,26 +3,26 @@
 
     const cards = [
         {
-            href: "/development/hueventory",
+            href: "/work/hueventory",
             title: "Hueventory",
             desc: "Colour Swatch Tracker",
             img: "-",
         },
         {
-            href: "/development/flower-garden",
+            href: "/work/flower-garden",
             title: "Flower Garden",
             desc: "Flower Planting Sim",
             img: "-",
         },
         {
-            href: "/development/todo-analytics",
+            href: "/work/todo-analytics",
             title: "Todo Analytics",
             desc: "-",
             img: "-",
             reload: true,
         },
         {
-            href: "/design/whale-phone-holder",
+            href: "/work/whale-phone-holder",
             title: "Whale Phone Holder",
             desc: "First-year project",
             img: "-",

@@ -31,7 +31,7 @@
     <aside>
         <ul>
             <li>
-                <a class="back-button" href="/design">← Back</a>
+                <a class="back-button" href="/">← Back</a>
             </li>
             <li>
                 <a href="#overview">Overview</a>
@@ -52,7 +52,6 @@
             </div>
 
             <span bind:this={container} style="display:none;"></span>
-
         </div>
     </div>
 </main>
