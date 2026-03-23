@@ -6,8 +6,8 @@
 <script lang="ts">
     import ColourSwatch from "./ColourSwatch.svelte";
     import { onMount } from "svelte";
-    import { colourInfo, loadColours } from "./loadColours.svelte";
-    import { ownedColours } from "./ownedColours.svelte";
+    import { colourInfo, loadColours } from "./loadColours.svelte.js";
+    import { ownedColours } from "./ownedColours.svelte.js";
 
     onMount(() => {
         loadColours().catch((e) => console.error("Failed to load colours", e));
@@ -67,7 +67,7 @@
 
     <div class="layout">
         <div class="cover">
-            <img alt="" id="#top" src="src/lib/img.png" />
+            <img alt="" id="top" src="src/lib/img.png" />
         </div>
 
         <div class="content">
@@ -75,7 +75,8 @@
                 <h1 class="title">Hueventory</h1>
                 <p class="section-title">Overview</p>
                 <p class="desc">
-                    A project built to help my little sister track her collected colour swatches. &lt;3
+                    A project built to help my little sister track her collected
+                    colour swatches. &lt;3
                 </p>
             </div>
 
@@ -83,9 +84,13 @@
                 {#each categoryStats as stat}
                     <section class="colour-category">
                         <div class="category-header">
-                            <p id="{stat.category}" class="section-title">{stat.category}</p>
+                            <p id={stat.category} class="section-title">
+                                {stat.category}
+                            </p>
                             <p class="stat-text">
-                                {stat.owned}/{stat.total} ({stat.percent.toFixed(0)}%)
+                                {stat.owned}/{stat.total} ({stat.percent.toFixed(
+                                    0,
+                                )}%)
                             </p>
                         </div>
 

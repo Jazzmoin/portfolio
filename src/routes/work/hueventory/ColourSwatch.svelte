@@ -1,6 +1,6 @@
 <script lang="ts">
-    import type { Colour } from "./loadColours.svelte";
-    import { toggleOwned } from "./ownedColours.svelte";
+    import type { Colour } from "./loadColours.svelte.js";
+    import { toggleOwned } from "./ownedColours.svelte.js";
 
     let { colour, isOwned }: { colour: Colour; isOwned: boolean } = $props();
 

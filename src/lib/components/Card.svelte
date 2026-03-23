@@ -1,8 +1,8 @@
 <script lang="ts">
     import type { CardType } from "$lib/types";
 
-    const {card}: {card: CardType} = $props();
-    let {title, desc, img, reload = false, href} = card;
+    const { card }: { card: CardType } = $props();
+    let { title, desc, img, reload = false, href } = card;
 </script>
 
 <div class="card">
@@ -11,12 +11,11 @@
             <img alt="" src={img} />
             <p class="card-title"><strong>{title}</strong> - {desc}</p>
         </a>
-        {:else }
+    {:else}
         <a {href}>
             <img alt="" src={img} />
             <p class="card-title"><strong>{title}</strong> - {desc}</p>
         </a>
-
     {/if}
 </div>
 
@@ -35,9 +34,9 @@
         aspect-ratio: 16 / 10;
         max-width: 100%;
         border-radius: 0.5rem;
+        border-color: var(--color-bg-1);
         opacity: 0.9;
         transition: transform 0.3s ease-out;
-        background-color: white;
+        background-color: pink;
     }
-
 </style>

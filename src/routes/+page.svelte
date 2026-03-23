@@ -3,9 +3,28 @@
 
     const cards = [
         {
-            href: "-",
-            title: "-",
+            href: "/development/hueventory",
+            title: "Hueventory",
+            desc: "Colour Swatch Tracker",
+            img: "-",
+        },
+        {
+            href: "/development/flower-garden",
+            title: "Flower Garden",
+            desc: "Flower Planting Sim",
+            img: "-",
+        },
+        {
+            href: "/development/todo-analytics",
+            title: "Todo Analytics",
             desc: "-",
+            img: "-",
+            reload: true,
+        },
+        {
+            href: "/design/whale-phone-holder",
+            title: "Whale Phone Holder",
+            desc: "First-year project",
             img: "-",
         },
     ];
@@ -16,10 +35,11 @@
     <meta name="description" />
 </svelte:head>
 
-<div>
+<div class="flex h-screen flex-col items-center justify-center">
     <h1>Welcome to my Portfolio!</h1>
+    <p>Nothing... for now</p>
 </div>
 
-<CardLayout sectionTitle="Currently working on... " />
-
-<p>Nothing... for now</p>
+<div id="work">
+    <CardLayout {cards} />
+</div>

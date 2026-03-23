@@ -2,10 +2,10 @@
     // Todo: TODO Wrapped
 
     import { onMount } from "svelte";
-    import { getSignedInAccount, loginPopup, logout } from "$lib/auth";
+    import { getSignedInAccount, loginPopup, logout } from "$lib/auth.ts";
     import { Plot, BarY } from "svelteplot";
-    import { load, allLists, reset } from "$lib/data.svelte";
-    import type { TodoTask } from "$lib/graph.svelte";
+    import { load, allLists, reset } from "$lib/data.svelte.js";
+    import type { TodoTask } from "$lib/graph.svelte.js";
     import type { AccountInfo } from "@azure/msal-browser";
 
     type StateType =
@@ -224,7 +224,6 @@
                 <a href="#graph">Graph</a>
             </li>
         </ul>
-
     </aside>
 
     <div class="layout">
@@ -242,7 +241,9 @@
             {#if s.state === "unknown"}
                 <div>Loading...</div>
             {:else if s.state === "signedOut"}
-                <button class="action-btn logout-btn" onclick={signIn}>Sign in</button>
+                <button class="action-btn logout-btn" onclick={signIn}
+                    >Sign in</button
+                >
             {:else if s.state === "error"}
                 <p class="mt-4 text-red-500">{s.error}</p>
             {:else if s.state === "loading"}
@@ -262,9 +263,9 @@
                         <button
                             class="action-btn reset-btn"
                             onclick={() => {
-                        s = { state: "loading", progress: 0 };
-                        reset(s);
-                    }}
+                                s = { state: "loading", progress: 0 };
+                                reset(s);
+                            }}
                         >
                             Reset Local Data
                         </button>
@@ -295,8 +296,12 @@
                                 <option value="week">Last 7 days</option>
                                 <option value="month">Last 30 days</option>
                                 <option value="6 months">Last 6 months</option>
-                                <option selected value="last year">Last year</option>
-                                <option value="last 3 years">Last 3 years</option>
+                                <option selected value="last year"
+                                    >Last year</option
+                                >
+                                <option value="last 3 years"
+                                    >Last 3 years</option
+                                >
                             </select>
                         </div>
 
@@ -305,10 +310,10 @@
                             <select bind:value={taskStatus}>
                                 <option value="all">All</option>
                                 <option value="completedByCompDate"
-                                >Completed (grouped by completed date)</option
+                                    >Completed (grouped by completed date)</option
                                 >
                                 <option value="completedByCreateDate"
-                                >Completed (grouped by created date)</option
+                                    >Completed (grouped by created date)</option
                                 >
                                 <option value="uncompleted">Uncompleted</option>
                             </select>
@@ -330,12 +335,12 @@
                             x={{ axis: "bottom", tickRotate: 90 }}
                             y={{ grid: true }}
                             color={{
-                        legend: true,
-                        domain: listsByUsage,
-                        // The type error here is wrong
-                        // @ts-ignore
-                        scheme: colourScheme,
-                    }}
+                                legend: true,
+                                domain: listsByUsage,
+                                // The type error here is wrong
+                                // @ts-ignore
+                                scheme: colourScheme,
+                            }}
                             margin={{ top: 25, bottom: 100 }}
                             height={525}
                         >
@@ -344,18 +349,18 @@
                                 x="date"
                                 y="n"
                                 fill={selectedListName === "All Tasks"
-                            ? "list"
-                            : "#F6A3B8"}
+                                    ? "list"
+                                    : "#F6A3B8"}
                                 fillOpacity={0.8}
                                 onpointerenter={showGraphTooltip}
                                 onpointermove={showGraphTooltip}
                                 onpointerleave={hideGraphTooltip}
                                 borderRadius={{
-                            topLeft: 5,
-                            topRight: 5,
-                            bottomLeft: 5,
-                            bottomRight: 5,
-                        }}
+                                    topLeft: 5,
+                                    topRight: 5,
+                                    bottomLeft: 5,
+                                    bottomRight: 5,
+                                }}
                             />
                         </Plot>
 
@@ -367,18 +372,16 @@
                                 <strong>{graphTooltip.point.list}</strong>
                                 <div>{graphTooltip.point.date}</div>
                                 <div>
-                                    {graphTooltip.point.n} task{graphTooltip.point.n ===
-                                1
-                                    ? ""
-                                    : "s"}
+                                    {graphTooltip.point.n} task{graphTooltip
+                                        .point.n === 1
+                                        ? ""
+                                        : "s"}
                                 </div>
                             </div>
                         {/if}
                     </div>
                 </div>
             {/if}
-
-
         </div>
     </div>
 </main>

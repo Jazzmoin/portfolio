@@ -1,12 +1,10 @@
 <script lang="ts">
     import Card from "$lib/components/Card.svelte";
     import type { CardType } from "$lib/types";
-    let {sectionTitle, cards}: {sectionTitle: string, cards: CardType[]} = $props();
+    let { cards }: { cards: CardType[] } = $props();
 </script>
 
 <div class="content-grid">
-    <h2>{sectionTitle}</h2>
-
     <div class="card-grid">
         {#each cards as card}
             <Card {card} />
@@ -16,7 +14,7 @@
 
 <style>
     .content-grid {
-        padding: var(--dot-spacing) calc(var(--dot-spacing) * 8 );
+        padding: var(--dot-spacing) calc(var(--dot-spacing) * 8);
     }
 
     .card-grid {

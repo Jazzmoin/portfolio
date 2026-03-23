@@ -3,8 +3,7 @@
     import "./layout.css";
 
     const pages = [
-        { path: "/design", name: "Design" },
-        { path: "/development", name: "Development" },
+        { path: "#work", name: "Work" },
         { path: "/about", name: "About" },
     ];
 
