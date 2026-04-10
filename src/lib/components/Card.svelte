@@ -2,19 +2,21 @@
     import type { CardType } from "$lib/types";
 
     const { card }: { card: CardType } = $props();
-    let { title, desc, img, reload = false, href } = card;
+    let { category, title, img, reload = false, href } = card;
 </script>
 
 <div class="card">
     {#if reload}
         <a data-sveltekit-reload {href}>
             <img alt="" src={img} />
-            <p class="card-title"><strong>{title}</strong> - {desc}</p>
+            <p class="category">{category}</p>
+            <h2 class="card-title">{title}</h2>
         </a>
     {:else}
         <a {href}>
             <img alt="" src={img} />
-            <p class="card-title"><strong>{title}</strong> - {desc}</p>
+            <p class="category">{category}</p>
+            <h2 class="card-title">{title}</h2>
         </a>
     {/if}
 </div>
