@@ -9,9 +9,7 @@
 
 <div class="about-page">
     <section class="about-intro">
-        <p>
-            Hi, I'm Jazzmine.
-        </p>
+        <p>Hi, I'm Jazzmine.</p>
     </section>
 
     <section class="about-gallery" aria-label="About image gallery">
@@ -67,7 +65,6 @@
 
     .gallery-placeholder span {
         text-transform: uppercase;
-        letter-spacing: 0.1em;
         font-size: 0.8rem;
     }
 
@@ -96,7 +93,6 @@
 
         .intro-copy p {
             font-size: 0.82rem;
-            line-height: 1.45;
         }
 
         .about-gallery {

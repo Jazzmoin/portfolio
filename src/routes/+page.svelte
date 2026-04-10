@@ -57,6 +57,7 @@
         align-items: center;
         justify-content: center;
         padding: 3rem 2rem 5rem;
+        margin-inline: calc(var(--dot-spacing) * -4);
         background-image: radial-gradient(
             circle,
             var(--color-bg-1) 1.5px,
@@ -81,9 +82,7 @@
         align-items: flex-end;
         justify-content: flex-start;
         font-size: clamp(1.3rem, 2vw, 1.8rem);
-        line-height: 1.05;
         text-transform: uppercase;
-        letter-spacing: 0.08em;
         box-shadow: 0.8rem 0.8rem 0 rgba(26, 26, 26, 0.08);
         border: 1px solid rgba(26, 26, 26, 0.08);
         transform: rotate(var(--note-rotate));

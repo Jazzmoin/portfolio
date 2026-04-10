@@ -2,7 +2,7 @@
     // Todo: TODO Wrapped
 
     import { onMount } from "svelte";
-    import { getSignedInAccount, loginPopup, logout } from "$lib/auth.ts";
+    import { getSignedInAccount, loginPopup, logout } from "$lib/auth";
     import { Plot, BarY } from "svelteplot";
     import { load, allLists, reset } from "$lib/data.svelte.js";
     import type { TodoTask } from "$lib/graph.svelte.js";
@@ -434,7 +434,7 @@
     }
 
     .action-btn {
-        font-size: 12px;
+        font-size: 14px;
         border-radius: 0.4rem;
         padding: 0.15rem 0.5rem;
         border: 2px solid var(--color-theme-1);
@@ -452,7 +452,7 @@
     }
 
     .reset-btn {
-        font-size: 12px;
+        font-size: 14px;
         opacity: 0.9;
         width: fit-content;
     }
@@ -470,7 +470,6 @@
             rgba(50, 50, 93, 0.2) 0 4px 10px -2px,
             rgba(0, 0, 0, 0.22) 0 2px 4px -2px;
         font-size: 0.8rem;
-        line-height: 1.35;
     }
 
     .graph-tooltip strong {
