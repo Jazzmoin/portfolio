@@ -28,18 +28,6 @@
             img: "-",
         },
     ];
-
-    const socialLinks = [
-        { href: "#", label: "Email" },
-        { href: "#", label: "LinkedIn" },
-        { href: "#", label: "Instagram" },
-    ];
-
-    const pageLinks = [
-        { href: "/", label: "Home" },
-        { href: "#work", label: "Work" },
-        { href: "/about", label: "About" },
-    ];
 </script>
 
 <svelte:head>
@@ -48,44 +36,15 @@
 </svelte:head>
 
 <section class="hero-section">
-    <div class="hero-copy">
-        <h1>Welcome to my portfolio</h1>
-    </div>
-
     <div class="sticky-stack" aria-hidden="true">
         <div class="sticky-note sticky-note-name">Jazzmine Pasnin</div>
         <div class="sticky-note sticky-note-study">Study</div>
-        <div class="sticky-note sticky-note-blank"></div>
     </div>
 </section>
 
 <section id="work" class="work-section">
     <CardLayout {cards} />
 </section>
-
-<footer class="page-footer">
-    <p class="footer-message">
-        Thanks for stopping by and taking a look through my work.
-    </p>
-
-    <div class="footer-column">
-        <h2>Socials</h2>
-        <div class="footer-links">
-            {#each socialLinks as link}
-                <a href={link.href}>{link.label}</a>
-            {/each}
-        </div>
-    </div>
-
-    <div class="footer-column">
-        <h2>Pages</h2>
-        <div class="footer-links">
-            {#each pageLinks as link}
-                <a href={link.href}>{link.label}</a>
-            {/each}
-        </div>
-    </div>
-</footer>
 
 <style>
     :global(html) {
@@ -94,51 +53,35 @@
 
     .hero-section {
         min-height: calc(100vh - var(--header-height));
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+        display: flex;
         align-items: center;
-        gap: 3rem;
-        padding: 4rem 2rem 6rem;
-    }
-
-    .hero-copy {
-        max-width: 32rem;
-    }
-
-    .eyebrow {
-        text-transform: uppercase;
-        letter-spacing: 0.18em;
-        margin-bottom: 1rem;
-    }
-
-    .hero-copy h1 {
-        font-size: clamp(3rem, 8vw, 6rem);
-        line-height: 0.95;
-        margin: 0;
-        text-transform: uppercase;
-        max-width: 8ch;
-    }
-
-    .hero-text {
-        margin-top: 1.5rem;
-        max-width: 24rem;
+        justify-content: center;
+        padding: 3rem 2rem 5rem;
+        background-image: radial-gradient(
+            circle,
+            var(--color-bg-1) 1.5px,
+            transparent 1px
+        );
+        background-size: 1.5rem 1.5rem;
     }
 
     .sticky-stack {
         position: relative;
-        min-height: 25rem;
+        width: min(100%, 46rem);
+        min-height: 31rem;
     }
 
     .sticky-note {
         --note-rotate: 0deg;
         position: absolute;
-        width: clamp(10rem, 22vw, 14rem);
+        width: clamp(14rem, 30vw, 20rem);
         aspect-ratio: 1 / 1;
-        padding: 1.25rem;
+        padding: 1.75rem;
         display: flex;
         align-items: flex-end;
         justify-content: flex-start;
-        font-size: 1.1rem;
+        font-size: clamp(1.3rem, 2vw, 1.8rem);
+        line-height: 1.05;
         text-transform: uppercase;
         letter-spacing: 0.08em;
         box-shadow: 0.8rem 0.8rem 0 rgba(26, 26, 26, 0.08);
@@ -158,71 +101,48 @@
     .sticky-note-name {
         --note-rotate: -9deg;
         background: #ffd86b;
-        top: 0.5rem;
-        left: 1rem;
+        top: 1.5rem;
+        left: 3.5rem;
         z-index: 3;
     }
 
     .sticky-note-study {
         --note-rotate: 8deg;
         background: #ffb6d9;
-        top: 5rem;
-        right: 1.75rem;
+        top: 9rem;
+        right: 4.5rem;
         z-index: 2;
-    }
-
-    .sticky-note-blank {
-        --note-rotate: -4deg;
-        background: #d9f0b8;
-        bottom: 0;
-        left: 2.5rem;
-        z-index: 1;
     }
 
     .work-section {
         scroll-margin-top: calc(var(--header-height) + 1rem);
-        padding-bottom: 5rem;
-    }
-
-    .page-footer {
-        display: grid;
-        grid-template-columns: minmax(0, 1.6fr) repeat(2, minmax(0, 1fr));
-        gap: 2rem;
-        padding: 2.5rem 2rem 4rem;
-        border-top: 1px solid var(--color-bg-1);
-        align-items: start;
-    }
-
-    .footer-message {
-        max-width: 22rem;
-        margin: 0;
-    }
-
-    .footer-column h2 {
-        margin: 0 0 1rem;
-        font-size: 0.8rem;
-    }
-
-    .footer-links {
-        display: flex;
-        flex-direction: column;
-        gap: 0.75rem;
+        padding: 5rem 0 5rem 0;
     }
 
     @media (max-width: 800px) {
         .hero-section {
-            grid-template-columns: 1fr;
-            padding-inline: 0.5rem;
-            gap: 2rem;
+            padding: 2rem 0.75rem 4rem;
         }
 
         .sticky-stack {
-            min-height: 19rem;
+            width: min(100%, 25rem);
+            min-height: 23rem;
         }
 
-        .page-footer {
-            grid-template-columns: 1fr;
-            padding-inline: 0.5rem;
+        .sticky-note {
+            width: clamp(10.5rem, 44vw, 13rem);
+            padding: 1rem;
+            font-size: clamp(1rem, 4vw, 1.2rem);
+        }
+
+        .sticky-note-name {
+            top: 1rem;
+            left: 0.35rem;
+        }
+
+        .sticky-note-study {
+            top: 6.75rem;
+            right: 1rem;
         }
     }
 </style>

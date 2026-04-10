@@ -21,12 +21,6 @@ body {
     min-height: 100vh;
     margin: 0;
     background-color: var(--color-bg-0);
-    /*background-image: radial-gradient(*/
-    /*        circle,*/
-    /*        var(--color-bg-1) 1.5px,*/
-    /*        transparent 1px*/
-    /*);*/
-    /*background-size: var(--dot-spacing) var(--dot-spacing);*/
 }
 
 p {
@@ -59,19 +53,6 @@ h2 {
 h3 {
     font-size: 1rem;
     font-weight: 500;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--color-bg-1);
-    background-color: var(--color-bg-0);
-    padding: var(--dot-spacing) calc(var(--dot-spacing) * 4);
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    height: var(--header-height);
 }
 
 main {
