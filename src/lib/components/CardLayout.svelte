@@ -13,10 +13,6 @@
 </div>
 
 <style>
-    .content-grid {
-        padding: var(--dot-spacing) calc(var(--dot-spacing) * 8);
-    }
-
     .card-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

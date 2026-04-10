@@ -37,7 +37,7 @@
 
     <footer class="footer">
         <p class="footer-message">
-            Thanks for stopping by and taking a look through my work.
+            &lt;3
         </p>
 
         <div class="footer-column">
