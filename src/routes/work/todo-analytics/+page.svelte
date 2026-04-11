@@ -214,7 +214,6 @@
 <div class="project-page">
     <div class="layout">
         <header id="overview" class="project-header">
-            <p class="project-type">Analytics Dashboard</p>
             <h1 class="project-title">Microsoft To Do Analytics</h1>
             <p class="project-description">
                 A personal dashboard for exploring task completion patterns

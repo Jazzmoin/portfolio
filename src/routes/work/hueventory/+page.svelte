@@ -57,7 +57,6 @@
 <div class="project-page">
     <div class="layout">
         <header id="overview" class="project-header">
-            <p class="project-type">Colour Swatch Tracker</p>
             <h1 class="project-title">Hueventory</h1>
             <p class="project-description">
                 A personal tracker for my little sister's colour swatch

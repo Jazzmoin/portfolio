@@ -29,8 +29,7 @@
 
 <div class="project-page">
     <div class="layout">
-        <header id="overview" class="project-header">
-            <p class="project-type">Flower Planting Playground</p>
+        <header id="overview" class="project-header">   
             <h1 class="project-title">Flower Garden</h1>
             <p class="project-description">
                 A Project created to learn Rust and Nannou.

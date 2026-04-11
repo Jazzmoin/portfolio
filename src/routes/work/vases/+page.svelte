@@ -8,7 +8,6 @@
 <div class="project-page">
     <div class="layout">
         <header id="overview" class="project-header">
-            <p class="project-type">Personal Project</p>
             <h1 class="project-title">Vases</h1>
             <p class="project-description">
                 A wall-mounted vase project designed to turn unused wall space
