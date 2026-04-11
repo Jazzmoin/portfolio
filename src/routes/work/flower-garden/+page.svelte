@@ -53,5 +53,8 @@
         display: block;
         margin: auto;
         cursor: none;
+        max-width: 90%;
+        width: auto !important;
+        height: auto !important;
     }
 </style>
