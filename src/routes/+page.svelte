@@ -1,31 +1,35 @@
 <script lang="ts">
-    import CardLayout from "$lib/components/CardLayout.svelte"; 
+    import CardLayout from "$lib/components/CardLayout.svelte";
+    import flowerGardenCover from "$lib/images/covers/flower-garden-cover.webp";
+    import hueventoryCover from "$lib/images/covers/hueventory-cover.webp";
+    import todoAnalyticsCover from "$lib/images/covers/todo-analytics-cover.webp";
+    import vaseCover from "$lib/images/covers/vase-cover.webp";
 
     const cards = [
         {
             href: "/work/hueventory",
             category: "Colour Swatch Tracker",
             title: "Hueventory",
-            img: "",
+            img: hueventoryCover,
         },
         {
             href: "/work/flower-garden",
             category: "Flower Planting Playground",
             title: "Flower Garden",
-            img: "",
+            img: flowerGardenCover,
         },
         {
             href: "/work/todo-analytics",
             category: "Analytics Dashboard",
             title: "Todo Analytics",
-            img: "",
+            img: todoAnalyticsCover,
             reload: true,
         },
         {
             href: "/work/vases",
             category: "Personal Project",
             title: "Vases",
-            img: "",
+            img: vaseCover,
         },
     ];
 </script>
@@ -37,8 +41,8 @@
 
 <section class="hero-section">
     <div class="sticky-stack" aria-hidden="true">
-        <div class="sticky-note sticky-note-name">Jazzmine Pasnin</div>
-        <div class="sticky-note sticky-note-study">Study</div>
+        <div class="sticky-note sticky-note-name">Jazzmine</div>
+        <div class="sticky-note sticky-note-study">Pasnin</div>
     </div>
 </section>
 

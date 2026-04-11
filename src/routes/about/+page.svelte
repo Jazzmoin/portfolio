@@ -1,9 +1,14 @@
 <script lang="ts">
+    import crochetFlowers from "$lib/images/about/crochet-flowers.webp";
+    import heartCake from "$lib/images/about/heart-cake.webp";
+    import inkSketch from "$lib/images/about/ink-sketch.webp";
+    import year12Artwork from "$lib/images/about/year12-artwork.webp";
+
     const gallery = [
-        { label: "Photo 01", color: "#f6bd60" },
-        { label: "Photo 02", color: "#f5cac3" },
-        { label: "Photo 03", color: "#84a59d" },
-        { label: "Photo 04", color: "#f28482" },
+        { src: year12Artwork, alt: "Year 12 artwork" },
+        { src: inkSketch, alt: "Ink sketch" },
+        { src: crochetFlowers, alt: "Crochet flowers" },
+        { src: heartCake, alt: "Heart cake" },
     ];
 </script>
 
@@ -15,12 +20,7 @@
     <section class="about-gallery" aria-label="About image gallery">
         {#each gallery as image}
             <figure class="gallery-card">
-                <div
-                    class="gallery-placeholder"
-                    style={`background: ${image.color}`}
-                >
-                    <span>{image.label}</span>
-                </div>
+                <img class="gallery-image" src={image.src} alt={image.alt} />
             </figure>
         {/each}
     </section>
@@ -57,25 +57,18 @@
     .gallery-card {
         margin: 0;
         min-width: 0;
+        aspect-ratio: 3 / 4;
         border: 1px solid var(--color-line);
         border-radius: 0.65rem;
         background: rgba(255, 248, 242, 0.74);
         overflow: hidden;
     }
 
-    .gallery-placeholder {
-        display: flex;
-        align-items: end;
-        padding: 1rem;
-        box-sizing: border-box;
+    .gallery-image {
+        display: block;
         width: 100%;
         height: 100%;
-        min-height: 18rem;
-    }
-
-    .gallery-placeholder span {
-        text-transform: uppercase;
-        font-size: 0.8rem;
+        object-fit: cover;
     }
 
     @media (max-width: 900px) {
