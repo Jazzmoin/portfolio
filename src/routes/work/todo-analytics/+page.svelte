@@ -224,18 +224,7 @@
 
         <div class="project-sections">
             <section id="dashboard" class="project-section">
-                <div class="section-header">
-                    <p class="section-type">[application]</p>
-                    <h2 class="section-heading">
-                        Filter activity across lists and time ranges
-                    </h2>
-                </div>
-
-                <p class="section-description">
-                    Sign in, select the lists you want to inspect, and compare
-                    how task volume changes over time using the interactive
-                    graph.
-                </p>
+                
 
                 <div class="section-body">
                     {#if s.state === "unknown"}

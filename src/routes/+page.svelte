@@ -1,5 +1,5 @@
 <script lang="ts">
-    import CardLayout from "$lib/components/CardLayout.svelte";
+    import CardLayout from "$lib/components/CardLayout.svelte"; 
 
     const cards = [
         {
@@ -10,7 +10,7 @@
         },
         {
             href: "/work/flower-garden",
-            category: "Flower Planting Sim",
+            category: "Flower Planting Playground",
             title: "Flower Garden",
             img: "",
         },
@@ -22,9 +22,9 @@
             reload: true,
         },
         {
-            href: "/work/whale-phone-holder",
-            category: "First-Year Design",
-            title: "Whale Phone Holder",
+            href: "/work/vases",
+            category: "Personal Project",
+            title: "Vases",
             img: "",
         },
     ];
@@ -56,20 +56,37 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+        overflow: hidden;
         padding: 3rem 2rem 5rem;
         margin-inline: calc(var(--dot-spacing) * -4);
+        background-color: var(--color-bg-1);
         background-image: radial-gradient(
             circle,
-            var(--color-bg-1) 1.5px,
-            transparent 1px
+            rgba(132, 165, 157, 0.2) 1.25px,
+            transparent 1.45px
         );
-        background-size: 1.5rem 1.5rem;
+        background-size: 1.35rem 1.35rem;
+    }
+
+    .hero-section::after {
+        content: "";
+        position: absolute;
+        inset: auto 0 0;
+        height: 8rem;
+        background: linear-gradient(
+            180deg,
+            rgba(255, 250, 245, 0),
+            var(--color-bg-1)
+        );
+        pointer-events: none;
     }
 
     .sticky-stack {
         position: relative;
         width: min(100%, 46rem);
         min-height: 31rem;
+        z-index: 1;
     }
 
     .sticky-note {
@@ -83,8 +100,8 @@
         justify-content: flex-start;
         font-size: clamp(1.3rem, 2vw, 1.8rem);
         text-transform: uppercase;
-        box-shadow: 0.8rem 0.8rem 0 rgba(26, 26, 26, 0.08);
-        border: 1px solid rgba(26, 26, 26, 0.08);
+        box-shadow: 0.8rem 0.8rem 0 rgba(66, 51, 45, 0.12);
+        border: 1px solid rgba(66, 51, 45, 0.12);
         transform: rotate(var(--note-rotate));
         transition:
             transform 180ms ease,
@@ -94,12 +111,12 @@
 
     .sticky-note:hover {
         transform: translateY(-0.55rem) rotate(var(--note-rotate)) scale(1.03);
-        box-shadow: 1.1rem 1.1rem 0 rgba(26, 26, 26, 0.12);
+        box-shadow: 1.1rem 1.1rem 0 rgba(66, 51, 45, 0.16);
     }
 
     .sticky-note-name {
         --note-rotate: -9deg;
-        background: #ffd86b;
+        background: var(--color-theme-1);
         top: 1.5rem;
         left: 3.5rem;
         z-index: 3;
@@ -107,7 +124,7 @@
 
     .sticky-note-study {
         --note-rotate: 8deg;
-        background: #ffb6d9;
+        background: var(--color-bg-2);
         top: 9rem;
         right: 4.5rem;
         z-index: 2;
@@ -115,7 +132,10 @@
 
     .work-section {
         scroll-margin-top: calc(var(--header-height) + 1rem);
-        padding: 5rem 0 5rem 0;
+        margin-inline: calc(var(--dot-spacing) * -4);
+        padding: 2rem calc(var(--dot-spacing) * 4) 5rem;
+        background: var(--color-bg-1);
+        position: relative;
     }
 
     @media (max-width: 800px) {

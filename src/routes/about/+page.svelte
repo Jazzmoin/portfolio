@@ -1,9 +1,9 @@
 <script lang="ts">
     const gallery = [
-        { label: "Photo 01", color: "#ffd86b" },
-        { label: "Photo 02", color: "#ffb6d9" },
-        { label: "Photo 03", color: "#d9f0b8" },
-        { label: "Photo 04", color: "#cfe4ff" },
+        { label: "Photo 01", color: "#f6bd60" },
+        { label: "Photo 02", color: "#f5cac3" },
+        { label: "Photo 03", color: "#84a59d" },
+        { label: "Photo 04", color: "#f28482" },
     ];
 </script>
 
@@ -38,6 +38,14 @@
         padding: 2rem 0;
     }
 
+    .about-intro p {
+        margin: 0;
+        font-family: var(--font-serif);
+        font-size: clamp(2rem, 5vw, 3.4rem);
+        line-height: 1.04;
+        max-width: 10ch;
+    }
+
     .about-gallery {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -49,8 +57,9 @@
     .gallery-card {
         margin: 0;
         min-width: 0;
-        border: 1px solid rgba(26, 26, 26, 0.08);
-        background: white;
+        border: 1px solid var(--color-line);
+        border-radius: 0.65rem;
+        background: rgba(255, 248, 242, 0.74);
         overflow: hidden;
     }
 
@@ -61,6 +70,7 @@
         box-sizing: border-box;
         width: 100%;
         height: 100%;
+        min-height: 18rem;
     }
 
     .gallery-placeholder span {
@@ -86,18 +96,14 @@
             grid-template-rows: 1.1fr 0.9fr;
         }
 
-        .intro-copy h1 {
-            font-size: clamp(1.7rem, 8vw, 2.5rem);
-            max-width: 12ch;
-        }
-
-        .intro-copy p {
-            font-size: 0.82rem;
-        }
-
         .about-gallery {
             gap: 0.75rem;
             padding-top: 0.75rem;
+        }
+
+        .gallery-card:nth-child(odd),
+        .gallery-card:nth-child(even) {
+            transform: none;
         }
     }
 </style>

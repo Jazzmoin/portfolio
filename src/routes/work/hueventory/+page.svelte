@@ -108,11 +108,18 @@
                 <a href="#overview">Overview</a>
             </li>
             {#each categories as category}
+                <!-- {@const colours = colourInfo.data.filter((c) => c.category === category)} -->
                 <li>
                     <a href={"#" + sectionId(category)}>
                         {category}
                     </a>
-                </li>
+                    <!-- <br />
+                    <div class="grid-cols-{colours.length} w-full h-5">
+                        {#each colours as colour}
+                            <div class="w-full h-full text-[{colour.hex}] block">&nbsp;</div>
+                        {/each}
+                    </div> -->
+                </li> 
             {/each}
         </ul>
     </nav>

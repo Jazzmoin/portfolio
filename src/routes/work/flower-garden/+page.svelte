@@ -39,16 +39,7 @@
 
         <div class="project-sections">
             <section id="simulation" class="project-section">
-                <div class="section-header">
-                    <p class="section-type">[simulation]</p>
-                    <h2 class="section-heading">Grow the scene in real time</h2>
-                </div>
-
-                <p class="section-description">
-                    The live canvas handles the interactive planting experience
-                    and turns the page into a small procedural garden
-                    playground.
-                </p>
+                
 
                 <div class="section-body">
                     <span bind:this={container} style="display:none;"></span>

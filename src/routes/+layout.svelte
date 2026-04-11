@@ -7,14 +7,8 @@
     ];
 
     const socialLinks = [
-        { href: "#", label: "Email" },
-        { href: "#", label: "Instagram" },
-    ];
-
-    const footerPages = [
-        { href: "/", label: "Home" },
-        { href: "/#work", label: "Work" },
-        { href: "/about", label: "About" },
+        { href: "japasnin@gmail.com", label: "Email" },
+        { href: "https://www.instagram.com/simplyjazzyp/", label: "Instagram" },
     ];
 
     let { children } = $props();
@@ -34,26 +28,14 @@
     </header>
 
     <main>{@render children()}</main>
-
+    
     <footer class="footer">
         <p class="footer-message">&lt;3</p>
 
-        <div class="footer-column">
-            <p>Socials</p>
-            <div class="footer-links">
-                {#each socialLinks as link}
-                    <a href={link.href}>{link.label}</a>
-                {/each}
-            </div>
-        </div>
-
-        <div class="footer-column">
-            <p>Pages</p>
-            <div class="footer-links">
-                {#each footerPages as link}
-                    <a href={link.href}>{link.label}</a>
-                {/each}
-            </div>
+        <div class="footer-links" aria-label="Contact links">
+            <a href={socialLinks[0].href}>{socialLinks[0].label}</a>
+            <span aria-hidden="true">/</span>
+            <a href={socialLinks[1].href}>{socialLinks[1].label}</a>
         </div>
     </footer>
 </div>
@@ -64,8 +46,9 @@
         justify-content: space-between;
         align-items: center;
         font-family: var(--font-mono);
-        border-bottom: 1px solid var(--color-bg-1);
-        background-color: var(--color-bg-0);
+        border-bottom: 1px solid var(--color-line);
+        background-color: rgba(247, 237, 226, 0.88);
+        backdrop-filter: blur(10px);
         padding: var(--dot-spacing) calc(var(--dot-spacing) * 4);
         position: sticky;
         top: 0;
@@ -79,8 +62,17 @@
     }
 
     .nav-link {
-        padding: 0.5rem 0 0.5rem 1rem;
+        padding: 0.35rem 0.8rem;
         font-size: var(--text-xs);
+        border-radius: 999px;
+        transition:
+            background-color 180ms ease,
+            transform 180ms ease;
+    }
+
+    .nav-link:hover {
+        background: rgba(245, 202, 195, 0.55);
+        transform: translateY(-1px);
     }
 
     a {
@@ -89,33 +81,27 @@
     }
 
     .footer {
-        display: grid;
-        grid-template-columns: minmax(0, 1.6fr) repeat(2, minmax(0, 1fr));
-        gap: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         font-family: var(--font-mono);
-        padding: 3rem var(--page-padding-inline);
-        border-top: 1px solid var(--color-bg-1);
-        align-items: start;
+        padding: 1rem var(--page-padding-inline);
+        background-color: rgba(247, 237, 226, 0.88);
+        border-top: 1px solid var(--color-line);
     }
 
     .footer-message {
-        max-width: 22rem;
         margin: 0;
-    }
-
-    .footer-column p {
-        margin: 0 0 1rem;
     }
 
     .footer-links {
         display: flex;
-        flex-direction: column;
-        gap: 0.75rem;
+        align-items: center;
+        gap: 0.4rem;
     }
 
     @media (max-width: 800px) {
         .footer {
-            grid-template-columns: 1fr;
             padding-inline: 0.5rem;
         }
     }
