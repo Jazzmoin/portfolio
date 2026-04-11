@@ -211,195 +211,200 @@
     };
 </script>
 
-<main>
-    <aside>
-        <ul>
-            <li>
-                <a class="back-button" href="/">← Back</a>
-            </li>
-            <li>
-                <a href="#overview">Overview</a>
-            </li>
-            <li>
-                <a href="#graph">Graph</a>
-            </li>
-        </ul>
-    </aside>
-
+<div class="project-page">
     <div class="layout">
-        <div class="cover">
-            <img alt="" src="src/lib/img.png" id="#top" />
-        </div>
+        <header id="overview" class="project-header">
+            <p class="project-type">Analytics Dashboard</p>
+            <h1 class="project-title">Microsoft To Do Analytics</h1>
+            <p class="project-description">
+                A personal dashboard for exploring task completion patterns
+                across Microsoft To Do lists, time ranges, and status filters.
+            </p>
+        </header>
 
-        <div class="content">
-            <div class="overview">
-                <h1>Microsoft To Do Analytics</h1>
-                <p id="overview" class="section-title">Overview</p>
-                <p>desc.</p>
-            </div>
-
-            {#if s.state === "unknown"}
-                <div>Loading...</div>
-            {:else if s.state === "signedOut"}
-                <button class="action-btn logout-btn" onclick={signIn}
-                    >Sign in</button
-                >
-            {:else if s.state === "error"}
-                <p class="mt-4 text-red-500">{s.error}</p>
-            {:else if s.state === "loading"}
-                <p class="mt-4">
-                    Loading... (Yes this really takes forever don't worry)
-                </p>
-                <p>Progress {(s.progress * 100).toFixed(2)}%</p>
-            {:else}
-                <div class="welcome-message">
-                    <p>Welcome, {s.user.name ?? "User"}</p>
-
-                    <div class="welcome-actions">
-                        <button class="action-btn logout-btn" onclick={signOut}>
-                            Logout
-                        </button>
-
-                        <button
-                            class="action-btn reset-btn"
-                            onclick={() => {
-                                s = { state: "loading", progress: 0 };
-                                reset(s);
-                            }}
-                        >
-                            Reset Local Data
-                        </button>
-                    </div>
+        <div class="project-sections">
+            <section id="dashboard" class="project-section">
+                <div class="section-header">
+                    <p class="section-type">[application]</p>
+                    <h2 class="section-heading">
+                        Filter activity across lists and time ranges
+                    </h2>
                 </div>
 
-                <div id="graph" class="content-grid">
-                    <div class="dropdowns-group">
-                        <div class="dropdown">
-                            <h3>To Do Lists</h3>
-                            {#if todoLists.length > 0}
-                                <select bind:value={selectedListName}>
-                                    <option value="All Tasks">All Tasks</option>
-                                    {#each todoLists as list}
-                                        <option>
-                                            {list.displayName}
-                                        </option>
-                                    {/each}
-                                </select>
-                            {:else}
-                                <p>No lists found.</p>
-                            {/if}
-                        </div>
+                <p class="section-description">
+                    Sign in, select the lists you want to inspect, and compare
+                    how task volume changes over time using the interactive
+                    graph.
+                </p>
 
-                        <div class="dropdown">
-                            <h3>Period</h3>
-                            <select bind:value={period}>
-                                <option value="week">Last 7 days</option>
-                                <option value="month">Last 30 days</option>
-                                <option value="6 months">Last 6 months</option>
-                                <option selected value="last year"
-                                    >Last year</option
-                                >
-                                <option value="last 3 years"
-                                    >Last 3 years</option
-                                >
-                            </select>
-                        </div>
-
-                        <div class="dropdown">
-                            <h3>Task Status</h3>
-                            <select bind:value={taskStatus}>
-                                <option value="all">All</option>
-                                <option value="completedByCompDate"
-                                    >Completed (grouped by completed date)</option
-                                >
-                                <option value="completedByCreateDate"
-                                    >Completed (grouped by created date)</option
-                                >
-                                <option value="uncompleted">Uncompleted</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="task-graphs h-max">
-                        <h2>
-                            {selectedListName}
-
-                            {#if taskStatus === "all" || taskStatus === "uncompleted" || taskStatus === "completedByCreateDate"}
-                                — Grouped by Created Date
-                            {:else if taskStatus === "completedByCompDate"}
-                                — Grouped by Completed Date
-                            {/if}
-                        </h2>
-
-                        <Plot
-                            x={{ axis: "bottom", tickRotate: 90 }}
-                            y={{ grid: true }}
-                            color={{
-                                legend: true,
-                                domain: listsByUsage,
-                                // The type error here is wrong
-                                // @ts-ignore
-                                scheme: colourScheme,
-                            }}
-                            margin={{ top: 25, bottom: 100 }}
-                            height={525}
+                <div class="section-body">
+                    {#if s.state === "unknown"}
+                        <div>Loading...</div>
+                    {:else if s.state === "signedOut"}
+                        <button class="action-btn logout-btn" onclick={signIn}
+                            >Sign in</button
                         >
-                            <BarY
-                                data={groupedTasks}
-                                x="date"
-                                y="n"
-                                fill={selectedListName === "All Tasks"
-                                    ? "list"
-                                    : "#F6A3B8"}
-                                fillOpacity={0.8}
-                                onpointerenter={showGraphTooltip}
-                                onpointermove={showGraphTooltip}
-                                onpointerleave={hideGraphTooltip}
-                                borderRadius={{
-                                    topLeft: 5,
-                                    topRight: 5,
-                                    bottomLeft: 5,
-                                    bottomRight: 5,
-                                }}
-                            />
-                        </Plot>
+                    {:else if s.state === "error"}
+                        <p class="mt-4 text-red-500">{s.error}</p>
+                    {:else if s.state === "loading"}
+                        <p class="mt-4">
+                            Loading... (Yes this really takes forever don't
+                            worry)
+                        </p>
+                        <p>Progress {(s.progress * 100).toFixed(2)}%</p>
+                    {:else}
+                        <div class="welcome-message">
+                            <p>Welcome, {s.user.name ?? "User"}</p>
 
-                        {#if graphTooltip}
-                            <div
-                                class="graph-tooltip"
-                                style="left: {graphTooltip.x}px; top: {graphTooltip.y}px;"
-                            >
-                                <strong>{graphTooltip.point.list}</strong>
-                                <div>{graphTooltip.point.date}</div>
-                                <div>
-                                    {graphTooltip.point.n} task{graphTooltip
-                                        .point.n === 1
-                                        ? ""
-                                        : "s"}
+                            <div class="welcome-actions">
+                                <button
+                                    class="action-btn logout-btn"
+                                    onclick={signOut}
+                                >
+                                    Logout
+                                </button>
+
+                                <button
+                                    class="action-btn reset-btn"
+                                    onclick={() => {
+                                        s = { state: "loading", progress: 0 };
+                                        reset(s);
+                                    }}
+                                >
+                                    Reset Local Data
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="content-grid">
+                            <div class="dropdowns-group">
+                                <div class="dropdown">
+                                    <h3>To Do Lists</h3>
+                                    {#if todoLists.length > 0}
+                                        <select bind:value={selectedListName}>
+                                            <option value="All Tasks"
+                                                >All Tasks</option
+                                            >
+                                            {#each todoLists as list}
+                                                <option>
+                                                    {list.displayName}
+                                                </option>
+                                            {/each}
+                                        </select>
+                                    {:else}
+                                        <p>No lists found.</p>
+                                    {/if}
+                                </div>
+
+                                <div class="dropdown">
+                                    <h3>Period</h3>
+                                    <select bind:value={period}>
+                                        <option value="week">Last 7 days</option
+                                        >
+                                        <option value="month"
+                                            >Last 30 days</option
+                                        >
+                                        <option value="6 months"
+                                            >Last 6 months</option
+                                        >
+                                        <option selected value="last year"
+                                            >Last year</option
+                                        >
+                                        <option value="last 3 years"
+                                            >Last 3 years</option
+                                        >
+                                    </select>
+                                </div>
+
+                                <div class="dropdown">
+                                    <h3>Task Status</h3>
+                                    <select bind:value={taskStatus}>
+                                        <option value="all">All</option>
+                                        <option value="completedByCompDate"
+                                            >Completed (grouped by completed
+                                            date)</option
+                                        >
+                                        <option value="completedByCreateDate"
+                                            >Completed (grouped by created date)</option
+                                        >
+                                        <option value="uncompleted"
+                                            >Uncompleted</option
+                                        >
+                                    </select>
                                 </div>
                             </div>
-                        {/if}
-                    </div>
+
+                            <div class="task-graphs h-max">
+                                <h2>
+                                    {selectedListName}
+
+                                    {#if taskStatus === "all" || taskStatus === "uncompleted" || taskStatus === "completedByCreateDate"}
+                                        — Grouped by Created Date
+                                    {:else if taskStatus === "completedByCompDate"}
+                                        — Grouped by Completed Date
+                                    {/if}
+                                </h2>
+
+                                <Plot
+                                    x={{ axis: "bottom", tickRotate: 90 }}
+                                    y={{ grid: true }}
+                                    color={{
+                                        legend: true,
+                                        domain: listsByUsage,
+                                        // The type error here is wrong
+                                        // @ts-ignore
+                                        scheme: colourScheme,
+                                    }}
+                                    margin={{ top: 25, bottom: 100 }}
+                                    height={525}
+                                >
+                                    <BarY
+                                        data={groupedTasks}
+                                        x="date"
+                                        y="n"
+                                        fill={selectedListName === "All Tasks"
+                                            ? "list"
+                                            : "#F6A3B8"}
+                                        fillOpacity={0.8}
+                                        onpointerenter={showGraphTooltip}
+                                        onpointermove={showGraphTooltip}
+                                        onpointerleave={hideGraphTooltip}
+                                        borderRadius={{
+                                            topLeft: 5,
+                                            topRight: 5,
+                                            bottomLeft: 5,
+                                            bottomRight: 5,
+                                        }}
+                                    />
+                                </Plot>
+
+                                {#if graphTooltip}
+                                    <div
+                                        class="graph-tooltip"
+                                        style="left: {graphTooltip.x}px; top: {graphTooltip.y}px;"
+                                    >
+                                        <strong
+                                            >{graphTooltip.point.list}</strong
+                                        >
+                                        <div>{graphTooltip.point.date}</div>
+                                        <div>
+                                            {graphTooltip.point.n} task{graphTooltip
+                                                .point.n === 1
+                                                ? ""
+                                                : "s"}
+                                        </div>
+                                    </div>
+                                {/if}
+                            </div>
+                        </div>
+                    {/if}
                 </div>
-            {/if}
+            </section>
         </div>
     </div>
-</main>
+</div>
 
 <style>
-    main {
-        display: grid;
-        grid-template-columns: 10rem 1fr;
-        gap: 4rem;
-        min-height: 150vh;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
     .content-grid {
         display: flex;
         flex-direction: column;
@@ -411,7 +416,12 @@
     .dropdowns-group {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 2rem;
+    }
+
+    .dropdown {
+        min-width: 12rem;
     }
 
     select {
@@ -475,5 +485,16 @@
     .graph-tooltip strong {
         display: block;
         margin-bottom: 0.15rem;
+    }
+
+    @media (max-width: 900px) {
+        .welcome-message {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .welcome-actions {
+            flex-wrap: wrap;
+        }
     }
 </style>

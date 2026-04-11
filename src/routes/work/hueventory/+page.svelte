@@ -46,59 +46,45 @@
         });
     });
 
-    let showStats = $state(false);
+    function sectionId(label: string) {
+        return label
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/^-|-$/g, "");
+    }
 </script>
 
-<main>
-    <aside>
-        <ul>
-            <li>
-                <a class="back-button" href="/">← Back</a>
-            </li>
-            {#each categories as category}
-                <li>
-                    <a href={"#" + category}>
-                        {category}
-                    </a>
-                </li>
-            {/each}
-        </ul>
-    </aside>
-
+<div class="project-page">
     <div class="layout">
-        <div class="cover">
-            <img alt="" id="top" src="src/lib/img.png" />
-        </div>
+        <header id="overview" class="project-header">
+            <p class="project-type">Colour Swatch Tracker</p>
+            <h1 class="project-title">Hueventory</h1>
+            <p class="project-description">
+                A personal tracker for my little sister's colour swatch
+                collection, designed to make progress visible at a glance.
+            </p>
+        </header>
 
-        <div class="content">
-            <div class="overview">
-                <h1 class="title">Hueventory</h1>
-                <p class="section-title">Overview</p>
-                <p class="desc">
-                    A project built to help my little sister track her collected
-                    colour swatches. &lt;3
-                </p>
-            </div>
+        <div class="project-sections">
+            {#each categoryStats as stat}
+                <section
+                    class="project-section colour-category"
+                    id={sectionId(stat.category)}
+                >
+                    <div class="section-header">
+                        <h2 class="section-heading">{stat.category}</h2>
+                    </div>
 
-            <div class="sections">
-                {#each categoryStats as stat}
-                    <section class="colour-category">
-                        <div class="category-header">
-                            <p id={stat.category} class="section-title">
-                                {stat.category}
-                            </p>
-                            <p class="stat-text">
-                                {stat.owned}/{stat.total} ({stat.percent.toFixed(
-                                    0,
-                                )}%)
-                            </p>
-                        </div>
+                    <div class="section-body">
+                        <p class="stat-text">
+                            {stat.owned}/{stat.total} owned
+                        </p>
 
                         <div class="progress-bar">
                             <div
                                 class="progress-fill"
                                 style={`width: ${stat.percent}%`}
-                            />
+                            ></div>
                         </div>
 
                         <div class="swatch-group">
@@ -109,43 +95,33 @@
                                 />
                             {/each}
                         </div>
-                    </section>
-                {/each}
-            </div>
+                    </div>
+                </section>
+            {/each}
         </div>
     </div>
-</main>
+
+    <nav class="page-contents" aria-label="Contents">
+        <div class="page-contents-tab">Contents</div>
+        <ul>
+            <li>
+                <a href="#overview">Overview</a>
+            </li>
+            {#each categories as category}
+                <li>
+                    <a href={"#" + sectionId(category)}>
+                        {category}
+                    </a>
+                </li>
+            {/each}
+        </ul>
+    </nav>
+</div>
 
 <style>
-    main {
-        display: grid;
-        grid-template-columns: 10rem 1fr;
-        gap: 4rem;
-        min-height: 170vh;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .sections {
-        display: flex;
-        flex-direction: column;
-        gap: 4rem;
-    }
-
     .colour-category {
-        padding-bottom: 2rem;
-        border-bottom: 1px solid #e8e8e8;
-    }
-
-    .category-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        margin-bottom: 0.75rem;
+        padding-top: 0;
+        border-top: 0;
     }
 
     .progress-bar {
@@ -160,6 +136,12 @@
         height: 100%;
         background: #111;
         transition: width 0.4s ease;
+    }
+
+    .stat-text {
+        margin: 0;
+        font-family: var(--font-mono);
+        font-size: var(--text-xs);
     }
 
     .swatch-group {

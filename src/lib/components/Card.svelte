@@ -8,13 +8,21 @@
 <div class="card">
     {#if reload}
         <a data-sveltekit-reload {href}>
-            <img alt="" src={img} />
+            {#if img}
+                <img alt="" src={img} />
+            {:else}
+                <div class="image-placeholder" aria-hidden="true"></div>
+            {/if}
             <p class="category">{category}</p>
             <h2 class="card-title">{title}</h2>
         </a>
     {:else}
         <a {href}>
-            <img alt="" src={img} />
+            {#if img}
+                <img alt="" src={img} />
+            {:else}
+                <div class="image-placeholder" aria-hidden="true"></div>
+            {/if}
             <p class="category">{category}</p>
             <h2 class="card-title">{title}</h2>
         </a>
@@ -28,17 +36,22 @@
         flex-flow: column;
     }
 
-    img:hover {
-        transform: scale(0.98);
+    img {
+        aspect-ratio: 3 / 2;
+        max-width: 100%;
+        border-radius: 0.2rem;
+        border: 1px solid rgba(26, 26, 26, 0.12);
+        outline: 1px solid rgba(26, 26, 26, 0.35);
+        outline-offset: 0;
+        opacity: 0.9;
     }
 
-    img {
-        aspect-ratio: 16 / 10;
-        max-width: 100%;
-        border-radius: 0.5rem;
-        border-color: var(--color-bg-1);
-        opacity: 0.9;
-        transition: transform 0.3s ease-out;
-        background-color: pink;
+    .image-placeholder {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        border-radius: 0.2rem;
+        border: 1px solid rgba(26, 26, 26, 0.12);
+        outline: 1px solid rgba(26, 26, 26, 0.35);
+        background: rgba(232, 229, 229, 0.55);
     }
 </style>

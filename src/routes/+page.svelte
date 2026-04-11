@@ -6,26 +6,26 @@
             href: "/work/hueventory",
             category: "Colour Swatch Tracker",
             title: "Hueventory",
-            img: "-",
+            img: "",
         },
         {
             href: "/work/flower-garden",
             category: "Flower Planting Sim",
             title: "Flower Garden",
-            img: "-",
+            img: "",
         },
         {
             href: "/work/todo-analytics",
             category: "Analytics Dashboard",
             title: "Todo Analytics",
-            img: "-",
+            img: "",
             reload: true,
         },
         {
             href: "/work/whale-phone-holder",
             category: "First-Year Design",
             title: "Whale Phone Holder",
-            img: "-",
+            img: "",
         },
     ];
 </script>

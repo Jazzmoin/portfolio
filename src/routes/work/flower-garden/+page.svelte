@@ -27,49 +27,38 @@
     });
 </script>
 
-<main>
-    <aside>
-        <ul>
-            <li>
-                <a class="back-button" href="/">← Back</a>
-            </li>
-            <li>
-                <a href="#overview">Overview</a>
-            </li>
-        </ul>
-    </aside>
-
+<div class="project-page">
     <div class="layout">
-        <div class="cover">
-            <img alt="" src="src/lib/img.png" id="#top" />
-        </div>
+        <header id="overview" class="project-header">
+            <p class="project-type">Flower Planting Playground</p>
+            <h1 class="project-title">Flower Garden</h1>
+            <p class="project-description">
+                A Project created to learn Rust and Nannou.
+            </p>
+        </header>
 
-        <div class="content">
-            <div class="overview">
-                <h1>Flower Garden</h1>
-                <p id="overview" class="section-title">Overview</p>
-                <p>desc.</p>
-            </div>
+        <div class="project-sections">
+            <section id="simulation" class="project-section">
+                <div class="section-header">
+                    <p class="section-type">[simulation]</p>
+                    <h2 class="section-heading">Grow the scene in real time</h2>
+                </div>
 
-            <span bind:this={container} style="display:none;"></span>
+                <p class="section-description">
+                    The live canvas handles the interactive planting experience
+                    and turns the page into a small procedural garden
+                    playground.
+                </p>
+
+                <div class="section-body">
+                    <span bind:this={container} style="display:none;"></span>
+                </div>
+            </section>
         </div>
     </div>
-</main>
+</div>
 
 <style>
-    main {
-        display: grid;
-        grid-template-columns: 150px 1fr;
-        gap: 4rem;
-        min-height: 170vh;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
     :global(canvas) {
         display: block;
         margin: auto;
