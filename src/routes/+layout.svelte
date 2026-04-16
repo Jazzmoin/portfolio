@@ -16,44 +16,55 @@
 
 <div class="app">
     <header>
-        <a href="/">Jazzmine Pasnin</a>
+        <div class="header-inner">
+            <a href="/">Jazzmine Pasnin</a>
 
-        <nav>
-            <p class="nav-links">
-                {#each pages as elem}
-                    <a class="nav-link" href={elem.path}> {elem.name}</a>
-                {/each}
-            </p>
-        </nav>
+            <nav>
+                <p class="nav-links">
+                    {#each pages as elem}
+                        <a class="nav-link" href={elem.path}> {elem.name}</a>
+                    {/each}
+                </p>
+            </nav>
+        </div>
     </header>
 
     <main>{@render children()}</main>
 
     <footer class="footer">
-        <p class="footer-message">&lt;3</p>
+        <div class="footer-inner">
+            <p class="footer-message">&lt;3</p>
 
-        <div class="footer-links" aria-label="Contact links">
-            <a href={socialLinks[0].href}>{socialLinks[0].label}</a>
-            <span aria-hidden="true">/</span>
-            <a href={socialLinks[1].href}>{socialLinks[1].label}</a>
+            <div class="footer-links" aria-label="Contact links">
+                <a href={socialLinks[0].href}>{socialLinks[0].label}</a>
+                <span aria-hidden="true">/</span>
+                <a href={socialLinks[1].href}>{socialLinks[1].label}</a>
+            </div>
         </div>
     </footer>
 </div>
 
 <style>
     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         font-family: var(--font-mono);
         border-bottom: 1px solid var(--color-line);
         background-color: rgba(247, 237, 226, 0.88);
         backdrop-filter: blur(10px);
-        padding: 1rem var(--page-padding-inline);
         position: sticky;
         top: 0;
         z-index: 4;
         height: var(--header-height);
+    }
+
+    .header-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: min(100%, 60rem);
+        margin-inline: auto;
+        padding-block: 1rem;
+        box-sizing: border-box;
+        height: 100%;
     }
 
     .nav-links {
@@ -80,13 +91,19 @@
     }
 
     .footer {
+        font-family: var(--font-mono);
+        background-color: rgba(247, 237, 226, 0.88);
+        border-top: 1px solid var(--color-line);
+    }
+
+    .footer-inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-family: var(--font-mono);
-        padding: 1rem var(--page-padding-inline);
-        background-color: rgba(247, 237, 226, 0.88);
-        border-top: 1px solid var(--color-line);
+        width: min(100%, 58rem);
+        margin-inline: auto;
+        padding-block: 1rem;
+        box-sizing: border-box;
     }
 
     .footer-message {
@@ -100,8 +117,9 @@
     }
 
     @media (max-width: 800px) {
-        .footer {
-            padding-inline: 0.5rem;
+        .header-inner,
+        .footer-inner {
+            padding-inline: 0.75rem;
         }
     }
 </style>

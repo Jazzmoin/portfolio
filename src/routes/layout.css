@@ -17,7 +17,6 @@
     --color-text-1: rgba(65, 64, 63, 0.78);
     --color-line: rgba(66, 51, 45, 0.14);
     --header-height: 3.5rem;
-    --page-padding-inline: 30rem;
     --section-gap: clamp(2rem, 4vw, 3.5rem);
     --text-xs: 14px;
     --text-base: 16px;
@@ -84,7 +83,8 @@ li {
 }
 
 main {
-    padding: 0 var(--page-padding-inline);
+    width: min(100%, 60rem);
+    margin-inline: auto;
 }
 
 .layout {
@@ -155,7 +155,6 @@ main {
 
 .section-description {
     margin: 0;
-    max-width: 42rem;
 }
 
 .section-body {

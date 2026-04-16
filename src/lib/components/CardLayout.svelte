@@ -15,6 +15,8 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+        width: min(100%, 60rem);
+        margin-inline: auto;
     }
 
     @media (max-width: 800px) {

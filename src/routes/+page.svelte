@@ -63,7 +63,8 @@
         position: relative;
         overflow: hidden;
         padding: 3rem 2rem 5rem;
-        margin-inline: calc(var(--page-padding-inline) * -1);
+        width: 100vw;
+        margin-inline: calc(50% - 50vw);
         background-color: var(--color-bg-1);
         background-image: radial-gradient(
             circle,
@@ -136,8 +137,9 @@
 
     .work-section {
         scroll-margin-top: calc(var(--header-height) + 1rem);
-        margin-inline: calc(var(--page-padding-inline) * -1);
-        padding: 2rem var(--page-padding-inline) 5rem;
+        width: 100vw;
+        margin-inline: calc(50% - 50vw);
+        padding: 2rem 2rem 5rem;
         background: var(--color-bg-1);
         position: relative;
     }
