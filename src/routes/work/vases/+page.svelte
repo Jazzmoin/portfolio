@@ -3,6 +3,8 @@
     import vase3dModels from "$lib/images/vases/vase-3D-models.webp";
     import vaseSketches from "$lib/images/vases/vase-sketches.webp";
     import vaseCover from "$lib/images/covers/vase-cover.webp";
+    import vaseDraft from "$lib/images/vases/vase-drafting.webp";
+    import vasePaint from "$lib/images/vases/vase-painting.webp";
 </script>
 
 <div class="project-page">
@@ -10,50 +12,27 @@
         <header id="overview" class="project-header">
             <h1 class="project-title">Vases</h1>
             <p class="project-description">
-                A wall-mounted vase project designed to turn unused wall space
-                into a more intentional display for my flowers.
+                This was a personal project where I set out to design a set of
+                vases that could solve a storage issue in my own space. I wanted
+                to create something that was both functional and visually
+                appealing, allowing me to better display my lego flowers!
             </p>
         </header>
 
         <div class="project-sections">
-            <section class="project-section">
-                <div class="section-header">
-                    <p class="section-type">OVERVIEW</p>
-                    <h2 class="section-heading">
-                        Designed from a real storage need
-                    </h2>
-                </div>
-
-                <div class="section-content">
-                    <div class="section-body">
-                        <p class="section-description">
-                            This was a personal project where I set out to
-                            design a set of vases that could solve a storage
-                            issue in my own space. I wanted to create something
-                            that was both functional and visually appealing,
-                            allowing me to better display things precious to me.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="problem" class="project-section section-with-image">
-                <p class="section-type section-label">PROBLEM</p>
-
+            <section class="project-section section-with-image">
                 <div class="section-copy">
-                    <h2 class="section-heading">
-                        The flowers needed a better place
-                    </h2>
+                    <h2 class="section-heading">The Problem</h2>
 
                     <div class="section-body">
                         <p class="section-description">
-                            I had a collection of LEGO flowers gifted to me by
-                            various people, but I struggled to find a place
-                            where they could be properly seen and appreciated.
-                            My desk needed to remain clear for drawing, and my
-                            existing shelving was too high and enclosed, which
-                            led me to realise that my unused wall space could be
-                            a better opportunity.
+                            I have a collection of LEGO flowers gifted to me by
+                            my loved ones, but I struggled to find a place where
+                            they could be properly seen and appreciated. My desk
+                            needed to remain clear for my projects, and my
+                            existing shelving was too high and enclosed. I then
+                            thought: what if I mounted them to a wall like a
+                            frame?
                         </p>
                     </div>
                 </div>
@@ -66,46 +45,66 @@
                 </div>
             </section>
 
-            <section id="process" class="project-section section-with-image">
-                <p class="section-type section-label">PROCESS</p>
-
+            <section class="project-section section-with-image">
                 <div class="section-copy">
-                    <h2 class="section-heading">
-                        Sketching and refining through 3D modelling
-                    </h2>
+                    <h2 class="section-heading">Sketching and Modelling</h2>
 
                     <div class="section-body">
                         <p class="section-description">
-                            My process involved iterating through multiple
-                            sketches and experimenting with different vase forms
-                            through 3D modelling. By exploring a range of shapes
-                            and mounting ideas, I was able to gradually refine
-                            both the function and aesthetic of the design.
+                            My process began by browsing Pinterest and the many
+                            model libraries that exist. The purpose of this
+                            project was to create something useful, but I felt
+                            that I could make it into a bit of art piece along
+                            the way. From what I gathered in my research and
+                            sketching phases, I wanted something that was
+                            colourful and fun to brighten up my space, From
+                            there, I went into Fusion360 and modelled some
+                            potetial vase designs before settling on a bulb
+                            shaped.
                         </p>
                     </div>
                 </div>
 
                 <div class="section-image section-image-stack">
-                    <img src={vaseSketches} alt="Early vase sketches" />
+                    <img src={vaseSketches} alt="Vase drafting in pencil" />
                     <img src={vase3dModels} alt="Vase 3D models" />
                 </div>
             </section>
 
-            <section id="solution" class="project-section section-with-image">
-                <p class="section-type section-label">SOLUTION</p>
-
+            <section class="project-section section-with-image">
                 <div class="section-copy">
-                    <h2 class="section-heading">
-                        A wall-mounted half vase for display
-                    </h2>
+                    <h2 class="section-heading">Personalising</h2>
 
                     <div class="section-body">
                         <p class="section-description">
-                            I designed a wall-mounted, bulb-like half vase that
-                            could securely hold the flowers while freeing up
-                            desk and shelf space. The mounting system allows the
-                            vase to be fixed directly to the wall, turning the
-                            flowers into a more intentional and visible display.
+                            Once my vases has finished printing, I gave them a
+                            good sand and prime. I didn't have any white spray
+                            paint so I took advantage of some left over wall
+                            paint. I then grabbed a yellow coloured pencil to
+                            draft my design before going in with some acrylic
+                            paint markers. I sealed them with some gloss spray and it
+                            was ready to go!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section-image section-image-stack">
+                    <img src={vaseDraft} alt="Early vase sketches" />
+                    <img src={vasePaint} alt="Painting design" />
+                </div>
+            </section>
+
+            <section class="project-section section-with-image">
+                <div class="section-copy">
+                    <h2 class="section-heading">Final Design</h2>
+
+                    <div class="section-body">
+                        <p class="section-description">
+                            The final design is wall-mounted and could securely
+                            hold the flowers while freeing up desk and shelf
+                            space. The mounting system allows the vase to be
+                            fixed directly to the wall, turning the flowers into
+                            a more intentional and visible display.
                         </p>
 
                         <div class="section-notes">
@@ -138,23 +137,11 @@
 </div>
 
 <style>
-    .section-content {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 2rem;
-        align-items: start;
-    }
-
     .section-with-image {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 2rem;
         align-items: start;
-    }
-
-    .section-label {
-        grid-column: 1 / -1;
-        margin-bottom: -0.5rem;
     }
 
     .section-copy {
@@ -227,8 +214,7 @@
     }
 
     @media (max-width: 900px) {
-        .section-with-image,
-        .section-content {
+        .section-with-image {
             grid-template-columns: 1fr;
         }
     }
