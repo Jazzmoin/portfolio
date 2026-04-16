@@ -62,6 +62,7 @@
         justify-content: center;
         position: relative;
         overflow: hidden;
+        box-sizing: border-box;
         padding: 3rem 2rem 5rem;
         width: 100vw;
         margin-inline: calc(50% - 50vw);
@@ -137,6 +138,7 @@
 
     .work-section {
         scroll-margin-top: calc(var(--header-height) + 1rem);
+        box-sizing: border-box;
         width: 100vw;
         margin-inline: calc(50% - 50vw);
         padding: 2rem 2rem 5rem;
