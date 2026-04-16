@@ -13,8 +13,8 @@
             {:else}
                 <div class="image-placeholder" aria-hidden="true"></div>
             {/if}
-            <p class="category">{category}</p>
             <h2 class="card-title">{title}</h2>
+            <p class="category">{category}</p>
         </a>
     {:else}
         <a {href}>
@@ -23,8 +23,8 @@
             {:else}
                 <div class="image-placeholder" aria-hidden="true"></div>
             {/if}
-            <p class="category">{category}</p>
             <h2 class="card-title">{title}</h2>
+            <p class="category">{category}</p>
         </a>
     {/if}
 </div>

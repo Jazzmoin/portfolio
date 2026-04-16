@@ -27,12 +27,13 @@
                     <div class="section-body">
                         <p class="section-description">
                             I have a collection of LEGO flowers gifted to me by
-                            my loved ones, but I struggled to find a place where
-                            they could be properly seen and appreciated. My desk
-                            needed to remain clear for my projects, and my
-                            existing shelving was too high and enclosed. I then
-                            thought: what if I mounted them to a wall like a
-                            frame?
+                            my loved ones that used to sit tucked away on my
+                            shelf. For a while, I struggled to find a place
+                            where they could be properly seen and appreciated.
+                            My desk needed to remain clear for my projects, and
+                            my existing shelving was too high and enclosed. I
+                            then thought: what if I mounted them to the wall
+                            like a frame?
                         </p>
                     </div>
                 </div>
@@ -52,15 +53,12 @@
                     <div class="section-body">
                         <p class="section-description">
                             My process began by browsing Pinterest and the many
-                            model libraries that exist. The purpose of this
-                            project was to create something useful, but I felt
-                            that I could make it into a bit of art piece along
-                            the way. From what I gathered in my research and
-                            sketching phases, I wanted something that was
-                            colourful and fun to brighten up my space, From
-                            there, I went into Fusion360 and modelled some
+                            model libraries that exist. From what I gathered in
+                            my research and sketching phases, I wanted something
+                            that was colourful and fun to brighten up my space.
+                            From there, I went into Fusion360 and modelled some
                             potetial vase designs before settling on a bulb
-                            shaped.
+                            shape.
                         </p>
                     </div>
                 </div>
@@ -73,16 +71,16 @@
 
             <section class="project-section section-with-image">
                 <div class="section-copy">
-                    <h2 class="section-heading">Personalising</h2>
+                    <h2 class="section-heading">Adding some colour</h2>
 
                     <div class="section-body">
                         <p class="section-description">
-                            Once my vases has finished printing, I gave them a
+                            Once my vases had finished printing, I gave them a
                             good sand and prime. I didn't have any white spray
                             paint so I took advantage of some left over wall
-                            paint. I then grabbed a yellow coloured pencil to
-                            draft my design before going in with some acrylic
-                            paint markers. I sealed them with some gloss spray and it
+                            paint. Then with a yellow coloured pencil, I drafted
+                            my design before going in with some acrylic paint
+                            markers. I sealed them with some gloss spray and it
                             was ready to go!
                         </p>
                     </div>
@@ -96,35 +94,25 @@
 
             <section class="project-section section-with-image">
                 <div class="section-copy">
-                    <h2 class="section-heading">Final Design</h2>
+                    <h2 class="section-heading">The Final Design</h2>
 
                     <div class="section-body">
                         <p class="section-description">
-                            The final design is wall-mounted and could securely
-                            hold the flowers while freeing up desk and shelf
+                            The final design is easy to mount to a wall and securely
+                            holds the flowers while freeing up desk and shelf
                             space. The mounting system allows the vase to be
-                            fixed directly to the wall, turning the flowers into
+                            fixed freely to an open wall, turning the flowers into
                             a more intentional and visible display.
                         </p>
 
-                        <div class="section-notes">
-                            <h3 class="section-subheading">Design Decisions</h3>
-
-                            <ul class="decision-list">
-                                <li>
-                                    I chose to use a mounting method inspired by
-                                    power tool battery chargers, as it provided
-                                    a simple and reliable way to attach and
-                                    remove the vase.
-                                </li>
-                                <li>
-                                    The rounded, bulb-like form was influenced
-                                    by the flowers themselves, helping the
-                                    object feel playful and connected to what it
-                                    holds.
-                                </li>
-                            </ul>
-                        </div>
+                        <p>
+                            I chose to use a mounting method inspired by power
+                            tool battery chargers, as it provided a simple and
+                            reliable way to attach and remove the vase. The
+                            rounded, bulb-like form was influenced by the
+                            flowers themselves, making the object feel playful
+                            and connected to what it holds.
+                        </p>
                     </div>
                 </div>
 
@@ -137,13 +125,6 @@
 </div>
 
 <style>
-    .section-with-image {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 2rem;
-        align-items: start;
-    }
-
     .section-copy {
         display: grid;
         gap: 1rem;
@@ -152,11 +133,9 @@
 
     .section-image {
         display: grid;
-        place-items: center;
-        aspect-ratio: 7 / 5;
         width: 100%;
         border: 1px solid var(--color-line);
-        border-radius: 0.65rem;
+        border-radius: 0.2rem;
         background:
             linear-gradient(
                 135deg,
@@ -183,39 +162,5 @@
         background: transparent;
         border: 0;
         padding: 0;
-    }
-
-    .section-image-stack img {
-        aspect-ratio: 7 / 5;
-        border: 1px solid var(--color-line);
-        border-radius: 0.65rem;
-        background: rgba(255, 248, 242, 0.86);
-    }
-
-    .section-notes {
-        display: grid;
-        gap: 1rem;
-    }
-
-    .section-subheading {
-        margin: 0;
-    }
-
-    .decision-list {
-        display: grid;
-        gap: 1rem;
-        max-width: 42rem;
-        margin: 0;
-        padding-left: 1.25rem;
-    }
-
-    .decision-list li {
-        text-transform: none;
-    }
-
-    @media (max-width: 900px) {
-        .section-with-image {
-            grid-template-columns: 1fr;
-        }
     }
 </style>
