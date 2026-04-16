@@ -217,7 +217,9 @@
             <h1 class="project-title">Microsoft To Do Analytics</h1>
             <p class="project-description">
                 A personal dashboard for exploring task completion patterns
-                across Microsoft To Do lists, time ranges, and status filters.
+                across Microsoft To Do lists.
+                <br> 
+                Sign in to view yours!
             </p>
         </header>
 

@@ -4,12 +4,10 @@
     let { cards }: { cards: CardType[] } = $props();
 </script>
 
-<div class="content-grid">
-    <div class="card-grid">
-        {#each cards as card}
-            <Card {card} />
-        {/each}
-    </div>
+<div class="card-grid">
+    {#each cards as card}
+        <Card {card} />
+    {/each}
 </div>
 
 <style>

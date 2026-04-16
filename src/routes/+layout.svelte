@@ -28,7 +28,7 @@
     </header>
 
     <main>{@render children()}</main>
-    
+
     <footer class="footer">
         <p class="footer-message">&lt;3</p>
 
@@ -49,7 +49,7 @@
         border-bottom: 1px solid var(--color-line);
         background-color: rgba(247, 237, 226, 0.88);
         backdrop-filter: blur(10px);
-        padding: var(--dot-spacing) calc(var(--dot-spacing) * 4);
+        padding: 1rem var(--page-padding-inline);
         position: sticky;
         top: 0;
         z-index: 4;
@@ -58,7 +58,7 @@
 
     .nav-links {
         display: flex;
-        gap: var(--dot-spacing);
+        gap: 1rem;
     }
 
     .nav-link {
@@ -77,7 +77,6 @@
 
     a {
         font-size: var(--text-xs);
-        /* text-transform: uppercase; */
     }
 
     .footer {
