@@ -93,10 +93,5 @@
             gap: 0.75rem;
             padding-top: 0.75rem;
         }
-
-        .gallery-card:nth-child(odd),
-        .gallery-card:nth-child(even) {
-            transform: none;
-        }
     }
 </style>

@@ -35,7 +35,7 @@
 </script>
 
 <svelte:head>
-    <title>Portfolio</title>
+    <title>Jazzmine Pasnin</title>
     <meta name="description" />
 </svelte:head>
 
