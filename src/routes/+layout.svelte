@@ -2,12 +2,13 @@
     import "./layout.css";
 
     const pages = [
-        { path: "/#work", name: "Work" },
+        { path: "/recipes", name: "Recipes" },
+        { path: "/work", name: "Work" },
         { path: "/about", name: "About" },
     ];
 
     const socialLinks = [
-        { href: "japasnin@gmail.com", label: "Email" },
+        { href: "mailto:japasnin@gmail.com", label: "Email" },
         { href: "https://www.instagram.com/simplyjazzyp/", label: "Instagram" },
     ];
 
@@ -54,6 +55,16 @@
         top: 0;
         z-index: 4;
         height: var(--header-height);
+    }
+
+    .app {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main {
+        flex: 1;
     }
 
     .header-inner {
