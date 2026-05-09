@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { page } from "$app/state";
     import "./layout.css";
 
     const pages = [
@@ -14,12 +15,13 @@
     ];
 
     let { children } = $props();
+    let showFooter = $derived(page.url.pathname !== "/work/flower-garden");
 </script>
 
 <div class="app">
     <header>
         <div class="header-inner">
-            <a href="/">Jazzmine Pasnin</a>
+            <a class="brand-link" href="/">Jazzmine Pasnin</a>
 
             <nav>
                 <p class="nav-links">
@@ -33,29 +35,30 @@
 
     <main>{@render children()}</main>
 
-    <footer class="footer">
-        <div class="footer-inner">
-            <p class="footer-message">&lt;3</p>
+    {#if showFooter}
+        <footer class="footer">
+            <div class="footer-inner">
+                <p class="footer-message">&lt;3</p>
 
-            <div class="footer-links" aria-label="Contact links">
-                <a href={socialLinks[0].href}>{socialLinks[0].label}</a>
-                <span aria-hidden="true">/</span>
-                <a href={socialLinks[1].href}>{socialLinks[1].label}</a>
+                <div class="footer-links" aria-label="Contact links">
+                    <a href={socialLinks[0].href}>{socialLinks[0].label}</a>
+                    <span aria-hidden="true">/</span>
+                    <a href={socialLinks[1].href}>{socialLinks[1].label}</a>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    {/if}
 </div>
 
 <style>
     header {
         font-family: var(--font-mono);
-        position: fixed;
+        position: sticky;
         top: 1rem;
-        left: 50%;
         z-index: 4;
         width: min(calc(100% - 1.5rem), 35rem);
         height: var(--header-height);
-        transform: translateX(-50%);
+        margin: 1rem auto 0;
     }
 
     .app {
@@ -74,14 +77,25 @@
         align-items: center;
         width: 100%;
         margin-inline: auto;
-        padding: 0.55rem 0.75rem;
+        padding: 0.5rem 1.5rem;
         box-sizing: border-box;
         height: 100%;
-        border: 1px solid var(--color-line);
+        border: 1px solid color-mix(in srgb, var(--color-text) 16%, transparent);
         border-radius: 999px;
-        background-color: rgba(255, 250, 245, 0.82);
-        box-shadow: 0 0.85rem 2rem rgba(66, 51, 45, 0.12);
+        background-color: color-mix(
+            in srgb,
+            var(--color-background) 82%,
+            transparent
+        );
+        box-shadow: 0 0.85rem 2rem
+            color-mix(in srgb, var(--color-text) 10%, transparent);
         backdrop-filter: blur(14px);
+    }
+
+    .brand-link {
+        font-family: var(--font-serif);
+        font-size: 0.95rem;
+        line-height: 1;
     }
 
     .nav-links {
@@ -100,7 +114,8 @@
     }
 
     .nav-link:hover {
-        background: rgba(245, 202, 195, 0.55);
+        background: color-mix(in srgb, var(--color-accent-1) 15%, transparent);
+        color: var(--color-accent-1);
         transform: translateY(-1px);
     }
 
@@ -110,7 +125,7 @@
 
     .footer {
         font-family: var(--font-mono);
-        background: var(--color-bg-1);
+        background: var(--color-background);
     }
 
     .footer-inner {
@@ -121,7 +136,8 @@
         margin-inline: auto;
         padding-block: 1rem;
         box-sizing: border-box;
-        border-top: 2px solid var(--color-line);
+        border-top: 2px solid
+            color-mix(in srgb, var(--color-text) 16%, transparent);
     }
 
     .footer-message {
