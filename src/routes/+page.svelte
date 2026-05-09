@@ -46,9 +46,17 @@
     </div>
 </section>
 
-<section id="work" class="work-section">
+<section class="card-section">
+    <h2>Work</h2>
     <CardLayout {cards} />
+     <a class="see-more-link" href="/work">See more</a>
 </section>
+
+<!-- 
+<section class="card-section">
+    <h2>Recipes</h2>
+    <CardLayout {cards} />
+</section> -->
 
 <style>
     :global(html) {
@@ -56,10 +64,12 @@
     }
 
     .hero-section {
-        min-height: calc(100vh - var(--header-height));
+        min-height: calc(100svh - var(--header-height) - 3rem);
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        gap: 1.25rem;
         position: relative;
         overflow: hidden;
         box-sizing: border-box;
@@ -93,6 +103,30 @@
         width: min(100%, 46rem);
         min-height: 31rem;
         z-index: 1;
+    }
+
+    .see-more-link {
+        position: relative;
+        z-index: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.55rem 1rem;
+        border: 1px solid var(--color-line);
+        border-radius: 999px;
+        background: rgba(255, 250, 245, 0.86);
+        box-shadow: 0.35rem 0.35rem 0 rgba(66, 51, 45, 0.1);
+        text-transform: uppercase;
+        transition:
+            transform 180ms ease,
+            box-shadow 180ms ease,
+            background-color 180ms ease;
+    }
+
+    .see-more-link:hover {
+        background: var(--color-theme-1);
+        transform: translateY(-0.2rem);
+        box-shadow: 0.5rem 0.5rem 0 rgba(66, 51, 45, 0.14);
     }
 
     .sticky-note {
@@ -136,19 +170,33 @@
         z-index: 2;
     }
 
-    .work-section {
+    .card-section {
         scroll-margin-top: calc(var(--header-height) + 1rem);
         box-sizing: border-box;
         width: 100vw;
         margin-inline: calc(50% - 50vw);
-        padding: 2rem 2rem 5rem;
+        padding: 0 2rem 5rem;
         background: var(--color-bg-1);
-        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .card-section h2 {
+        margin: 0;
     }
 
     @media (max-width: 800px) {
         .hero-section {
+            min-height: calc(100svh - var(--header-height) - 2.5rem);
             padding: 2rem 0.75rem 4rem;
+        }
+
+        .card-section {
+            padding-inline: 0.75rem;
+            gap: 1.25rem;
         }
 
         .sticky-stack {

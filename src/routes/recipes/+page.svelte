@@ -8,27 +8,33 @@
             title: "Fried Rice",
             img: "-",
         },
-        {
-            href: "/work/flower-garden",
-            category: "Flower Planting Playground",
-            title: "Flower Garden",
-            img: "-",
-        },
     ];
 </script>
 
-<section id="work" class="work-section">
+<section class="card-section">
+    <h2>Recipes</h2>
+    <p>-</p>
     <CardLayout {cards} />
 </section>
 
 <style>
-    .work-section {
+    .card-section {
         scroll-margin-top: calc(var(--header-height) + 1rem);
         box-sizing: border-box;
         width: 100vw;
+        min-height: calc(100vh - var(--header-height));
         margin-inline: calc(50% - 50vw);
-        padding: 2rem 2rem 5rem;
+        padding: calc(var(--header-height) + 3rem) 2rem 5rem;
         background: var(--color-bg-1);
-        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .card-section h2,
+    .card-section p {
+        margin: 0;
     }
 </style>

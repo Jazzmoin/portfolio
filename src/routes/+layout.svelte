@@ -2,9 +2,10 @@
     import "./layout.css";
 
     const pages = [
+        // { path: "/art", name: "Art" },
         { path: "/recipes", name: "Recipes" },
         { path: "/work", name: "Work" },
-        { path: "/about", name: "About" },
+        { path: "mailto:japasnin@gmail.com", name: "Contact" },
     ];
 
     const socialLinks = [
@@ -48,13 +49,13 @@
 <style>
     header {
         font-family: var(--font-mono);
-        border-bottom: 1px solid var(--color-line);
-        background-color: rgba(247, 237, 226, 0.88);
-        backdrop-filter: blur(10px);
-        position: sticky;
-        top: 0;
+        position: fixed;
+        top: 1rem;
+        left: 50%;
         z-index: 4;
+        width: min(calc(100% - 1.5rem), 35rem);
         height: var(--header-height);
+        transform: translateX(-50%);
     }
 
     .app {
@@ -71,16 +72,22 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: min(100%, 60rem);
+        width: 100%;
         margin-inline: auto;
-        padding-block: 1rem;
+        padding: 0.55rem 0.75rem;
         box-sizing: border-box;
         height: 100%;
+        border: 1px solid var(--color-line);
+        border-radius: 999px;
+        background-color: rgba(255, 250, 245, 0.82);
+        box-shadow: 0 0.85rem 2rem rgba(66, 51, 45, 0.12);
+        backdrop-filter: blur(14px);
     }
 
     .nav-links {
         display: flex;
-        gap: 1rem;
+        gap: 0.35rem;
+        margin: 0;
     }
 
     .nav-link {
@@ -103,18 +110,18 @@
 
     .footer {
         font-family: var(--font-mono);
-        background-color: rgba(247, 237, 226, 0.88);
-        border-top: 1px solid var(--color-line);
+        background: var(--color-bg-1);
     }
 
     .footer-inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: min(100%, 58rem);
+        width: min(100%, 60rem);
         margin-inline: auto;
         padding-block: 1rem;
         box-sizing: border-box;
+        border-top: 2px solid var(--color-line);
     }
 
     .footer-message {
@@ -128,9 +135,16 @@
     }
 
     @media (max-width: 800px) {
-        .header-inner,
-        .footer-inner {
+        header {
+            top: 0.75rem;
+        }
+
+        .header-inner {
             padding-inline: 0.75rem;
+        }
+
+        .footer-inner {
+            width: calc(100% - 1.5rem);
         }
     }
 </style>

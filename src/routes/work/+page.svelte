@@ -44,12 +44,15 @@
         scroll-margin-top: calc(var(--header-height) + 1rem);
         box-sizing: border-box;
         width: 100vw;
+        min-height: calc(100vh - var(--header-height));
         margin-inline: calc(50% - 50vw);
-        padding: 0 2rem 5rem;
+        padding: calc(var(--header-height) + 3rem) 2rem 5rem;
         background: var(--color-bg-1);
         display: flex;
+        align-items: center;
         flex-direction: column;
         gap: 1.5rem;
+        text-align: center;
     }
 
     .card-section h2 {
