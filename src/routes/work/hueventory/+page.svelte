@@ -57,7 +57,7 @@
 <div class="project-page">
     <div class="layout">
         <header id="overview" class="project-header">
-            <h1 class="project-title">Hueventory</h1>
+            <h2 class="project-title">Hueventory</h2>
             <p class="project-description">
                 A personal tracker for my little sister's colour swatch
                 collection, designed to make progress visible at a glance.
@@ -71,7 +71,7 @@
                     id={sectionId(stat.category)}
                 >
                     <div class="section-header">
-                        <h2 class="section-heading">{stat.category}</h2>
+                        <h3 class="section-heading">{stat.category}</h3>
                     </div>
 
                     <div class="section-body">

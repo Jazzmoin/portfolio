@@ -52,12 +52,6 @@
     <a class="see-more-link" href="/work">See more</a>
 </section>
 
-<!-- 
-<section class="card-section">
-    <h2>Recipes</h2>
-    <CardLayout {cards} />
-</section> -->
-
 <style>
     :global(html) {
         scroll-behavior: smooth;
@@ -76,10 +70,10 @@
         padding: 3rem 2rem 5rem;
         width: 100vw;
         margin-inline: calc(50% - 50vw);
-        background-color: var(--color-bg-1);
+        background-color: var(--color-background);
         background-image: radial-gradient(
             circle,
-            rgba(132, 165, 157, 0.2) 1.25px,
+            color-mix(in srgb, var(--color-accent-2) 18%, transparent) 1.25px,
             transparent 1.45px
         );
         background-size: 1.35rem 1.35rem;
@@ -92,8 +86,8 @@
         height: 8rem;
         background: linear-gradient(
             180deg,
-            rgba(255, 250, 245, 0),
-            var(--color-bg-1)
+            color-mix(in srgb, var(--color-background) 0%, transparent),
+            var(--color-background)
         );
         pointer-events: none;
     }
@@ -112,11 +106,8 @@
         align-items: center;
         justify-content: center;
         padding: 0.55rem 1rem;
-        border: 1px solid var(--color-line);
         border-radius: 999px;
-        background: rgba(255, 250, 245, 0.86);
-        box-shadow: 0.35rem 0.35rem 0 rgba(66, 51, 45, 0.1);
-        text-transform: uppercase;
+        background: color-mix(in srgb, var(--color-accent-1) 15%, transparent);
         transition:
             transform 180ms ease,
             box-shadow 180ms ease,
@@ -124,9 +115,8 @@
     }
 
     .see-more-link:hover {
-        background: var(--color-theme-1);
-        transform: translateY(-0.2rem);
-        box-shadow: 0.5rem 0.5rem 0 rgba(66, 51, 45, 0.14);
+        background: var(--color-accent-1);
+        color: var(--color-background);
     }
 
     .sticky-note {
@@ -138,10 +128,11 @@
         display: flex;
         align-items: flex-end;
         justify-content: flex-start;
+        font-family: var(--font-serif);
         font-size: clamp(1.3rem, 2vw, 1.8rem);
-        text-transform: uppercase;
-        box-shadow: 0.8rem 0.8rem 0 rgba(66, 51, 45, 0.12);
-        border: 1px solid rgba(66, 51, 45, 0.12);
+        box-shadow: 0.8rem 0.8rem 0
+            color-mix(in srgb, var(--color-text) 12%, transparent);
+        border: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
         transform: rotate(var(--note-rotate));
         transition:
             transform 180ms ease,
@@ -151,12 +142,13 @@
 
     .sticky-note:hover {
         transform: translateY(-0.55rem) rotate(var(--note-rotate)) scale(1.03);
-        box-shadow: 1.1rem 1.1rem 0 rgba(66, 51, 45, 0.16);
+        box-shadow: 1.1rem 1.1rem 0
+            color-mix(in srgb, var(--color-text) 16%, transparent);
     }
 
     .sticky-note-name {
         --note-rotate: -9deg;
-        background: var(--color-theme-1);
+        background: var(--color-accent-1);
         top: 1.5rem;
         left: 3.5rem;
         z-index: 3;
@@ -164,7 +156,7 @@
 
     .sticky-note-study {
         --note-rotate: 8deg;
-        background: var(--color-bg-2);
+        background: var(--color-accent-2);
         top: 9rem;
         right: 4.5rem;
         z-index: 2;
@@ -175,8 +167,7 @@
         box-sizing: border-box;
         width: 100vw;
         margin-inline: calc(50% - 50vw);
-        padding: 0 2rem 5rem;
-        background: var(--color-bg-1);
+        padding: 0 2rem 3rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -186,6 +177,7 @@
 
     .card-section h2 {
         margin: 0;
+        color: var(--color-accent-1);
     }
 
     @media (max-width: 800px) {

@@ -10,7 +10,7 @@
 <div class="project-page">
     <div class="layout">
         <header id="overview" class="project-header">
-            <h1 class="project-title">Vases</h1>
+            <h2 class="project-title">Vases</h2>
             <p class="project-description">
                 This was a personal project where I set out to design a set of
                 vases that could solve a storage issue in my own space. I wanted
@@ -22,7 +22,7 @@
         <div class="project-sections">
             <section class="project-section section-with-image">
                 <div class="section-copy">
-                    <h2 class="section-heading">The Problem</h2>
+                    <h3 class="section-heading">The Problem</h3>
 
                     <div class="section-body">
                         <p class="section-description">
@@ -48,7 +48,7 @@
 
             <section class="project-section section-with-image">
                 <div class="section-copy">
-                    <h2 class="section-heading">Sketching and Modelling</h2>
+                    <h3 class="section-heading">Sketching and Modelling</h3>
 
                     <div class="section-body">
                         <p class="section-description">
@@ -71,7 +71,7 @@
 
             <section class="project-section section-with-image">
                 <div class="section-copy">
-                    <h2 class="section-heading">Adding some colour</h2>
+                    <h3 class="section-heading">Adding some colour</h3>
 
                     <div class="section-body">
                         <p class="section-description">
@@ -94,7 +94,7 @@
 
             <section class="project-section section-with-image">
                 <div class="section-copy">
-                    <h2 class="section-heading">The Final Design</h2>
+                    <h3 class="section-heading">The Final Design</h3>
 
                     <div class="section-body">
                         <p class="section-description">
@@ -134,16 +134,16 @@
     .section-image {
         display: grid;
         width: 100%;
-        border: 1px solid var(--color-line);
+        border: 1px solid color-mix(in srgb, var(--color-text) 16%, transparent);
         border-radius: 0.2rem;
         background:
             linear-gradient(
                 135deg,
-                rgba(246, 189, 96, 0.14),
-                rgba(245, 202, 195, 0.16) 52%,
-                rgba(132, 165, 157, 0.16)
+                color-mix(in srgb, var(--color-accent-1) 14%, transparent),
+                color-mix(in srgb, var(--color-accent-2) 16%, transparent) 52%,
+                color-mix(in srgb, var(--color-accent-2) 16%, transparent)
             ),
-            rgba(255, 248, 242, 0.86);
+            color-mix(in srgb, var(--color-background) 86%, transparent);
         box-sizing: border-box;
     }
 

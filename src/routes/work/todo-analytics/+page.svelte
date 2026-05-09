@@ -214,7 +214,7 @@
 <div class="project-page">
     <div class="layout">
         <header id="overview" class="project-header">
-            <h1 class="project-title">Microsoft To Do Analytics</h1>
+            <h2 class="project-title">Microsoft To Do Analytics</h2>
             <p class="project-description">
                 A personal dashboard for exploring task completion patterns
                 across Microsoft To Do lists.
@@ -323,7 +323,7 @@
                             </div>
 
                             <div class="task-graphs h-max">
-                                <h2>
+                                <h3>
                                     {selectedListName}
 
                                     {#if taskStatus === "all" || taskStatus === "uncompleted" || taskStatus === "completedByCreateDate"}
@@ -331,7 +331,7 @@
                                     {:else if taskStatus === "completedByCompDate"}
                                         — Grouped by Completed Date
                                     {/if}
-                                </h2>
+                                </h3>
 
                                 <Plot
                                     x={{ axis: "bottom", tickRotate: 90 }}
@@ -435,9 +435,9 @@
         font-size: 14px;
         border-radius: 0.4rem;
         padding: 0.15rem 0.5rem;
-        border: 2px solid var(--color-theme-1);
-        background: var(--color-bg-0);
-        color: var(--color-text-1);
+        border: 2px solid var(--color-accent-1);
+        background: var(--color-background);
+        color: color-mix(in srgb, var(--color-text) 76%, transparent);
         width: fit-content;
 
         cursor: pointer;
@@ -445,7 +445,7 @@
     }
 
     .action-btn:hover {
-        background: var(--color-theme-1);
+        background: var(--color-accent-1);
         transform: translateY(-1px);
     }
 
@@ -461,7 +461,7 @@
         pointer-events: none;
         min-width: 10rem;
         padding: 0.45rem 0.6rem;
-        border: 1px solid var(--color-bg-1);
+        border: 1px solid var(--color-background);
         border-radius: 0.35rem;
         background: rgba(255, 255, 255, 0.96);
         box-shadow:
