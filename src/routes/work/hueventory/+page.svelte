@@ -118,7 +118,7 @@
                             <div class="w-full h-full text-[{colour.hex}] block">&nbsp;</div>
                         {/each}
                     </div> -->
-                </li> 
+                </li>
             {/each}
         </ul>
     </nav>

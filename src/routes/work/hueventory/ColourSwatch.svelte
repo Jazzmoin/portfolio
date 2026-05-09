@@ -7,8 +7,9 @@
     const textColour = "#242424";
 </script>
 
-<div
+<button
     class="card"
+    type="button"
     onclick={() => toggleOwned(colour.hex)}
     style="background-color: white; opacity: {isOwned
         ? 0.25
@@ -19,12 +20,14 @@
         <p>{colour.code}</p>
         <p style="font-weight: bold">{colour.name}</p>
     </div>
-</div>
+</button>
 
 <style>
     .card {
         display: flex;
         flex-direction: column;
+        padding: 0;
+        text-align: inherit;
         border-radius: 0.35rem;
         cursor: pointer;
         overflow: hidden;

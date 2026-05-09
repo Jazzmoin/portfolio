@@ -98,11 +98,11 @@
 
                     <div class="section-body">
                         <p class="section-description">
-                            The final design is easy to mount to a wall and securely
-                            holds the flowers while freeing up desk and shelf
-                            space. The mounting system allows the vase to be
-                            fixed freely to an open wall, turning the flowers into
-                            a more intentional and visible display.
+                            The final design is easy to mount to a wall and
+                            securely holds the flowers while freeing up desk and
+                            shelf space. The mounting system allows the vase to
+                            be fixed freely to an open wall, turning the flowers
+                            into a more intentional and visible display.
                         </p>
 
                         <p>

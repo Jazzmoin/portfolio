@@ -1,6 +1,3 @@
-
-
-
 ## Ingredients
 
 Chicken cut into little pieces (15mm x 15mm x 15-45mm) coated in light soy and oyster sauce
@@ -21,8 +18,7 @@ Peas
 
 Eggs
 
-
-## Instructions 
+## Instructions
 
 Cook chicken and brawns in batches in a wok at max heat unit just done. Reserve in bowl
 

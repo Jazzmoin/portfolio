@@ -2,15 +2,15 @@
     const wh = { x: 100, y: 100 };
     let v = $state(0);
 
-    let p = $state({x: 0, y: 30});
+    let p = $state({ x: 0, y: 30 });
 </script>
 
-<div class="flex flex-col bg-background">
+<div class="bg-background flex flex-col">
     <input type="range" bind:value={p.x} min="-50" max="50" step="1" />
     <input type="range" bind:value={p.y} min="-50" max="50" step="1" />
     <svg
         viewBox="-50 -50 100 100"
-        class="w-[min(80vw,700px)] h-auto"
+        class="h-auto w-[min(80vw,700px)]"
         style="stroke: var(--accent-foreground); stroke-linecap: butt;"
     >
         {#each [...Array(11).keys()] as i}
@@ -85,7 +85,6 @@
             stroke-dashoffset="0"
         />
 
-        
         <!-- <ellipse rx="1" ry="1" cx="-20" cy="-40" fill="red" stroke="none" />
         <ellipse rx="1" ry="1" cx="0" cy="-40" fill="red" stroke="none" />
 

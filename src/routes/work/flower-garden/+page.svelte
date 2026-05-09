@@ -29,7 +29,7 @@
 
 <div class="project-page">
     <div class="layout">
-        <header id="overview" class="project-header">   
+        <header id="overview" class="project-header">
             <h1 class="project-title">Flower Garden</h1>
             <p class="project-description">
                 A Project created to learn Rust and Nannou.
@@ -38,8 +38,6 @@
 
         <div class="project-sections">
             <section id="simulation" class="project-section">
-                
-
                 <div class="section-body">
                     <span bind:this={container} style="display:none;"></span>
                 </div>

@@ -218,15 +218,13 @@
             <p class="project-description">
                 A personal dashboard for exploring task completion patterns
                 across Microsoft To Do lists.
-                <br> 
+                <br />
                 Sign in to view yours!
             </p>
         </header>
 
         <div class="project-sections">
             <section id="dashboard" class="project-section">
-                
-
                 <div class="section-body">
                     {#if s.state === "unknown"}
                         <div>Loading...</div>
