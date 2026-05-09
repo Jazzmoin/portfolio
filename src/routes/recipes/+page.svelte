@@ -3,10 +3,28 @@
 
     const cards = [
         {
-            href: "/recipes/fried-rice-recipe",
+            href: "/recipes/fried-rice",
             category: "-",
             title: "Fried Rice",
-            img: "-",
+            img: "",
+        },
+        {
+            href: "/recipes/gateau-manioc",
+            category: "Casava Cakes",
+            title: "Gateau Manioc",
+            img: "",
+        },
+        {
+            href: "/recipes/chicken-wontons",
+            category: "",
+            title: "Chicken Wontons",
+            img: "",
+        },
+          {
+            href: "/recipes/samosas",
+            category: "",
+            title: "Samosas",
+            img: "",
         },
     ];
 </script>
@@ -25,7 +43,7 @@
         min-height: calc(100vh - var(--header-height));
         margin-inline: calc(50% - 50vw);
         padding: var(--page-top-padding) 2rem 5rem;
-        background: var(--color-bg-1);
+        background: var(--color-background);
         display: flex;
         align-items: center;
         flex-direction: column;
