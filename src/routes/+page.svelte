@@ -49,7 +49,7 @@
 <section class="card-section">
     <h2>Work</h2>
     <CardLayout {cards} />
-     <a class="see-more-link" href="/work">See more</a>
+    <a class="see-more-link" href="/work">See more</a>
 </section>
 
 <!-- 

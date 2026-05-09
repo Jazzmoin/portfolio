@@ -17,6 +17,7 @@
     --color-text-1: rgba(65, 64, 63, 0.78);
     --color-line: rgba(66, 51, 45, 0.14);
     --header-height: 3.5rem;
+    --page-top-padding: calc(var(--header-height) + 4rem);
     --section-gap: clamp(2rem, 4vw, 3.5rem);
     --text-xs: 14px;
     --text-base: 16px;
@@ -91,6 +92,10 @@ main {
     margin-inline: auto;
 }
 
+main > :first-child:not(section):not(.project-page) {
+    margin-top: var(--page-top-padding);
+}
+
 .layout {
     display: flex;
     flex-direction: column;
@@ -100,7 +105,7 @@ main {
 
 .project-page {
     min-height: calc(100vh - var(--header-height));
-    padding-block: 2rem 4rem;
+    padding-block: var(--page-top-padding) 4rem;
 }
 
 .project-header {
@@ -223,7 +228,7 @@ main {
 
 @media (max-width: 900px) {
     .project-page {
-        padding-block: 1.5rem 3rem;
+        padding-block: var(--page-top-padding) 3rem;
     }
 
     .page-contents {
