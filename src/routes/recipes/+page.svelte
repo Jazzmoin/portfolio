@@ -31,7 +31,7 @@
 
 <section class="card-section">
     <h2>Recipes</h2>
-    <p>-</p>
+    <p>A collection of recipes from my mum and I &lt;3</p>
     <CardLayout {cards} />
 </section>
 

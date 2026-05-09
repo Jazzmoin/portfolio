@@ -6,11 +6,11 @@
         // { path: "/art", name: "Art" },
         { path: "/recipes", name: "Recipes" },
         { path: "/work", name: "Work" },
-        { path: "mailto:japasnin@gmail.com", name: "Contact" },
+        { path: "mailto:hello@jazzmine.au", name: "Contact" },
     ];
 
     const socialLinks = [
-        { href: "mailto:japasnin@gmail.com", label: "Email" },
+        { href: "mailto:hello@jazzmine.au", label: "Email" },
         { href: "https://www.instagram.com/simplyjazzyp/", label: "Instagram" },
     ];
 
