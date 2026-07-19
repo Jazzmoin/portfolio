@@ -1,7 +1,21 @@
 <script lang="ts">
     import CardLayout from "$lib/components/CardLayout.svelte";
+    import ChickenWontonCover from "$lib/images/recipes/covers/chicken-wonton-cover.webp";
+    import SamosaCover from "$lib/images/recipes/covers/samosa-cover.webp";
 
     const cards = [
+        {
+            href: "/recipes/chicken-wontons",
+            category: "",
+            title: "Chicken Wontons",
+            img: ChickenWontonCover,
+        },
+        {
+            href: "/recipes/samosas",
+            category: "",
+            title: "Samosas",
+            img: SamosaCover,
+        },
         {
             href: "/recipes/fried-rice",
             category: "-",
@@ -12,18 +26,6 @@
             href: "/recipes/gateau-manioc",
             category: "Casava Cakes",
             title: "Gateau Manioc",
-            img: "",
-        },
-        {
-            href: "/recipes/chicken-wontons",
-            category: "",
-            title: "Chicken Wontons",
-            img: "",
-        },
-        {
-            href: "/recipes/samosas",
-            category: "",
-            title: "Samosas",
             img: "",
         },
     ];
