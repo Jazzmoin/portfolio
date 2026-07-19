@@ -78,7 +78,7 @@
         font-family: var(--font-serif);
         font-size: var(--text-2xl);
         line-height: 1;
-        padding: 0 5rem;
+        margin: 0 5rem;
     }
 
     .home-link img {

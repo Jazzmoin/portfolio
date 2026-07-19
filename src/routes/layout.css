@@ -64,6 +64,7 @@ h1 {
 h2 {
     font-family: var(--font-serif);
     font-size: var(--heading2);
+    color: var(--color-primary);
     line-height: 1.12;
     font-weight: 600;
 }

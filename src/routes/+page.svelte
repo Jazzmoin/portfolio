@@ -45,7 +45,7 @@
 
         <div class="hero-text">
             <h1>Jazzmine Pasnin</h1>
-            <h2>---</h2>
+            <h2>a collection of designs, projects and side quests</h2>
         </div>
     </div>
 </section>
@@ -93,7 +93,6 @@
         align-items: center;
         justify-content: center;
         height: 100%;
-        color: var(--color-text);
         text-align: center;
     }
 
@@ -104,8 +103,13 @@
         font-weight: 600;
     }
 
-    h2 {
-        color: var(--color-primary);
+    .hero-text h2 {
+        color: var(--color-text);
+        -webkit-text-stroke-width: 8px;
+        -webkit-text-stroke-color: #f4eacf;
+        paint-order: stroke fill;
+        transform: uppercase;
+        font-size: 40px;
     }
 
     .card-section {
@@ -118,7 +122,6 @@
         justify-content: center;
         flex-direction: column;
         gap: 1.5rem;
-        padding-bottom: 8rem;
     }
 
     @media (max-width: 800px) {
