@@ -4,6 +4,7 @@
     import hueventoryCover from "$lib/images/covers/hueventory-cover.webp";
     import todoAnalyticsCover from "$lib/images/covers/todo-analytics-cover.webp";
     import vaseCover from "$lib/images/covers/vase-cover.webp";
+    import heroImg from "$lib/images/test.png";
 
     const cards = [
         {
@@ -41,7 +42,7 @@
 
 <section class="hero">
     <div class="hero-content">
-        <img src="src/lib/images/test.png" alt="Floral background" />
+        <img src={heroImg} alt="Floral background" />
 
         <div class="hero-text">
             <h1>Jazzmine Pasnin</h1>
