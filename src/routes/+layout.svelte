@@ -87,12 +87,10 @@
     }
 
     .nav-link {
-        padding: 0.35rem 0.8rem;
         font-size: var(--heading3);
         font-family: var(--font-serif);
         text-transform: uppercase;
         color: var(--color-primary);
-        border-radius: 999px;
         transition:
             background-color 180ms ease,
             transform 180ms ease;
