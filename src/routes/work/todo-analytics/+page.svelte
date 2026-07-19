@@ -485,4 +485,15 @@
             flex-wrap: wrap;
         }
     }
+
+    @media (max-width: 800px) {
+        .dropdowns-group {
+            gap: 1rem;
+        }
+
+        .dropdown {
+            min-width: 0;
+            flex: 1 1 100%;
+        }
+    }
 </style>

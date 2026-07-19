@@ -15,12 +15,13 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
-        padding: 0.5rem 10rem 5rem;
+        padding: 0.5rem 8.5rem 5rem;
     }
 
     @media (max-width: 800px) {
         .card-grid {
             grid-template-columns: 1fr;
+            padding: 0.5rem 1rem 3rem;
         }
     }
 </style>

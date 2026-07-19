@@ -86,6 +86,18 @@ main {
     margin-inline: auto;
 }
 
+@media (max-width: 800px) {
+    :root {
+        --heading1: clamp(3rem, 12vw, 180px);
+        --heading2: clamp(2rem, 8vw, 60px);
+        --heading3: clamp(1.25rem, 4vw, 24px);
+    }
+
+    main {
+        width: 92%;
+    }
+}
+
 .layout {
     display: flex;
     flex-direction: column;

@@ -126,8 +126,21 @@
     }
 
     @media (max-width: 800px) {
-        .hero-section {
+        .hero {
             padding: 0 1rem 4rem;
+        }
+
+        .hero-content {
+            height: 70svh;
+        }
+
+        .hero-text h2 {
+            font-size: clamp(1.25rem, 5vw, 40px);
+            -webkit-text-stroke-width: 4px;
+        }
+
+        h1 {
+            -webkit-text-stroke-width: 4px;
         }
 
         .card-section {
