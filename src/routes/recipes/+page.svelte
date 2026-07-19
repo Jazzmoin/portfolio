@@ -20,7 +20,7 @@
             title: "Chicken Wontons",
             img: "",
         },
-          {
+        {
             href: "/recipes/samosas",
             category: "",
             title: "Samosas",

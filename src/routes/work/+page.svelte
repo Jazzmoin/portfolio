@@ -46,13 +46,11 @@
         width: 100vw;
         min-height: calc(100vh - var(--header-height));
         margin-inline: calc(50% - 50vw);
-        padding: var(--page-top-padding) 2rem 5rem;
-        background: var(--color-background);
+        padding: var(--page-top-padding) 0rem 0rem;
         display: flex;
         align-items: center;
         flex-direction: column;
         gap: 1.5rem;
-        text-align: center;
     }
 
     .card-section h2 {

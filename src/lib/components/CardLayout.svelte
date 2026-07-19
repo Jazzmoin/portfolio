@@ -14,9 +14,8 @@
     .card-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        width: min(100%, 60rem);
-        margin-inline: auto;
+        gap: 1.5rem;
+        padding: 0.5rem 10rem;
     }
 
     @media (max-width: 800px) {

@@ -39,17 +39,20 @@
     <meta name="description" />
 </svelte:head>
 
-<section class="hero-section">
-    <div class="sticky-stack" aria-hidden="true">
-        <div class="sticky-note sticky-note-name">Jazzmine</div>
-        <div class="sticky-note sticky-note-study">Pasnin</div>
+<section class="hero">
+    <div class="hero-content">
+        <img src="src/lib/images/test.png" alt="Floral background" />
+
+        <div class="hero-text">
+            <h1>Jazzmine Pasnin</h1>
+            <h2>---</h2>
+        </div>
     </div>
 </section>
 
 <section class="card-section">
-    <h2>Work</h2>
+    <h2>Featured Work</h2>
     <CardLayout {cards} />
-    <a class="see-more-link" href="/work">See more</a>
 </section>
 
 <style>
@@ -57,109 +60,52 @@
         scroll-behavior: smooth;
     }
 
-    .hero-section {
-        min-height: calc(100svh - var(--header-height) - 3rem);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 1.25rem;
-        position: relative;
-        overflow: hidden;
-        box-sizing: border-box;
-        padding: 3rem 2rem 5rem;
+    .hero {
+        padding: 0rem 8rem 8rem;
         width: 100vw;
         margin-inline: calc(50% - 50vw);
-        background-color: var(--color-background);
-        background-image: radial-gradient(
-            circle,
-            color-mix(in srgb, var(--color-accent-2) 18%, transparent) 1.25px,
-            transparent 1.45px
-        );
-        background-size: 1.35rem 1.35rem;
+        box-sizing: border-box;
     }
 
-    .hero-section::after {
-        content: "";
+    .hero-content {
+        position: relative;
+        overflow: hidden;
+        background-color: #f4eacf;
+        height: 90svh;
+        border-radius: 1rem;
+    }
+
+    img {
         position: absolute;
-        inset: auto 0 0;
-        height: 8rem;
-        background: linear-gradient(
-            180deg,
-            color-mix(in srgb, var(--color-background) 0%, transparent),
-            var(--color-background)
-        );
-        pointer-events: none;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: 0;
     }
 
-    .sticky-stack {
-        position: relative;
-        width: min(100%, 46rem);
-        min-height: 31rem;
-        z-index: 1;
-    }
-
-    .see-more-link {
+    .hero-text {
         position: relative;
         z-index: 1;
-        display: inline-flex;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 0.55rem 1rem;
-        border-radius: 999px;
-        background: color-mix(in srgb, var(--color-accent-1) 15%, transparent);
-        transition:
-            transform 180ms ease,
-            box-shadow 180ms ease,
-            background-color 180ms ease;
+        height: 100%;
+        color: var(--color-text);
+        text-align: center;
     }
 
-    .see-more-link:hover {
-        background: var(--color-accent-1);
-        color: var(--color-background);
+    h1 {
+        -webkit-text-stroke-width: 8px;
+        -webkit-text-stroke-color: #f4eacf;
+        paint-order: stroke fill;
+        font-weight: 600;
     }
 
-    .sticky-note {
-        --note-rotate: 0deg;
-        position: absolute;
-        width: clamp(14rem, 30vw, 20rem);
-        aspect-ratio: 1 / 1;
-        padding: 1.75rem;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-start;
-        font-family: var(--font-serif);
-        font-size: clamp(1.3rem, 2vw, 1.8rem);
-        box-shadow: 0.8rem 0.8rem 0
-            color-mix(in srgb, var(--color-text) 12%, transparent);
-        border: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
-        transform: rotate(var(--note-rotate));
-        transition:
-            transform 180ms ease,
-            box-shadow 180ms ease;
-        will-change: transform;
-    }
-
-    .sticky-note:hover {
-        transform: translateY(-0.55rem) rotate(var(--note-rotate)) scale(1.03);
-        box-shadow: 1.1rem 1.1rem 0
-            color-mix(in srgb, var(--color-text) 16%, transparent);
-    }
-
-    .sticky-note-name {
-        --note-rotate: -9deg;
-        background: var(--color-accent-1);
-        top: 1.5rem;
-        left: 3.5rem;
-        z-index: 3;
-    }
-
-    .sticky-note-study {
-        --note-rotate: 8deg;
-        background: var(--color-accent-2);
-        top: 9rem;
-        right: 4.5rem;
-        z-index: 2;
+    h2 {
+        color: var(--color-primary);
     }
 
     .card-section {
@@ -167,49 +113,22 @@
         box-sizing: border-box;
         width: 100vw;
         margin-inline: calc(50% - 50vw);
-        padding: 0 2rem 3rem;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         gap: 1.5rem;
-    }
-
-    .card-section h2 {
-        margin: 0;
-        color: var(--color-accent-1);
+        padding-bottom: 8rem;
     }
 
     @media (max-width: 800px) {
         .hero-section {
-            min-height: calc(100svh - var(--header-height) - 2.5rem);
-            padding: 2rem 0.75rem 4rem;
+            padding: 0 1rem 4rem;
         }
 
         .card-section {
             padding-inline: 0.75rem;
             gap: 1.25rem;
-        }
-
-        .sticky-stack {
-            width: min(100%, 25rem);
-            min-height: 23rem;
-        }
-
-        .sticky-note {
-            width: clamp(10.5rem, 44vw, 13rem);
-            padding: 1rem;
-            font-size: clamp(1rem, 4vw, 1.2rem);
-        }
-
-        .sticky-note-name {
-            top: 1rem;
-            left: 0.35rem;
-        }
-
-        .sticky-note-study {
-            top: 6.75rem;
-            right: 1rem;
         }
     }
 </style>

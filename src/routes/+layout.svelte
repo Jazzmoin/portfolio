@@ -2,13 +2,6 @@
     import { page } from "$app/state";
     import "./layout.css";
 
-    const pages = [
-        // { path: "/art", name: "Art" },
-        { path: "/recipes", name: "Recipes" },
-        { path: "/work", name: "Work" },
-        { path: "mailto:hello@jazzmine.au", name: "Contact" },
-    ];
-
     const socialLinks = [
         { href: "mailto:hello@jazzmine.au", label: "Email" },
         { href: "https://www.instagram.com/simplyjazzyp/", label: "Instagram" },
@@ -21,15 +14,15 @@
 <div class="app">
     <header>
         <div class="header-inner">
-            <a class="brand-link" href="/">Jazzmine Pasnin</a>
+            <a class="nav-link" href="/recipes">Recipes</a>
+            <a class="nav-link" href="/fun">Fun</a>
 
-            <nav>
-                <p class="nav-links">
-                    {#each pages as elem}
-                        <a class="nav-link" href={elem.path}> {elem.name}</a>
-                    {/each}
-                </p>
-            </nav>
+            <a class="home-link" href="/">
+                <img src="/favicon.svg" alt="logo" />
+            </a>
+
+            <a class="nav-link" href="/work">Work</a>
+            <a class="nav-link" href="mailto:hello@jazzmine.au">Contact</a>
         </div>
     </header>
 
@@ -52,13 +45,13 @@
 
 <style>
     header {
-        font-family: var(--font-mono);
         position: sticky;
-        top: 1rem;
-        z-index: 4;
-        width: min(calc(100% - 1.5rem), 35rem);
+        top: 0rem;
+        z-index: 3;
+        width: 100%;
         height: var(--header-height);
-        margin: 1rem auto 0;
+        margin: 0rem auto 0;
+        background-color: var(--color-background);
     }
 
     .app {
@@ -75,38 +68,30 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
         margin-inline: auto;
-        padding: 0.5rem 1.5rem;
+        padding: 0.5rem 8rem;
         box-sizing: border-box;
         height: 100%;
-        border: 1px solid color-mix(in srgb, var(--color-text) 16%, transparent);
-        border-radius: 999px;
-        background-color: color-mix(
-            in srgb,
-            var(--color-background) 82%,
-            transparent
-        );
-        box-shadow: 0 0.85rem 2rem
-            color-mix(in srgb, var(--color-text) 10%, transparent);
-        backdrop-filter: blur(14px);
     }
 
-    .brand-link {
+    .home-link {
         font-family: var(--font-serif);
-        font-size: 0.95rem;
+        font-size: var(--text-2xl);
         line-height: 1;
+        padding: 0 5rem;
     }
 
-    .nav-links {
-        display: flex;
-        gap: 0.35rem;
-        margin: 0;
+    .home-link img {
+        height: 100%;
+        max-height: 3rem;
     }
 
     .nav-link {
         padding: 0.35rem 0.8rem;
-        font-size: var(--text-xs);
+        font-size: var(--heading3);
+        font-family: var(--font-serif);
+        text-transform: uppercase;
+        color: var(--color-primary);
         border-radius: 999px;
         transition:
             background-color 180ms ease,
@@ -114,17 +99,10 @@
     }
 
     .nav-link:hover {
-        background: color-mix(in srgb, var(--color-accent-1) 15%, transparent);
         color: var(--color-accent-1);
-        transform: translateY(-1px);
-    }
-
-    a {
-        font-size: var(--text-xs);
     }
 
     .footer {
-        font-family: var(--font-mono);
         background: var(--color-background);
     }
 
@@ -132,9 +110,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: min(100%, 60rem);
+        width: 100%;
         margin-inline: auto;
-        padding-block: 1rem;
+        padding: 1rem 8rem;
         box-sizing: border-box;
         border-top: 2px solid
             color-mix(in srgb, var(--color-text) 16%, transparent);

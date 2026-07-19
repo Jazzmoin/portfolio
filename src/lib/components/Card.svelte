@@ -35,20 +35,13 @@
     .text {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    h3 {
-        color: var(--color-accent-1);
     }
 
     a {
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        padding: 1.2rem;
-        border: 1px solid var(--color-accent-1);
-        border-radius: 1rem;
+        overflow: hidden;
         transition:
             transform 180ms ease,
             box-shadow 180ms ease,
@@ -61,10 +54,7 @@
     }
 
     img {
-        aspect-ratio: 16 / 9;
         width: 100%;
-        max-width: 100%;
-        border-radius: inherit;
-        object-fit: cover;
+        border-radius: 1rem;
     }
 </style>

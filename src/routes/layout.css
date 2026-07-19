@@ -1,24 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=DynaPuff:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 @import "tailwindcss";
 
 :root {
-    --font-mono: var(--font-sans);
-    --font-serif: "DynaPuff", "Cooper Black", "Arial Rounded MT Bold", cursive;
+    --font-serif: "Fraunces", "Arial Rounded MT Bold", cursive;
     --font-sans:
         "Atkinson Hyperlegible", Verdana, -apple-system, BlinkMacSystemFont,
         "Segoe UI", sans-serif;
     --color-background: #fffaf5;
-    --color-text: #454b4b;
-    --color-accent-1: #d984b0;
+    --color-text: #460707;
+    --color-primary: #d65447;
     --color-accent-2: #dfe9fb;
-    --header-height: 3.5rem;
+    --header-height: 4rem;
     --page-top-padding: clamp(2.5rem, 6vw, 4rem);
     --section-gap: clamp(2rem, 4vw, 3.5rem);
-    --text-xs: 14px;
-    --text-base: 16px;
-    --text-lg: 24px;
-    --text-xl: 40px;
-    --text-2xl: clamp(2rem, 4vw, 3rem);
+    --heading1: 180px;
+    --heading2: 60px;
+    --heading3: 24px;
+    --body: 16px;
     font-family: var(--font-sans);
     color: var(--color-text);
 }
@@ -37,15 +35,13 @@ body {
 
 p {
     font-family: var(--font-sans);
-    font-weight: 400;
-    font-size: var(--text-base);
+    font-size: var(--body);
     line-height: 1.6;
 }
 
 a {
-    font-family: var(--font-mono);
-    font-size: var(--text-xs);
-    color: inherit;
+    font-family: var(--font-sans);
+    font-size: var(--body);
 }
 
 ul {
@@ -60,35 +56,32 @@ ol {
 
 h1 {
     font-family: var(--font-serif);
-    font-size: var(--text-2xl);
+    font-size: var(--heading1);
+    line-height: 1.03;
     font-weight: 600;
-    line-height: 1.05;
 }
 
 h2 {
     font-family: var(--font-serif);
-    font-size: var(--text-xl);
-    font-weight: 600;
+    font-size: var(--heading2);
     line-height: 1.12;
-    color: var(--color-accent-1);
+    font-weight: 600;
 }
 
 h3 {
     font-family: var(--font-serif);
-    font-size: var(--text-lg);
-    font-weight: 600;
+    font-size: var(--heading3);
     line-height: 1.2;
-    color: var(--color-accent-1);
 }
 
 li {
     font-family: var(--font-sans);
-    font-size: var(--text-base);
+    font-size: var(--body);
     line-height: 1.55;
 }
 
 main {
-    width: min(100%, 60rem);
+    width: 70%;
     margin-inline: auto;
 }
 
@@ -184,8 +177,8 @@ main {
         var(--color-accent-2) 72%,
         var(--color-background)
     );
-    font-family: var(--font-mono);
-    font-size: var(--text-xs);
+    font-family: var(--font-sans);
+    font-size: var(--body);
     line-height: 1.2;
     letter-spacing: 0.08em;
     writing-mode: vertical-rl;
@@ -208,8 +201,8 @@ main {
 }
 
 .page-contents li {
-    font-family: var(--font-mono);
-    font-size: var(--text-xs);
+    font-family: var(--font-sans);
+    font-size: var(--body);
     line-height: 1.4;
     text-transform: none;
 }
@@ -221,8 +214,8 @@ main {
 }
 
 :global(.category) {
-    font-family: var(--font-mono);
-    font-size: var(--text-xs);
+    font-family: var(--font-sans);
+    font-size: var(--body);
     line-height: 1.4;
 }
 
