@@ -44,7 +44,7 @@
         width: 100vw;
         min-height: calc(100vh - var(--header-height));
         margin-inline: calc(50% - 50vw);
-        padding: var(--page-top-padding) 2rem 5rem;
+        padding: var(--page-top-padding) 0rem 0rem;
         background: var(--color-background);
         display: flex;
         align-items: center;

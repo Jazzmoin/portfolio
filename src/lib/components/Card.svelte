@@ -55,6 +55,6 @@
 
     img {
         width: 100%;
-        border-radius: 1rem;
+        border-radius: 0.2rem;
     }
 </style>

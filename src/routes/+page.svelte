@@ -46,7 +46,7 @@
 
         <div class="hero-text">
             <h1>Jazzmine Pasnin</h1>
-            <h2>a collection of designs, projects and side quests</h2>
+            <h2>a collection of projects and side quests</h2>
         </div>
     </div>
 </section>
@@ -62,7 +62,7 @@
     }
 
     .hero {
-        padding: 0rem 8rem 8rem;
+        padding: 0rem 15rem 8rem;
         width: 100vw;
         margin-inline: calc(50% - 50vw);
         box-sizing: border-box;
@@ -73,7 +73,7 @@
         overflow: hidden;
         background-color: #f4eacf;
         height: 90svh;
-        border-radius: 1rem;
+        border-radius: 0.2rem;
     }
 
     img {

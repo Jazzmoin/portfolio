@@ -28,7 +28,7 @@
         flex-direction: column;
         padding: 0;
         text-align: inherit;
-        border-radius: 0.35rem;
+        border-radius: 0.25rem;
         cursor: pointer;
         overflow: hidden;
         transition: 0.2s ease all;

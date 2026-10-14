@@ -99,16 +99,12 @@
         min-height: 100vh;
     }
 
-    main {
-        flex: 1;
-    }
-
     .header-inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-inline: auto;
-        padding: 0.5rem 8rem;
+        padding: 0.5rem 15rem;
         box-sizing: border-box;
         height: var(--header-height);
     }
@@ -123,6 +119,11 @@
     .home-link img {
         height: 100%;
         max-height: 3rem;
+        transition: transform 800ms cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .home-link:hover img {
+        transform: rotate(180deg);
     }
 
     .nav-link {
@@ -215,7 +216,7 @@
         align-items: center;
         width: 100%;
         margin-inline: auto;
-        padding: 1rem 8rem;
+        padding: 1rem 15rem;
         box-sizing: border-box;
         border-top: 2px solid
             color-mix(in srgb, var(--color-text) 16%, transparent);
