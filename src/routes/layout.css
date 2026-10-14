@@ -82,20 +82,9 @@ li {
 }
 
 main {
+    flex: 1;
     width: 70%;
     margin-inline: auto;
-}
-
-@media (max-width: 800px) {
-    :root {
-        --heading1: clamp(3rem, 12vw, 180px);
-        --heading2: clamp(2rem, 8vw, 60px);
-        --heading3: clamp(1.25rem, 4vw, 24px);
-    }
-
-    main {
-        width: 92%;
-    }
 }
 
 .layout {
@@ -232,7 +221,18 @@ main {
     line-height: 1.4;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
+    :root {
+        --heading1: clamp(3rem, 12vw, 180px);
+        --heading2: clamp(2rem, 8vw, 60px);
+        --heading3: clamp(1.25rem, 4vw, 24px);
+    }
+
+    main,
+    main.project {
+        width: 90%;
+    }
+
     .project-page {
         padding-block: var(--page-top-padding) 3rem;
     }

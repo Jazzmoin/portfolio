@@ -1,33 +1,15 @@
-<div style="padding-top:20px">
+## Gateau Manioc
 
-<h2 style="padding-bottom: 25px">Gateau Manioc</h2>
+### Ingredients
 
-<h3 style="border-bottom: 2px solid #ddd; padding-bottom: 5px;">Ingredients</h3>
+- 410 g sweetened condensed milk
+- 500 g shredded cassava
+- Desiccated coconut
 
-<ul style="padding-left: 20px;">
-    <li>410g sweetened condensed milk</li>
-    <li>500g shredded cassava</li>
-    <li>Desiccated coconut</li>
-  </ul>
+### Method
 
-<h3 style="border-bottom: 2px solid #ddd; padding-bottom: 5px; margin-top: 20px;">Method</h3>
-
-<ol style="padding-left: 20px;">
-    <li style="margin-bottom: 10px;">
-      Prepare pan with baking paper and another slightly larger pan
-    </li>
-    <li style="margin-bottom: 10px;">
-      Separate cassava in a large bowl
-    </li>
-    <li style="margin-bottom: 10px;">
-      Add sweetened condensed milk and combine with cassava
-    </li>
-    <li style="margin-bottom: 10px;">
-      Put mixture in pan, then place into larger pan and pour hot water into the larger pan
-    </li>
-    <li>
-      Cook at 180°C for 45 minutes
-    </li>
-  </ol>
-
-</div>
+1. Prepare a baking pan with baking paper, along with another slightly larger pan.
+2. Separate the cassava in a large bowl.
+3. Add the sweetened condensed milk and combine with the cassava.
+4. Put the mixture into the prepared pan, then place it inside the larger pan. Pour hot water into the larger pan to create a water bath.
+5. Bake at 180°C for 45 minutes.
