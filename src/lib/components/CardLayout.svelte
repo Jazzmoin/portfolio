@@ -14,7 +14,7 @@
     .card-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
+        gap: 2rem;
         padding: 0.5rem 15rem 5rem;
     }
 

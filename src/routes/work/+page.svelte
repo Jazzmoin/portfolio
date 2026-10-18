@@ -3,32 +3,36 @@
     import flowerGardenCover from "$lib/images/covers/flower-garden-cover.webp";
     import hueventoryCover from "$lib/images/covers/hueventory-cover.webp";
     import todoAnalyticsCover from "$lib/images/covers/todo-analytics-cover.webp";
-    import vaseCover from "$lib/images/covers/vase-cover.webp";
+    import vaseCover from "$lib/images/covers/wallflowers-cover.webp";
 
     const cards = [
         {
             href: "/work/hueventory",
-            category: "Colour Swatch Tracker",
+            timeline: "JUL 2025",
             title: "Hueventory",
+            desc: "Colour Swatch Tracker",
             img: hueventoryCover,
         },
         {
             href: "/work/flower-garden",
-            category: "Flower Planting Playground",
+            timeline: "AUG 2025",
             title: "Flower Garden",
+            desc: "Flower Planting Playground",
             img: flowerGardenCover,
         },
         {
             href: "/work/todo-analytics",
-            category: "Analytics Dashboard",
+            timeline: "JUL 2025",
             title: "Todo Analytics",
+            desc: "Analytics Dashboard",
             img: todoAnalyticsCover,
             reload: true,
         },
         {
-            href: "/work/vases",
-            category: "Personal Project",
-            title: "Vases",
+            href: "/work/wallflowers",
+            timeline: "JUL 2025",
+            title: "Wallflowers",
+            desc: "Personal Project",
             img: vaseCover,
         },
     ];

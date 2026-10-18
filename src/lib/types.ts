@@ -1,7 +1,8 @@
 export type CardType = {
-    category: string;
-    title: string;
     href: string;
+    timeline: string;
+    title: string;
+    desc: string;
     img: string;
     reload?: boolean;
 };

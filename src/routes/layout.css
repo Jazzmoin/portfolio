@@ -215,7 +215,7 @@ main {
     line-height: 1.08;
 }
 
-:global(.category) {
+:global(.desc) {
     font-family: var(--font-sans);
     font-size: var(--body);
     line-height: 1.4;

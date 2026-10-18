@@ -14,7 +14,7 @@
     .markdown-page {
         display: flex;
         flex-direction: column;
-        gap: var(--section-gap);
+        gap: 2rem;
         padding-block: var(--page-top-padding) 4rem;
     }
 
@@ -26,7 +26,7 @@
         display: block;
         max-width: 100%;
         height: auto;
-        border-radius: 0.5rem;
+        border-radius: 0.2rem;
     }
 
     @media (max-width: 800px) {

@@ -9,16 +9,18 @@
         <a data-sveltekit-reload href={card.href}>
             <img alt="" src={card.img} />
             <div class="text">
+                <p class="timeline">{card.title}</p>
                 <h3 class="card-title">{card.title}</h3>
-                <p class="category">{card.category}</p>
+                <p class="desc">{card.desc}</p>
             </div>
         </a>
     {:else}
         <a href={card.href}>
             <img alt="" src={card.img} />
             <div class="text">
+                <p class="timeline">{card.title}</p>
                 <h3 class="card-title">{card.title}</h3>
-                <p class="category">{card.category}</p>
+                <p class="desc">{card.desc}</p>
             </div>
         </a>
     {/if}
@@ -35,12 +37,18 @@
     .text {
         display: flex;
         flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .timeline {
+        font-size: 14px;
+        text-transform: uppercase;
     }
 
     a {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 0.5rem;
         overflow: hidden;
         transition:
             transform 180ms ease,

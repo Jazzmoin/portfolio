@@ -6,25 +6,25 @@
     const cards = [
         {
             href: "/recipes/chicken-wontons",
-            category: "",
+            desc: "",
             title: "Chicken Wontons",
             img: ChickenWontonCover,
         },
         {
             href: "/recipes/samosas",
-            category: "",
+            desc: "",
             title: "Samosas",
             img: SamosaCover,
         },
         {
             href: "/recipes/fried-rice",
-            category: "-",
+            desc: "-",
             title: "Fried Rice",
             img: "",
         },
         {
             href: "/recipes/gateau-manioc",
-            category: "Casava Cakes",
+            desc: "Casava Cakes",
             title: "Gateau Manioc",
             img: "",
         },
