@@ -9,7 +9,7 @@
         <a data-sveltekit-reload href={card.href}>
             <img alt="" src={card.img} />
             <div class="text">
-                <p class="timeline">{card.title}</p>
+                <p class="comptimeline">{card.comptimeline}</p>
                 <h3 class="card-title">{card.title}</h3>
                 <p class="desc">{card.desc}</p>
             </div>
@@ -18,7 +18,7 @@
         <a href={card.href}>
             <img alt="" src={card.img} />
             <div class="text">
-                <p class="timeline">{card.title}</p>
+                <p class="comptimeline">{card.comptimeline}</p>
                 <h3 class="card-title">{card.title}</h3>
                 <p class="desc">{card.desc}</p>
             </div>
@@ -40,8 +40,8 @@
         gap: 0.2rem;
     }
 
-    .timeline {
-        font-size: 14px;
+    .comptimeline {
+        font-size: 13px;
         text-transform: uppercase;
     }
 

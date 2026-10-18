@@ -1,6 +1,6 @@
 export type CardType = {
     href: string;
-    timeline: string;
+    comptimeline: string;
     title: string;
     desc: string;
     img: string;

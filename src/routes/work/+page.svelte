@@ -7,33 +7,33 @@
 
     const cards = [
         {
-            href: "/work/hueventory",
-            timeline: "JUL 2025",
-            title: "Hueventory",
-            desc: "Colour Swatch Tracker",
-            img: hueventoryCover,
-        },
-        {
-            href: "/work/flower-garden",
-            timeline: "AUG 2025",
-            title: "Flower Garden",
-            desc: "Flower Planting Playground",
-            img: flowerGardenCover,
-        },
-        {
             href: "/work/todo-analytics",
-            timeline: "JUL 2025",
+            comptimeline: "Personal Project - FEB 2026",
             title: "Todo Analytics",
-            desc: "Analytics Dashboard",
+            desc: "Visualising personal productivity through to-do list data.",
             img: todoAnalyticsCover,
             reload: true,
         },
         {
             href: "/work/wallflowers",
-            timeline: "JUL 2025",
+            comptimeline: "Personal Project - NOV 2025",
             title: "Wallflowers",
-            desc: "Personal Project",
+            desc: "Hand-painted vases designed to display my LEGO flowers",
             img: vaseCover,
+        },
+        {
+            href: "/work/flower-garden",
+            comptimeline: "Personal Project - AUG 2025",
+            title: "Flower Garden",
+            desc: "Rust-based playground to create your own garden.",
+            img: flowerGardenCover,
+        },
+        {
+            href: "/work/hueventory",
+            comptimeline: "Personal Project - JUL 2025",
+            title: "Hueventory",
+            desc: "Library for colour swatches collected from the hardware store.",
+            img: hueventoryCover,
         },
     ];
 </script>
