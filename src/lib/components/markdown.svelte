@@ -14,12 +14,22 @@
     .markdown-page {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
         padding-block: var(--page-top-padding) 4rem;
     }
 
     .markdown-page > :global(*) {
         margin: 0;
+    }
+
+     /* space between sections */
+    .markdown-page > :global(* + *) {
+        margin-top: 2rem;
+    }
+
+    /* space between headings and their descriptions */
+    .markdown-page > :global(h2 + *),
+    .markdown-page > :global(h3 + *) {
+        margin-top: 0.75rem;
     }
 
     .markdown-page :global(img) {

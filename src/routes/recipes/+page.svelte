@@ -6,26 +6,30 @@
     const cards = [
         {
             href: "/recipes/chicken-wontons",
-            desc: "",
+            comptimeline: "",
             title: "Chicken Wontons",
+            desc: "",
             img: ChickenWontonCover,
         },
         {
             href: "/recipes/samosas",
-            desc: "",
+            comptimeline: "",
             title: "Samosas",
+            desc: "",
             img: SamosaCover,
         },
         {
             href: "/recipes/fried-rice",
-            desc: "-",
+            comptimeline: "",
             title: "Fried Rice",
+            desc: "",
             img: "",
         },
         {
             href: "/recipes/gateau-manioc",
-            desc: "Casava Cakes",
+            comptimeline: "",
             title: "Gateau Manioc",
+            desc: "",
             img: "",
         },
     ];
@@ -33,7 +37,10 @@
 
 <section class="card-section">
     <h2>Recipes</h2>
-    <p>A collection of recipes from my mum and I &lt;3</p>
+    <p>
+        A collection of recipes from my mum and I &lt;3 <br /> (Images coming soon...
+        they take a while to draw)
+    </p>
     <CardLayout {cards} />
 </section>
 
