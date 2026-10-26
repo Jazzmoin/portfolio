@@ -3,9 +3,19 @@
     import flowerGardenCover from "$lib/images/covers/flower-garden-cover.webp";
     import hueventoryCover from "$lib/images/covers/hueventory-cover.webp";
     import todoAnalyticsCover from "$lib/images/covers/todo-analytics-cover.webp";
-    import vaseCover from "$lib/images/covers/wallflowers-cover.webp";
+    import vaseCover from "$lib/images/covers/wallflower-cover.webp";
+    import BMOCover from "$lib/images/covers/BMO-cover.webp";
+    // import secnetCover from "$lib/images/covers/secnet-cover.webp";
 
     const cards = [
+        {
+            href: "/work/medication-tracker",
+            comptimeline: "University Project - MAY 2026",
+            title: "Medication Tracker",
+            desc: "Turning an annoying reminder into a cute companion.",
+            img: BMOCover,
+            reload: true,
+        },
         {
             href: "/work/todo-analytics",
             comptimeline: "Personal Project - FEB 2026",
@@ -15,9 +25,9 @@
             reload: true,
         },
         {
-            href: "/work/wallflowers",
+            href: "/work/wallflower",
             comptimeline: "Personal Project - NOV 2025",
-            title: "Wallflowers",
+            title: "Wallflower",
             desc: "Hand-painted vases designed to display my LEGO flowers",
             img: vaseCover,
         },
@@ -35,6 +45,14 @@
             desc: "Library for colour swatches collected from the hardware store.",
             img: hueventoryCover,
         },
+        // {
+        //     href: "/work/secnet",
+        //     comptimeline: "SecNet - FEB 2025",
+        //     title: "Website Refresh",
+        //     desc: "Refreshing a small business website.",
+        //     img: secnetCover,
+        //     reload: true,
+        // },
     ];
 </script>
 

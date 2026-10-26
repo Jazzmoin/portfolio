@@ -1,9 +1,9 @@
 <script lang="ts">
     import CardLayout from "$lib/components/CardLayout.svelte";
-    import flowerGardenCover from "$lib/images/covers/flower-garden-cover.webp";
+    import BMOCover from "$lib/images/covers/BMO-cover.webp";
     import hueventoryCover from "$lib/images/covers/hueventory-cover.webp";
     import todoAnalyticsCover from "$lib/images/covers/todo-analytics-cover.webp";
-    import vaseCover from "$lib/images/covers/wallflowers-cover.webp";
+    import vaseCover from "$lib/images/covers/wallflower-cover.webp";
     import heroImg from "$lib/images/test.png";
 
     const cards = [
@@ -16,18 +16,19 @@
             reload: true,
         },
         {
-            href: "/work/wallflowers",
+            href: "/work/wallflower",
             comptimeline: "Personal Project - NOV 2025",
-            title: "Wallflowers",
+            title: "Wallflower",
             desc: "Hand-painted vases designed to display my LEGO flowers",
             img: vaseCover,
         },
         {
-            href: "/work/flower-garden",
-            comptimeline: "Personal Project - AUG 2025",
-            title: "Flower Garden",
-            desc: "Rust-based playground to create your own garden.",
-            img: flowerGardenCover,
+            href: "/work/medication-tracker",
+            comptimeline: "University Project - MAY 2026",
+            title: "Medication Tracker",
+            desc: "Turning an annoying reminder into a cute companion.",
+            reload: true,
+            img: BMOCover,
         },
         {
             href: "/work/hueventory",

@@ -15,15 +15,15 @@
 <div class="app">
     <header>
         <div class="header-inner">
-            <a class="nav-link nav-recipes" href="/recipes">Recipes</a>
-            <a class="nav-link nav-fun" href="/fun">Fun</a>
+            <a class="nav-link nav-recipes justify-start" href="/recipes">Recipes</a>
+            <a class="nav-link nav-fun justify-center" href="/fun">Fun</a>
 
             <a class="home-link" href="/">
                 <img src="/favicon.svg" alt="logo" />
             </a>
 
-            <a class="nav-link nav-work" href="/work">Work</a>
-            <a class="nav-link nav-contact" href="mailto:hello@jazzmine.au"
+            <a class="nav-link nav-work justify-center" href="/work">Work</a>
+            <a class="nav-link nav-contact justify-end" href="mailto:hello@jazzmine.au"
                 >Contact</a
             >
 
@@ -100,8 +100,9 @@
     }
 
     .header-inner {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: centre;
         align-items: center;
         margin-inline: auto;
         padding: 0.5rem 15rem;
@@ -113,7 +114,9 @@
         font-family: var(--font-serif);
         font-size: var(--text-2xl);
         line-height: 1;
-        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .home-link img {
@@ -134,6 +137,8 @@
         transition:
             background-color 180ms ease,
             transform 180ms ease;
+        display: flex;
+        align-items: center;
     }
 
     .nav-link:hover {

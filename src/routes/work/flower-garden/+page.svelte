@@ -32,7 +32,7 @@
         <header id="overview" class="project-header">
             <h2 class="project-title">Flower Garden</h2>
             <p class="project-description">
-                A Project created to learn Rust and Nannou.
+                An interactive project created to learn Rust and Nannou.
             </p>
         </header>
 
