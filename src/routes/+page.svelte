@@ -4,7 +4,7 @@
     import hueventoryCover from "$lib/images/covers/hueventory-cover.webp";
     import todoAnalyticsCover from "$lib/images/covers/todo-analytics-cover.webp";
     import vaseCover from "$lib/images/covers/wallflower-cover.webp";
-    import heroImg from "$lib/images/test.png";
+    import heroImg from "$lib/images/floral-hero.svg";
 
     const cards = [
         {
@@ -67,7 +67,7 @@
     }
 
     .hero {
-        padding: 0rem 15rem 8rem;
+        padding: 0rem 15rem 5rem;
         width: 100vw;
         margin-inline: calc(50% - 50vw);
         box-sizing: border-box;
@@ -77,7 +77,7 @@
         position: relative;
         overflow: hidden;
         background-color: #f4eacf;
-        height: 90svh;
+        aspect-ratio: 16/10;
         border-radius: 0.2rem;
     }
 
@@ -85,7 +85,7 @@
         position: absolute;
         inset: 0;
         width: 100%;
-        height: 100%;
+        aspect-ratio: 16/10;
         object-fit: cover;
         object-position: center;
         z-index: 0;
