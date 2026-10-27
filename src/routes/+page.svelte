@@ -8,6 +8,15 @@
 
     const cards = [
         {
+            href: "/work/medication-tracker",
+            comptimeline: "University Project - MAY 2026",
+            title: "Medication Tracker",
+            desc: "Turning an annoying reminder into a cute companion.",
+            reload: true,
+            img: BMOCover,
+        },
+
+        {
             href: "/work/todo-analytics",
             comptimeline: "Personal Project - FEB 2026",
             title: "Todo Analytics",
@@ -21,14 +30,6 @@
             title: "Wallflower",
             desc: "Hand-painted vases designed to display my LEGO flowers",
             img: vaseCover,
-        },
-        {
-            href: "/work/medication-tracker",
-            comptimeline: "University Project - MAY 2026",
-            title: "Medication Tracker",
-            desc: "Turning an annoying reminder into a cute companion.",
-            reload: true,
-            img: BMOCover,
         },
         {
             href: "/work/hueventory",
