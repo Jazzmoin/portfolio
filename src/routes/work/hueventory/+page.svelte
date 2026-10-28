@@ -152,7 +152,7 @@
 
     .swatch-group {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(min(110px, 100%), 1fr));
         gap: 1rem;
     }
 </style>

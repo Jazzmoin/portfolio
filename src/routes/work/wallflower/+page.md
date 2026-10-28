@@ -11,7 +11,7 @@
 
 ### Context
 
-I have a collection of LEGO flowers gifted to me by my loved ones that used to sit tucked away on my shelf. For a while, I struggled to find a place where they could be properly seen and appreciated. I needed my desk to remain clear for work, and my existing shelving was too high and enclosed for them to be seen. I then thought: what if I mounted them to the wall like a picture frame? 
+I have a collection of LEGO flowers gifted to me by my loved ones that used to sit tucked away on my shelf. For a while, I struggled to find a place where they could be properly seen and appreciated. I needed my desk to remain clear for work, and my existing shelving was too high and enclosed for them to be seen. I then thought: what if I mounted them to the wall like a picture frame?
 
 <img src={originalStorage} alt="Original flower storage setup" />
 
@@ -34,6 +34,6 @@ I figured 3D printing would be the best approach, giving me the freedom to shape
 
 ### The Solution
 
-Once I had given the vases a protective clear coat, I hung them up and organised my flowers into cute little bouquets (ten flowers turned out to be too much for one vase, so now I have two!). I'm pretty proud of how this project turned out. It's the first self-guided design project I've worked on that solves a problem in my life so well. What started as a way to get my LEGO flowers off my shelf has turned into a piece of functional art that gives them the attention they deserve, while keeping my desk free for other projects. 
+Once I had given the vases a protective clear coat, I hung them up and organised my flowers into cute little bouquets (ten flowers turned out to be too much for one vase, so now I have two!). I'm pretty proud of how this project turned out. It's the first self-guided design project I've worked on that solves a problem in my life so well. What started as a way to get my LEGO flowers off my shelf has turned into a piece of functional art that gives them the attention they deserve, while keeping my desk free for other projects.
 
 <img src={vaseCover} alt="Final vase" />

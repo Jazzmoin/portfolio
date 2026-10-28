@@ -11,11 +11,12 @@
     --color-primary: #d65447;
     --color-accent-2: #dfe9fb;
     --header-height: 4rem;
+    --page-gutter: clamp(1rem, 15vw, 15rem);
     --page-top-padding: clamp(2.5rem, 6vw, 4rem);
     --section-gap: clamp(2rem, 4vw, 3.5rem);
-    --heading1: 150px;
-    --heading2: 60px;
-    --heading3: 24px;
+    --heading1: clamp(3rem, 11vw, 150px);
+    --heading2: clamp(2rem, 5vw, 60px);
+    --heading3: clamp(1.25rem, 2.2vw, 24px);
     --body: 16px;
     font-family: var(--font-sans);
     color: var(--color-text);
@@ -23,6 +24,7 @@
 
 html {
     scrollbar-gutter: stable;
+    overflow-x: clip;
 }
 
 body {
@@ -83,8 +85,9 @@ li {
 
 main {
     flex: 1;
-    width: 70%;
+    width: min(calc(100% - 2 * var(--page-gutter)), 90rem);
     margin-inline: auto;
+    min-width: 0;
 }
 
 .layout {
@@ -173,7 +176,7 @@ main {
     padding: 0.75rem 0.6rem;
     border: 1px solid color-mix(in srgb, var(--color-text) 16%, transparent);
     border-right: 0;
-    border-radius: 0.35rem 0 0 0.35rem;
+    border-radius: 0;
     background: color-mix(
         in srgb,
         var(--color-accent-2) 72%,
@@ -196,7 +199,7 @@ main {
     list-style: none;
     border: 1px solid color-mix(in srgb, var(--color-text) 16%, transparent);
     border-right: 0;
-    border-radius: 0.35rem 0 0 0.35rem;
+    border-radius: 0;
     background: color-mix(in srgb, var(--color-background) 96%, white);
     box-shadow: 0 0.8rem 2rem
         color-mix(in srgb, var(--color-text) 12%, transparent);
@@ -221,11 +224,21 @@ main {
     line-height: 1.4;
 }
 
+@media (max-width: 1280px) {
+    .page-contents ul {
+        min-width: 11rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .page-contents ul {
+        min-width: 10rem;
+    }
+}
+
 @media (max-width: 800px) {
     :root {
-        --heading1: clamp(3rem, 12vw, 180px);
-        --heading2: clamp(2rem, 8vw, 60px);
-        --heading3: clamp(1.25rem, 4vw, 24px);
+        --page-gutter: 1rem;
     }
 
     main,

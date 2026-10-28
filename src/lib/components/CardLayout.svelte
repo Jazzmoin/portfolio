@@ -14,14 +14,15 @@
     .card-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        padding: 0.5rem 15rem 5rem;
+        gap: clamp(1.25rem, 3vw, 2rem);
+        padding: 0.5rem var(--page-gutter) 5rem;
     }
 
     @media (max-width: 800px) {
         .card-grid {
             grid-template-columns: 1fr;
-            padding: 0.5rem 1rem 3rem;
+            gap: 1.25rem;
+            padding: 0.5rem var(--page-gutter) 3rem;
         }
     }
 </style>

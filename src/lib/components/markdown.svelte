@@ -8,7 +8,7 @@
 
 <style>
     :global(main:has(.markdown-page)) {
-        width: 50%;
+        width: min(50%, 45rem);
     }
 
     .markdown-page {
@@ -21,7 +21,7 @@
         margin: 0;
     }
 
-     /* space between sections */
+    /* space between sections */
     .markdown-page > :global(* + *) {
         margin-top: 2rem;
     }
@@ -37,6 +37,12 @@
         max-width: 100%;
         height: auto;
         border-radius: 0.2rem;
+    }
+
+    @media (max-width: 1100px) {
+        :global(main:has(.markdown-page)) {
+            width: 78%;
+        }
     }
 
     @media (max-width: 800px) {

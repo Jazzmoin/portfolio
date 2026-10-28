@@ -15,7 +15,9 @@
 <div class="app">
     <header>
         <div class="header-inner">
-            <a class="nav-link nav-recipes justify-start" href="/recipes">Recipes</a>
+            <a class="nav-link nav-recipes justify-start" href="/recipes"
+                >Recipes</a
+            >
             <a class="nav-link nav-fun justify-center" href="/fun">Fun</a>
 
             <a class="home-link" href="/">
@@ -23,8 +25,9 @@
             </a>
 
             <a class="nav-link nav-work justify-center" href="/work">Work</a>
-            <a class="nav-link nav-contact justify-end" href="mailto:hello@jazzmine.au"
-                >Contact</a
+            <a
+                class="nav-link nav-contact justify-end"
+                href="mailto:hello@jazzmine.au">Contact</a
             >
 
             <button
@@ -86,7 +89,6 @@
 <style>
     header {
         position: sticky;
-        top: 0rem;
         z-index: 3;
         width: 100%;
         margin: 0rem auto 0;
@@ -105,7 +107,7 @@
         justify-content: centre;
         align-items: center;
         margin-inline: auto;
-        padding: 0.5rem 15rem;
+        padding: 0.5rem var(--page-gutter);
         box-sizing: border-box;
         height: var(--header-height);
     }
@@ -217,11 +219,13 @@
 
     .footer-inner {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        gap: 0.5rem 2rem;
         width: 100%;
         margin-inline: auto;
-        padding: 1rem 15rem;
+        padding: 1rem var(--page-gutter);
         box-sizing: border-box;
         border-top: 2px solid
             color-mix(in srgb, var(--color-text) 16%, transparent);
@@ -238,10 +242,6 @@
     }
 
     @media (max-width: 800px) {
-        header {
-            top: 0.5rem;
-        }
-
         .header-inner {
             padding-inline: 1rem;
         }

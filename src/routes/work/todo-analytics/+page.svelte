@@ -217,8 +217,7 @@
             <h2 class="project-title">Microsoft To Do Analytics</h2>
             <p class="project-description">
                 A personal dashboard for exploring task completion patterns
-                across Microsoft To Do lists. 
-                Sign in to view yours!
+                across Microsoft To Do lists. Sign in to view yours!
             </p>
         </header>
 
@@ -397,7 +396,13 @@
         flex-direction: column;
         gap: 1rem;
         width: 100%;
+        min-width: 0;
         min-height: fit-content;
+    }
+
+    .task-graphs {
+        width: 100%;
+        min-width: 0;
     }
 
     .dropdowns-group {

@@ -68,7 +68,7 @@
     }
 
     .hero {
-        padding: 0rem 15rem 5rem;
+        padding: 0rem var(--page-gutter) 5rem;
         width: 100vw;
         margin-inline: calc(50% - 50vw);
         box-sizing: border-box;
@@ -86,7 +86,7 @@
         position: absolute;
         inset: 0;
         width: 100%;
-        aspect-ratio: 16/10;
+        height: 100%;
         object-fit: cover;
         object-position: center;
         z-index: 0;
@@ -133,15 +133,21 @@
 
     @media (max-width: 800px) {
         .hero {
-            padding: 0 1rem 4rem;
+            padding: 0 0 4rem;
         }
 
         .hero-content {
-            height: 70svh;
+            border-radius: 0;
+        }
+
+        .hero-text {
+            padding-inline: 1.25rem;
         }
 
         .hero-text h2 {
+            max-width: 100%;
             font-size: clamp(1.25rem, 5vw, 40px);
+            text-wrap: balance;
             -webkit-text-stroke-width: 4px;
         }
 
