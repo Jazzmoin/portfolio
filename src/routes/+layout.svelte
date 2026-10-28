@@ -17,9 +17,7 @@
 <div class="app">
     <header>
         <div class="header-inner">
-            <a class="nav-link nav-recipes justify-start" href="/recipes"
-                >Recipes</a
-            >
+            <a class="nav-link nav-recipes justify-start" href="/recipes">Recipes</a>
             <a class="nav-link nav-fun justify-center" href="/fun">Fun</a>
 
             <a class="home-link" href="/">
@@ -27,10 +25,7 @@
             </a>
 
             <a class="nav-link nav-work justify-center" href="/work">Work</a>
-            <a
-                class="nav-link nav-contact justify-end"
-                href="mailto:hello@jazzmine.au">Contact</a
-            >
+            <a class="nav-link nav-contact justify-end" href="mailto:hello@jazzmine.au">Contact</a>
 
             <button
                 class="hamburger"
@@ -47,26 +42,10 @@
 
         {#if menuOpen}
             <nav class="mobile-menu">
-                <a
-                    class="mobile-link"
-                    href="/recipes"
-                    onclick={() => (menuOpen = false)}>Recipes</a
-                >
-                <a
-                    class="mobile-link"
-                    href="/fun"
-                    onclick={() => (menuOpen = false)}>Fun</a
-                >
-                <a
-                    class="mobile-link"
-                    href="/work"
-                    onclick={() => (menuOpen = false)}>Work</a
-                >
-                <a
-                    class="mobile-link"
-                    href="mailto:hello@jazzmine.au"
-                    onclick={() => (menuOpen = false)}>Contact</a
-                >
+                <a class="mobile-link" href="/recipes" onclick={() => (menuOpen = false)}>Recipes</a>
+                <a class="mobile-link" href="/fun" onclick={() => (menuOpen = false)}>Fun</a>
+                <a class="mobile-link" href="/work" onclick={() => (menuOpen = false)}>Work</a>
+                <a class="mobile-link" href="mailto:hello@jazzmine.au" onclick={() => (menuOpen = false)}>Contact</a>
             </nav>
         {/if}
     </header>
@@ -152,18 +131,21 @@
     .hamburger {
         display: none;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
-        gap: 5px;
+        gap: 4px;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0;
         background: none;
         border: none;
         cursor: pointer;
-        padding: 0.5rem;
         z-index: 10;
     }
 
     .hamburger span {
         display: block;
-        width: 24px;
+        width: 22px;
         height: 2px;
         background-color: var(--color-text);
         border-radius: 2px;
@@ -173,7 +155,7 @@
     }
 
     .hamburger.open span:nth-child(1) {
-        transform: translateY(7px) rotate(45deg);
+        transform: translateY(6px) rotate(45deg);
     }
 
     .hamburger.open span:nth-child(2) {
@@ -181,7 +163,7 @@
     }
 
     .hamburger.open span:nth-child(3) {
-        transform: translateY(-7px) rotate(-45deg);
+        transform: translateY(-6px) rotate(-45deg);
     }
 
     .mobile-menu {
@@ -191,8 +173,7 @@
         gap: 0.25rem;
         padding: 0.5rem 1rem 1rem;
         background-color: var(--color-background);
-        border-bottom: 1px solid
-            color-mix(in srgb, var(--color-text) 16%, transparent);
+        border-bottom: 1px solid color-mix(in srgb, var(--color-text) 16%, transparent);
     }
 
     .mobile-link {
@@ -208,11 +189,7 @@
     }
 
     .mobile-link:hover {
-        background-color: color-mix(
-            in srgb,
-            var(--color-primary) 8%,
-            transparent
-        );
+        background-color: color-mix(in srgb, var(--color-primary) 8%, transparent);
     }
 
     .footer {
@@ -229,8 +206,7 @@
         margin-inline: auto;
         padding: 1rem var(--page-gutter);
         box-sizing: border-box;
-        border-top: 2px solid
-            color-mix(in srgb, var(--color-text) 16%, transparent);
+        border-top: 2px solid color-mix(in srgb, var(--color-text) 16%, transparent);
     }
 
     .footer-message {
@@ -245,6 +221,7 @@
 
     @media (max-width: 800px) {
         .header-inner {
+            grid-template-columns: 1fr auto 1fr;
             padding-inline: 1rem;
         }
 
@@ -256,10 +233,13 @@
         }
 
         .home-link {
+            grid-column: 2;
             margin: 0;
         }
 
         .hamburger {
+            grid-column: 3;
+            justify-self: end;
             display: flex;
         }
 
