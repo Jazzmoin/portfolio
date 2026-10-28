@@ -45,6 +45,18 @@
         text-transform: uppercase;
     }
 
+    .card-title {
+        font-family: var(--font-serif);
+        font-size: clamp(1.5rem, 2.2vw, 2rem);
+        line-height: 1.08;
+    }
+
+    .desc {
+        font-family: var(--font-sans);
+        font-size: var(--body);
+        line-height: 1.4;
+    }
+
     a {
         display: flex;
         flex-direction: column;

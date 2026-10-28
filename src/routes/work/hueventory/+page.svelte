@@ -130,6 +130,16 @@
         border-top: 0;
     }
 
+    .section-header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+    }
+
+    .section-heading {
+        margin: 0;
+    }
+
     .progress-bar {
         height: 4px;
         background: #e5e5e5;
@@ -154,5 +164,89 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(min(110px, 100%), 1fr));
         gap: 1rem;
+    }
+
+    .page-contents {
+        position: fixed;
+        top: calc(var(--header-height) + 2rem);
+        right: 0;
+        z-index: 5;
+        display: flex;
+        align-items: stretch;
+        transform: translateX(calc(100% - 2.8rem));
+        transition: transform 180ms ease;
+    }
+
+    .page-contents:hover,
+    .page-contents:focus-within {
+        transform: translateX(0);
+    }
+
+    .page-contents-tab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem 0.6rem;
+        border: 1px solid color-mix(in srgb, var(--color-text) 16%, transparent);
+        border-right: 0;
+        border-radius: 0;
+        background: color-mix(
+            in srgb,
+            var(--color-accent-2) 72%,
+            var(--color-background)
+        );
+        font-family: var(--font-sans);
+        font-size: var(--body);
+        line-height: 1.2;
+        letter-spacing: 0.08em;
+        writing-mode: vertical-rl;
+    }
+
+    .page-contents ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        min-width: 12rem;
+        margin: 0;
+        padding: 0.9rem 1rem;
+        list-style: none;
+        border: 1px solid color-mix(in srgb, var(--color-text) 16%, transparent);
+        border-right: 0;
+        border-radius: 0;
+        background: color-mix(in srgb, var(--color-background) 96%, white);
+        box-shadow: 0 0.8rem 2rem
+            color-mix(in srgb, var(--color-text) 12%, transparent);
+    }
+
+    .page-contents li {
+        font-family: var(--font-sans);
+        font-size: var(--body);
+        line-height: 1.4;
+        text-transform: none;
+    }
+
+    @media (max-width: 1280px) {
+        .page-contents ul {
+            min-width: 11rem;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .page-contents ul {
+            min-width: 10rem;
+        }
+    }
+
+    @media (max-width: 800px) {
+        .page-contents {
+            top: auto;
+            bottom: 1rem;
+            transform: translateX(calc(100% - 2.5rem));
+        }
+
+        .page-contents ul {
+            max-height: min(55vh, 18rem);
+            overflow: auto;
+        }
     }
 </style>

@@ -1,5 +1,7 @@
 <script lang="ts">
     import { page } from "$app/state";
+    import "./theme.css";
+    import "./base.css";
     import "./layout.css";
 
     const socialLinks = [
