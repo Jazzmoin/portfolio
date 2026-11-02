@@ -24,7 +24,7 @@ The main challenge was designing a reminder that was noticeable enough to prompt
 
 <img src={sketch} alt="Sketch and cardboard prototype" />
 
-### Insights
+### The Process
 
 This project introduced me to coding an ESP32 in C/C++, both of which I'm new to. Integrating hardware and software was a bit confusing and frustrating since my understanding of it was quite basic. There was a lot of research and failed attempts involved (including times when spent 10 minutes trying to figure out why things stopped working when I just wired it wrong). In saying that, learning how the data was transmitted and the wiring of the ESP32 to the dot matrix display to correctly show my reminders was really fun. I had done quite a bit of planning for the faces that it makes while it is idle and not displaying a message to make it more like a friendly companion.
 

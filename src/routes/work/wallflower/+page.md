@@ -28,7 +28,7 @@ I started looking around the house for inspiration, taking note of how things li
 
 <img src={vasePaint} alt="Painting design onto vase" />
 
-### Insights
+### The Process
 
 I figured 3D printing would be the best approach, giving me the freedom to shape the vase however I liked. However, the bare plastic looked a little too plain (and a bit too much like a toy), so I decided to experiment with some wall paint to give the surface more texture. I then hand-painted the designs onto each vase to give them a bit more personality and life.
 
